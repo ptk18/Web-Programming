@@ -1,0 +1,54 @@
+.myformcontainer tr td {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .border {
+    outline: 0;
+    border-width: 0 0 1px;
+    color: gray;
+    width: 150px;
+  }
+  .underline {
+    border-bottom: 2px solid black;
+    width: 500px;
+  }
+  .center {
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    background-color: #04aa6d;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  table td{
+    color: maroon;
+    font-family: 'Roboto';
+    font-size: 22px;
+ }
+ table td:hover {
+    color: blue;
+    background-color: burlywood;
+    font-family: 'Roboto';
+    font-size: 22px;
+ }
+body{
+    margin: 0;
+    margin-top: 0;
+}
+.bg_blue{
+    background-color: darkcyan;
+}
+.bg_yellow{
+    background-color:khaki;
+}
