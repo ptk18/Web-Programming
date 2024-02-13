@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	<table>
+			<tr><td>Enroll Date</td><td>
+			<input type="date" name="date" id="date" size="50"></td></tr>
+			 
+			 
+			<tr><td>Form No</td><td> 
+			<input type="number" name="formno" id="formno" min="1" size="50"> </td></tr>
+			 
+			 
+			<tr><td>Name</td><td> 
+			<input type="text" name="name" id="name" size="50"></td></tr>
+			 
+			 
+			<tr><td>Birth Date(YY/MM/DD)</td><td> 
+			<input type="date" name="birthday" id="birtday" size="50"></td></tr>
+			 
+			 
+			<tr><td>Gender</td><td> 
+			<input type="radio" name="gender" value="male" checked> Male 
+			<input type="radio" name="gender" value="female" style="margin-left: 20px;"> Female </td></tr>
+			 	
+			 
+			<tr><td>Phone no</td><td> 
+			<input type="text" name="phone" id="phone" size="50"></td></tr> 
+			 
+			 
+			<tr><td>Major</td><td> 
+			<input type="text" name="major" id="major" list="majors" size="50"></td></tr> 
+				<datalist id="majors"> 
+					<option value="ICT" label="ICT">
+					<option value="IST" label="IST">
+					<option value="CE" label="CE">
+					<option value="ECE" label="ECE">
+					<option value="PrE" label="PRE">
+					<option value="AME" label="AME">
+				</datalist>
+			 
+			 
+			<tr><td>Year</td><td> 
+			<select size="1" name="year" id="year">
+				<option value="1">First Year</option>
+				<option value="2">Second Year</option>
+				<option value="3">Third Year</option>
+				<option value="4">Foulth Year</option>
+				<option value="5">Fifth Year</option>
+				<option value="6">Sixth Year</option>
+			</select> 
+			</td></tr>
+			 
+			<tr><td>E-mail</td><td> 
+			<input type="text" name="email" id="email" size="50"></td></tr> 
+			 
+			 
+			<tr><td>Facebook</td><td> 
+			<input type="text" name="fb" id="fb" size="50"></td></tr> 
+		 
+			 
+			<tr><td>Hostel Address</td><td> 
+			<input type="text" name="address" id="address" size="50"></td></tr> 
+			 
+		</table>
+</body>
+</html>

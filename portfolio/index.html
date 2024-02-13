@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*For laptops and desktop size*/
+        body {
+          background-image: url('bg.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 1;
+        }
+        .nav {
+            font-family:monospace;
+            font-size:x-large;
+            padding: 20px;
+        }
+        .nav-item a{
+            color: white; 
+        }
+        .nav-item a:hover{
+            color: #45CED2;
+        }
+        .nav-item .resume .btn:hover{
+            background-color: #45CED2;
+        }
+        .nav-item .icon{
+            display: none;
+        }
+
+        .side-bar{
+            list-style-type: none;
+            font-family:monospace;
+            font-size:x-large;
+            background-color: rgba(0, 100, 100, 0.9);
+            width: 100%;
+            padding: 70px 30px;
+            margin-top: -70px;
+            display: none;
+        }
+        .side-bar a{
+            padding-top: 10px;
+        }
+
+        /*For tablet size*/
+        @media only screen and (max-width: 1080px) and (min-width: 600px){
+        body {
+            background-image: url('bg_ipad.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        }
+        /*For mobile size*/
+        @media only screen and (max-width: 600px) {
+        body {
+            background-image: url('bg_phone.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .nav-item a, .nav-item button{
+            display: none;
+        }
+        .nav-item .icon{
+            display: block;
+        }
+        .side-bar {
+            display: block;
+        }
+        .side-bar a, .side-bar button{
+            display: block;
+        }
+
+
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <!--Top Navigation Bar for laptop size and tablet size-->
+    <ul class="nav justify-content-end nav-underline " id="myTopnav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="padding: 8px 5px;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="padding: 8px 5px;">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="padding: 8px 5px;">Expertise</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="padding: 8px 5px;">Contact</a>
+        </li>
+        <li class="nav-item resume">
+            <button type="button" class="btn btn-outline-light" style="font-size: x-large; padding: 0px 8px; margin-top: 7px;">Resume</button>
+        </li>
+      </ul>
+      <!--Top Navigation Bar end-->
+
+      <!--Side Navigation Bar for mobile size-->
+      <ul class="side-bar" id="side-nav-bar">
+        <li class="nav-item icon">
+            <a href="" class="icon" onclick="sideNavBarClose()" >
+                <i class="fa fa-close" style="color: white;"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="padding: 20px 5px;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="padding: 20px 5px;">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="padding: 20px 5px;">Expertise</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" style="padding: 20px 5px;">Contact</a>
+          </li>
+          <li class="nav-item resume">
+              <button type="button" class="btn btn-outline-light" style="font-size: x-large; padding: 0px 8px; margin-top: 20px;">Resume</button>
+          </li>
+      </ul>
+      <!--Side Navigation Bar end-->
+      <!--Navigation Bar end-->
+     <div style="height: 2000px;"></div>
+    
+<script>
+    console.log("JS working")
+    var sideNav = document.getElementsByClassName('side-bar');
+    console.log(sideNav.style.display == "block");
+    
+</script>
+</body>
+</html>

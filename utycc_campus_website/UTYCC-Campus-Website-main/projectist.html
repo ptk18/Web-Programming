@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IST Projects</title>
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/projectist.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <style>
+        body{
+            width: 100%;
+            margin: 0px auto;
+        }
+        main{
+            width: 100%;
+            background-color: white;
+        }
+        .footer{
+  width: 100%;
+  
+  background-image: linear-gradient(to bottom,rgb(204, 205, 206), rgb(201, 203, 204));
+  color: black;
+  opacity: 0.8;
+  /*background-image: linear-gradient(to right,#6dc0f2 , #0092cc);*/
+  
+}
+.footer p{
+ 
+  font-size: 17px;
+  
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  
+}
+
+.footer-1-sec{
+  width: 50%;
+  text-align: left;
+  
+  
+}
+.footer-2-sec{
+  width:50%;
+  text-align: right;
+
+   
+}
+.footer-2-sec img{
+ 
+  margin-top: 30px;
+  margin-bottom: 15px;
+text-align: right;
+
+
+}
+.footer-3-sec{
+  width: 60%;
+  
+  text-align: center;
+ 
+  font-size: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-style: italic;
+  padding-bottom: 10px;
+  color:black;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding-top: 10px;
+}
+.Suggest-button{
+  margin-top: 30px;
+  border: 2px solid ;
+   border-radius: 10px;
+   
+}
+    </style>
+</head>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+ //readmore
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<body>
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+    <main>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" style="width:30px"></button>
+            <div class="title">
+                <img src="graphic/projectnavigateict-01.png">
+                <h1>Projects of<br><span>Information Science<br><span>Department</span></span></h1>
+                <a href="project.html"><button class="previousButton">Previous</button></a>
+            </div>
+            <div class="dataContainer">
+                <h1>Second<br>Year</h1>
+                <div class="data">
+                    
+                    <details class="detailsTilte">
+                        <summary>ASEAN Nations</summary>
+                        <p class="detailsTitle">Introduction</p>
+                        <p class="detailsParagraph">Using the information of ASEAN countries, we created this website. The website will help the visitors to know what is ASEAN and how interesting are ASEAN member countries.</p>
+                        <p class="detailsTitle">Aims and Objective</p>
+                        <ul>
+                            <li>To know easily what is ASEAN</li>
+                            <li>To know which activities are held by ASEAN organization</li>
+                            <li>To state how beautiful are ASEAN countries to the world</li>
+                            <li>To help people who are planning to travel around ASEAN countries</li>   
+                        </ul>
+                    </details>
+                
+                    <details class="detailsTilte">
+                            <summary>Business Bee</summary>
+                                <p class="detailsTitle">Introduction</p>
+                                    <p class="detailsParagraph">The reason we developed this website is to provide information about new strategies or methods that are being used in business. Our project hopes users can open the entrepreneurial doorways and find success in their starting business or in their current business by following various methods provided within.</p>
+                                <p class="detailsTitle">Aims and Objective</p>
+                                    <ul>
+                                        <li>To provide the interesting categories about the topic and what business is.</li>
+                                        <li>To show how to invest money by collecting some properties-jewels, cars and estates.</li>
+                                        <li>To provide the facts about banking investment, stock share market, and investment in cryptocurrency</li>
+                                        <li>To guide some easy-small businesses and to demonstrate how to register a company in our country</li>
+                                        <li>To understand how to communicate with the target customers using advertising and marketing</li>
+                                        <li>To provide about business methods by guiding business books and courses</li>
+                                        <li>To reduce the amount of unemployment in our country by guiding business methods</li>  
+                                    </ul>
+                        </details>
+
+                        <details class="detailsTilte">
+                                <summary>The Ultimate Guide for Pyin Oo Lwin (Maymyo)</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">This website intends for both local guests and tourists who have plans for coming and visiting PyinOoLwin. It occupies various kinds of guides for travelling around PyinOoLwin.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To help local guests and tourists to visit PyinOoLwin conveniently</li>
+                                            <li>To be familiar about the places around PyinOoLwin including hidden treasures</li>
+                                            <li>To know better place to shop, stay and taste delicious food while staying in PyinOoLwin</li>
+                                            <li>To develop the tourism in Myanmar and out-perform other sectors of the economy</li>   
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>YCCSU</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">Our website intends for fresher students who can know about the details of students’ union and general knowledge about UTYCC.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To join YCCSU, related club and family with easily</li>
+                                                <li>To know all of the information of UT-YCC</li>
+                                                <li>To include apart of university’s website</li>   
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>ျမန္မာနွင့္ ပရဟိတ</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">ျမန္မာနွင့္ပရဟိတ website တြင္ ျမန္မာနိုင္ငံ အတြင္ရွိပညာေရး၊ က်န္းမာေရး၊ မိဘမဲ့ကေလးမ်ား၊ သက္ႀကီး ႐ြယ္အိုဘိုးဘြားမ်ား၊ သဘာဝေဘးဒဏ္သင့္ေဒသမ်ားအတြင္းရွိ ပရဟိတလွဳပ္ရွားမွဳမ်ား၊ အကူအညီလိုအပ္ေနေသးေသာ ေနရာမ်ား၊ ဆက္သြယ္လွဴဒါန္းနိုင္ရန္ ပရဟိတ အဖြဲ႕အစည္းမ်ား၏ လိပ္စာမ်ားအားတင္ျပထားပါသည္။</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>ပရဟိတဆိုေသာ စကားလံုးကိုနားလည္ေစရန္ျဖစ္သည္။ ပရဟိတ ဆိုတာဘာလဲ၊ ပရဟိတလုပ္လွ်င္လည္း လိုက္နာရမည့္အခ်က္မ်ားကို သိရွိေစရန္ ရည္႐ြယ္ျခင္းျဖစ္သည္</li>
+                                                    <li>ကၽြန္ေတာ္၊ မ တို႔ျမန္မာနိုင္ငံ အတြင္း အမွန္တကယ္လိုအပ္ေနေသာ ေနရာကို သိရွိေစလိုေသာ ရည္႐ြယ္ခ်က္ျဖစ္သည္၊ ပရဟိတနွင့္ မရင္းနွီးသည့္သူမ်ားကိုလည္း ပါဝင္လာေစရန္ ရည္႐ြယ္သည္</li>
+                                                    <li>အခ်င္းခ်င္းပါဝင္ကူညီလာျခင္းျဖင့္ ကုသိုလ္တရားပြားမ်ားကာ၊ ကူညီရိုင္းပင္းတတ္ေသာ စိတ္ပိုင္းဆိုင္ရာအေလ့အက်င့္မ်ားေပၚေပါက္လာေစရန္ျဖစ္သည္၊ ပိုမိုေကာင္းမြန္ေသာ အနာဂတ္မ်ားလည္းရရွိလာမည္ျဖစ္သည္</li>  
+                                                </ul>
+                                    </details>
+                </div>
+            </div>
+            <div class="dataContainer">
+                <h1>Third<br>Year</h1>
+                <div class="data">
+                        <details class="detailsTilte">
+                                <summary>Attendance Management System</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Attendance Management System is  a System to  help teachers and students’ affair to reduce time in taking and calculating roll call. We can take attendance by scanning our barcode id.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To create a better Technology and Society</li>
+                                            <li>To decrease human resources & time in unnecessary work.</li>
+                                            <li>To make an easy daily life with AMS.</li>                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Car Insurance Management System</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">Car Insurance Management System is basically for management of customers who take insurance for their cars. In this system, all records are maintained in the database. It is able to be used in Car Insurance Department from any Insurance Company to manage for their customers’ insurance details.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To save time consuming and power consuming</li>
+                                                <li>To provide more reliability for maintaining information</li>
+                                                <li>To have more storage capacity and search facility and faster access to database</li>
+                                                <li>To be able to calculate premium easier rather than calculating by manual</li>   
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Hospital Management System</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Our project includes Patient’s register, information, check out, room info, bill and staff information, user info, expense and report.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Maternal health, Quality of care, Place of delivery</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To promote awareness of health care among all sections of the Myanmar people</li>
+                                                    <li>To promote awareness of among functionaries involved in health and hospital management</li>
+                                                    <li>To promote research in the field of Health and Hospital Management in order to improve efficiency of Health Care delivery Systems</li>
+                                                    <li>To promote the development of high-quality hospital services and community health care</li> 
+                                                    <li>To promote a forum for the exchange of ideas and information among health and hospital planners, academicians.</li>  
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Learning English for Life</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">By learning courses, reading books at library, studying skill improvement and testing exam at the English learning for life, you can improve your English knowledge and skills. Users can choose the courses (Basic, Intermediate 1, Intermediate 2, and Advanced), and study the units, practice the questions about the respective level that you choose. By testing the exams, the users can know your acquisition about you learn and touching the placement test, the users can know your level. When the users are learning for a long time, they can feel boring. So, the users can read the story books about English at that system. And the user can get the ways how to improve your skills (Listening, Reading, Writing, Grammar and Speaking) by studying skill improvement. Moreover, the user can review the records about they studied.</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <ul>
+                                                        <li>	To enable you to improve your ability</li>
+                                                        <li>	To provide “Effective English Lessons” with no waste of time</li>
+                                                        <li>	To help teaching English Lessons for Schools and English Courses</li>
+                                                        <li>	To support “Active Learning” with the help of technology</li>
+                                                        <li>	To provide each learner’s skill accurately with effective questions</li>  
+                                                    </ul>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>Payroll Management System</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">Payroll Management System is implemented to be able to support calculating pay salary for employees for save time consuming in big companies without mistakes in producing pay slip.</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <ul>
+                                                            <li>To support faster pay system in companies</li>
+                                                            <li>To provide able to reduce mistakes in calculating pay salary</li>
+                                                            <li>To prevent profiteer for employee with this system</li>
+                                                            <li>To be able to reduce this time-consuming calculating with this system</li>   
+                                                        </ul>
+                                            </details>
+
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                    <h1>Fourth<br>Year</h1>
+                    <div class="data">
+
+                        <details class="detailsTilte">
+                            <summary>Myanmar Art & Culture</summary>
+                                <p class="detailsTitle">Introduction</p>
+                                    <p class="detailsParagraph">The development of this website intends for people who interested in Myanmar Art & Culture and for artist to sell their arts.</p>
+                                <p class="detailsTitle">Aims and Objective</p>
+                                    <ul>
+                                        <li>To be easily seen Myanmar Arts & Culture and sell items of the artists</li>
+                                        <li>To auction the ancient-valuable arts</li>
+                                        <li>To attract the foreigner and native by viewing Myanmar Arts & Cultures</li>
+                                    </ul>
+                        </details>
+
+                        <details class="detailsTilte">
+                                <summary>Organic Favour</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">The development of this website intend for farm-product sellers and farm-product buyers</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To help sellers to view other selling posts or upload their agricultural products and know about the price range of their products from other sellers from global.</li>
+                                            <li>To help buyers to view other selling posts and to adjust product prices with sellers to satisfy with their needs.</li>
+                                            <li>To attract the users by giving convenient and efficient experiences and easy configuration through our website.</li>
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Random Questions Papers Generator</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">The “Random Question Papers Generators” is a comfortable software. On this application, the dean can post question form for teachers and teacher can post questions as sample form and dean can random questions of teacher’s post and print question papers for exam.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To provide a mobile application for universities and schools</li>
+                                                <li>To help dean for generating form for teachers easily</li>
+                                                <li>To help Dean for choosing the question in random easily</li>
+                                                <li>To provide teachers to post questions easily</li>   
+                                            </ul>
+                                </details>
+
+                    </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Fifth<br>Year</h1>
+                <div class="data">
+                        <details class="detailsTilte">
+                                <summary>Eco Bin</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">The development of this application intends to throw trash efficiently and effectively for the citizen and to collect trash for labor of city management committee.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>	To collect the trash effectively in time so the negative environment factors can be reduced (e.g.: bad smell cause of agglomeration of trash)</li>
+                                            <li>	To pack the trash for the citizen before garbage trucks come</li>
+                                            <li>	To avoid agglomeration of trash</li>
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>2.	Smart Kids</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">This application intends for parents to make their kids to be smart and record kid’s progression. They can also predict their kid’s adult height.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To make parents to be more convenient in recording their children growth</li>
+                                                <li>To support children be more intelligent in their future</li>
+                                                <li>To provides child-care knowledge to parents</li>
+                                            </ul>
+                                </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Title Defender</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">This application targets under-graduated students to finish their title defense in a more convenient way and can find old titles for references</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To reduce time and paper cost</li>
+                                                <li>To have better communication between teachers and students</li>
+                                                <li>To optimize the scheduling of students without any delay</li>
+                                            </ul>
+                                </details>
+                </div>
+            </div>
+
+            
+            
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

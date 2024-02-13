@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Timer</title>
+</head>
+<body>
+    <h1>Online Timer</h1>
+    <h3 id="currentTime"></h3>
+    <button id="editBtn">Edit</button>
+    <table id="timer-table" border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Alert Word</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <table id="timer-table-editor" border="1">
+        <tbody></tbody>
+    </table>
+
+
+    <script>
+        function AlertTime(time, alertMessage) {
+            this.time = time || "";
+            this.alertMessage = alertMessage || "";
+        }
+        var timerArray = [
+            new AlertTime("09:00", "Wake up"),
+            new AlertTime("09:10", "Lunch time"),
+            new AlertTime("09:20", "Take a break"),
+        ];
+        var timer_table = document.getElementById("timer-table");
+        for (var i = 0; i < timerArray.length; i++) {
+            var timer = timerArray[i];
+            var myTr = document.createElement("tr");
+
+            // Create and append a cell for time
+            var timeCell = document.createElement("td");
+            timeCell.textContent = timer.time;
+            myTr.appendChild(timeCell);
+
+            // Create and append a cell for alert message
+            var messageCell = document.createElement("td");
+            messageCell.textContent = timer.alertMessage;
+            myTr.appendChild(messageCell);
+
+            // Append the row to the table body
+            timer_table.querySelector("tbody").appendChild(myTr);
+        }
+
+        function updateCurrentTime(currentTimeInSec) {
+            const hours = Math.floor(currentTimeInSec / 3600);
+            const minutes = Math.floor((currentTimeInSec % 3600) / 60);
+            const currentTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+            var currentTimeItem = document.getElementById("currentTime");
+            currentTimeItem.innerHTML = "Current Time (1000x faster): " + currentTime;
+        }
+
+        var currentTimeinSec = (8 * 3600 + 50 * 60); // Initial time
+        updateCurrentTime(currentTimeinSec);
+
+        var incrementValue = 300;
+        var timerInterval = setInterval(function () {
+            currentTimeinSec += incrementValue; 
+            if (currentTimeinSec >= (24 * 3600)) {
+                clearInterval(timerInterval); // Stop the loop after 24 hours
+            }
+            updateCurrentTime(currentTimeinSec);
+            checkTimers(currentTimeinSec);
+        }, 5000);
+
+        function checkTimers(currentTimeinSec) {
+            for (var i = 0; i < timerArray.length; i++) {
+                var timer = timerArray[i];
+                var timeParts = timer.time.split(":");
+                var timeInSec = parseInt(timeParts[0]) * 3600 + parseInt(timeParts[1]) * 60;
+                if (timeInSec === currentTimeinSec) {
+                    //alert(timer.alertMessage);
+                }
+            }
+        }
+        var editBtn = document.getElementById("editBtn").onclick(changeEditorMode());
+        function changeEditorMode(){
+            var timer_table = document.getElementById("timer-table-editor");
+            for (var i = 0; i < timerArray.length; i++) {
+                var timer = timerArray[i];
+                var myTr = document.createElement("tr");
+
+                // Create and append a cell for time
+                var timeCell = document.createElement("td");
+                var timeInput = document.createElement("input")
+                timeCell.textContent = timer.time;
+                myTr.appendChild(timeCell);
+
+                // Create and append a cell for alert message
+                var messageCell = document.createElement("td");
+                messageCell.textContent = timer.alertMessage;
+                myTr.appendChild(messageCell);
+
+                // Create and append a cell for remove btn
+                var removeCell = document.createElement("td");
+                var removeBtn = document.createElement("button");
+                removeBtn.textContent = "Remove";
+                myTr.appendChild(removeCell.appendChild(removeBtn));
+                //removeBtn.onclick(function() {timer.clear();});
+
+                // Append the row to the table body
+                timer_table.querySelector("tbody").appendChild(myTr);
+            }
+        
+        }
+        
+    </script>
+</body>
+</html>

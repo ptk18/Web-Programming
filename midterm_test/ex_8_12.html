@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number = Math.floor( 1 + Math.random() * 1000);
+        function start(){
+            var button = document.getElementById("guessButton");
+            button.addEventListener ("click", displayResult, false);
+            
+
+        }
+        function displayResult(){
+            var inputField = document.getElementById("input");
+            var input = parseFloat(inputField.value);
+            var result = document.getElementById("result");
+            result.innerHTML = "Result is " + check(input);
+        }
+        function check(input){
+            if(input===number){
+                return "Congratulations. You guessed the number!"
+            }
+            else if(input<number){
+                return "Too low"
+            }
+            else if(input>number){
+                return "Too High"
+            }
+            else{
+                return "Try again"
+            }
+        }
+        window.addEventListener("load",start,false);
+    </script>
+</head>
+<body>
+    <form action="#">
+        <p><label for="">Guess a number between 1 and 1000</label>
+            <input type="input" name="" id="input">
+            <input type="button" value="Guess" id="guessButton">
+        </p>
+    </form>
+    <p id="result"></p>
+</body>
+</html>

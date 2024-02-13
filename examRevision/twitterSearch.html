@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Search</title>
+    <style>
+        p{
+            margin: 0px;
+        }
+        #welcomeMessage {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"] {width: 250px;}
+        
+    </style>
+</head>
+<body>
+    <h1>Favourite Twitter Search</h1>
+    <p id="welcomeMessage"></p>
+    <form action="#">
+        <p><input id="query" type="text" placeholder="Entery Twitter Search Query">
+        <a href="https://www.facebook.com">Search operators</a></p>
+        <p><input id="tag" type="text" placeholder="Tag your query">
+        <input type="button" value="Save" id="saveButton">
+        <input type="button" value="Clear All Saved Searches" id="clearButton"></p>
+    </form>
+    <h1>Previously Tagged Searches</h1>
+    <div id="searches"></div>
+</body>
+</html>

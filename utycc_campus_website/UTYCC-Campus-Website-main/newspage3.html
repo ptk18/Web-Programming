@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/nav1.css">
+   <link rel="stylesheet" href="css/News.css">
+   <link rel="stylesheet" href="css/tailwind.min.css">
+   <link rel="stylesheet" href="css/backtotop.css">
+   <link rel="stylesheet" href="css/img.css">
+   <link rel="stylesheet" href="css/newfooter.css">
+ 
+    
+    <title>News</title>
+
+    
+</head>
+<body>
+    <!--Navigation Bar-->
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+    
+    <!--Up Buttom-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/backtotop-01.png" style="width:30px"></button> 
+<div>
+
+               <div  >
+               <img src="img/newstt.png" alt="" width="500" height="200" style=" margin-left: auto; margin-right: auto; ">
+               <p class="header">Monday, August 19, 2019</p>
+            </div>
+        <hr style="border: none;
+        border-top-color: black;
+        border-top-style: double;
+        border-top-width: 3px;
+        width: 100%;">
+        
+        <main>
+        
+    
+
+<!--Page3--The Selected News19-->
+<br>
+<div class="selected_news19 oo" style="border-bottom: 2px solid #000;   margin-bottom: -150px;">
+    <div style=" margin-bottom: 0px; margin-top:  0px;">
+        <div style="display: flex;">
+            <h2 class="seleted-new-header">  န၀မအၾကိမ္ေျမာက္စုေပါင္းေသးြလွဴပဲြအခမ္းအနား</h2>
+            <img class="hide19 hide-button" src="img/cancel.png" alt="">
+        </div>
+            
+            <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+        <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+            <img class="image" src="news-page-img/su5.jpg" alt="" width="920" style="height: 500px;">
+            <p style="font-size: small;">Sunday, July 28, 2019 </p>
+        </div> 
+        
+        <div style="padding: 10px; width: 28%;" >
+            <p style="align-items:justify;">၂၈.၇.၂၀၁၉ ရက္ေန႔(တနဂၤေႏြနေ႕) တကၠသိုလ္ဘဲြ႕ႏွင္းသဘင္အခမ္းအနားတငြ္ 
+                ျပည္သူ႔ဆေးရံုၾကီးႏွင့္ တကၠသိုလ္ၾကက္ေျခနီတပ္ခဲြတို႕ ပူးေပါင္းကာ နည္းပညာတကၠသိုလ္
+                (ရတနာပံုဆိုင္ဘာစီးတီး)မိသားစု၏ စုေပါင္းေသးြလွဴပဲြအခမ္းအနားကို ျပဳလုပ္က်င္းပခဲ့သည္
+                </p>
+        </div>
+        </div>
+    </div>
+</div> 
+
+<!--Page3--The Selected News20-->
+<br>
+<div class="selected_news20 oo" style="border-bottom: 2px solid #000; display: none; margin-bottom: -130px; ">
+<div style="  margin-bottom: 0px; margin-top:  -20px;">
+    <div style="display: flex;">
+        <h2 class="seleted-new-header">ေမာင္မယ္သစ္လြင္ ႀကိဳဆိုပြဲ က်င္းပမည့္ အစီအစဥ္ </h2>
+        <img class="hide20 hide-button" src="img/cancel.png" alt="">
+    </div>
+        
+        <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+    <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+        <img class="image" src="news-page-img/fresher-welcome.jpg" alt="" width="920" style="height: 500px;">
+        <p style="font-size: small;">Monday, July 29, 2019 </p>
+    </div> 
+    
+    <div style="padding: 10px; width: 28%;" >
+        <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+            သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+            ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+            သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+            </p>
+    </div>
+    </div>
+</div>
+</div> 
+<br>
+<!--Page3--The Selected News21-->
+<br>
+<div class="selected_news21 oo" style="border-bottom: 2px solid #000; display: none;  margin-bottom: -90px;  ">
+<div style=" margin-bottom: 0px; margin-top:  -70px;">
+ <div style="display: flex;">
+     <h2 class="seleted-new-header"> တတိယ အႀကိမ္ေျမာက္ ကထိန္ေအာင္ပြဲ အခမ္းအနားက်င္းပ </h2>
+     <img class="hide21 hide-button" src="img/cancel.png" alt="">
+ </div>
+     
+     <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+ <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+     <img class="image" src="news-page-img/kahtain.jpg" alt="" width="920" style="height: 500px;">
+     <p style="font-size: small;">Monday, July 29, 2019 </p>
+ </div> 
+ 
+ <div style="padding: 10px; width: 28%;" >
+     <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+         သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+         ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+         သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+         </p>
+ </div>
+ </div>
+</div>
+</div> 
+<br>
+<br>
+
+<!--Page3--The Selected News22-->
+<br>
+<div class="selected_news22 oo" style="border-bottom: 2px solid #000; display: none;  margin-bottom: -10px; ">
+<div style=" margin-top:  -150px;">
+ <div style="display: flex;">
+     <h2 class="seleted-new-header"> အာစရိယ ပူေဇာ္ပြဲႏွင့္ ဆုေပးပြဲ အခမ္းအနား </h2>
+     <img class="hide22 hide-button" src="img/cancel.png" alt="">
+ </div>
+     
+     <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+ <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+     <img class="image" src="news-page-img/sayar-gadaw-pwe.jpg" alt="" width="920" style="height: 500px;">
+     <p style="font-size: small;">Monday, July 29, 2019 </p>
+ </div> 
+ 
+ <div style="padding: 10px; width: 28%;" >
+     <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+         သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+         ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+         သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+         </p>
+ </div>
+ </div>
+</div>
+</div> 
+<br>
+<br>
+<br>
+<br>
+
+<!--Page3--The Selected News23-->
+<br>
+<div class="selected_news23 oo" style="border-bottom: 2px solid #000; display: none; margin-bottom: 100px;">
+<div style=" margin-top:  -270px;">
+ <div style="display: flex;">
+     <h2 class="seleted-new-header"> ေက်ာင္းသားမ်ား သမဂၢ ကတိသစၥာ ခံယူပြဲ </h2>
+     <img class="hide23 hide-button" src="img/cancel.png" alt="">
+ </div>
+     
+     <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+ <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+     <img class="image" src="news-page-img/su-promise.jpg" alt="" width="920" style="height: 500px;">
+     <p style="font-size: small;">Monday, July 29, 2019 </p>
+ </div> 
+ 
+ <div style="padding: 10px; width: 28%;" >
+     <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+         သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+         ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+         သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+         </p>
+ </div>
+ </div>
+</div>
+</div> 
+
+<!--Page3--The Selected News24-->
+<br>
+<div class="selected_news24 oo" style="border-bottom: 2px solid #000; display: none;  margin-bottom: 150px; ">
+<div style=" margin-top:  -290px;">
+ <div style="display: flex;">
+     <h2 class="seleted-new-header"> Project Show & Job Fairs </h2>
+     <img class="hide24 hide-button" src="img/cancel.png" alt="">
+ </div>
+     
+     <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+ <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+     <img class="image" src="news-page-img/project-show.jpg" alt="" width="920" style="height: 500px;">
+     <p style="font-size: small;">Monday, July 29, 2019 </p>
+ </div> 
+ 
+ <div style="padding: 10px; width: 28%;" >
+     <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+         သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+         ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+         သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+         </p>
+ </div>
+ </div>
+</div>
+</div> 
+
+<!--Page3--The Selected News25-->
+<br>
+<div class="selected_news25 oo" style="border-bottom: 2px solid #000; display: none;  margin-bottom: 180px; ">
+<div style="  margin-top:  -320px;">
+ <div style="display: flex;">
+     <h2 class="seleted-new-header"> ေက်ာင္းသားမ်ား သမဂၢ ပထမအႀကိမ္ ေ႐ြးေကာက္ပြဲ က်င္းပ</h2>
+     <img class="hide25 hide-button" src="img/cancel.png" alt="">
+ </div>
+     
+     <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+ <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+     <img class="image" src="news-page-img/su-election.jpg" alt="" width="920" style="height: 500px;">
+     <p style="font-size: small;">Monday, July 29, 2019 </p>
+ </div> 
+ 
+ <div style="padding: 10px; width: 28%;" >
+     <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+         သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+         ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+         သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+         </p>
+ </div>
+ </div>
+</div>
+</div> 
+
+<!--Page3--The Selected News26-->
+<br>
+<div class="selected_news26 oo" style="border-bottom: 2px solid #000; display: none;  margin-bottom: 200px;">
+<div style=" margin-top:  -340px;">
+ <div style="display: flex;">
+     <h2 class="seleted-new-header"> Country Winner in Go Green in The City</h2>
+     <img class="hide26 hide-button" src="img/cancel.png" alt="">
+ </div>
+     
+     <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+ <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+     <img class="image" src="news-page-img/go-green-country-winner.jpg" alt="" width="920" style="height: 500px;">
+     <p style="font-size: small;">Monday, July 29, 2019 </p>
+ </div> 
+ 
+ <div style="padding: 10px; width: 28%;" >
+     <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+         သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+         ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+         သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+         </p>
+ </div>
+ </div>
+</div>
+</div> 
+
+<!--Page3--The Selected News27-->
+<br>
+<div class="selected_news27 oo" style="border-bottom: 2px solid #000; display: none;  margin-bottom: 230px; ">
+<div style=" margin-top:  -360px;">
+ <div style="display: flex;">
+     <h2 class="seleted-new-header">မိုးရာသီ ေမဂ်ာေပါင္းစံု ေဘာလံုးၿပိဳင္ပြဲက်င္းပျခင္း </h2>
+     <img class="hide27 hide-button" src="img/cancel.png" alt="">
+ </div>
+     
+     <div style="display: flex; padding: 10px; padding-bottom: 0px; margin-bottom: 0px;">
+ <div style="padding: 10px; width: 82%; border-right: 1px solid #eaeaea " >
+     <img class="image" src="news-page-img/football.jpg" alt="" width="920" style="height: 500px;">
+     <p style="font-size: small;">Monday, July 29, 2019 </p>
+ </div> 
+ 
+ <div style="padding: 10px; width: 28%;" >
+     <p style="align-items:justify;"><span style="font-weight: bold;"> Tution fee 50000ks per student</span> for UTYCC
+         သင္တန္းတက္ရန္ေလ်ွာက္လႊာတင္ထားေသာ ေက်ာင္းသားမ်ားႏွင့္ ေလ်ွာက္လႊာထပ္တင္လိုေသာ
+         ေက်ာင္းသားမ်ားအားလံုးသိရွိႏိုင္ရန္
+         သင္တန္းကာလ (2-8-19)မွ (4-8-19)
+         </p>
+ </div>
+ </div>
+</div>
+</div> 
+
+
+
+        <!----latest news box3-->
+ <a href="#">
+        <div id="page3" >
+                <div style="margin-top:-150px;">
+                 <div style="display: flex; ">
+                         <h2 style="font-size: 25px; font-weight: bold; width: 15%;" >Latest News</h2>
+                         <hr style="border: none;
+                         border-top-color: black;
+                         border-top-style: double;
+                         border-top-width: 3px; width: 100%;  margin-top: 20px;">
+                 </div>
+                 <div style="padding-top: 20px;">
+                    <div style="display: flex; padding-left: 10px; border-bottom: 1px solid #eaeaea; padding: 20px;">
+                        <div  style="width: 33.33%; ">
+                            <div style=" margin-left: 15px;">
+                             <img class="image news19 " src="news-page-img/su5.jpg" alt="" width="350" style="height: 200px;">
+                             <p style="font-size:20px; font-weight:bold;  width: 96%;"> န၀မအၾကိမ္ေျမာက္စုေပါင္းေသးြလွဴပဲြ
+                                အခမ္းအနား</p>
+                          </div>
+                          </div>
+                          <div  style="width: 33.33%; ">
+                            <div style=" margin-left: 15px;">
+                             <img class="image news20 " src="news-page-img/fresher-welcome.jpg" alt="" width="350" style="height: 200px;">
+                             <p style="font-size:20px; font-weight:bold;  width: 96%;">ေမာင္မယ္သစ္လြင္ ႀကိဳဆိုပြဲ က်င္းပမည့္ အစီအစဥ္ </p>
+                          </div>
+                          </div>
+                          <div  style="width: 33.33%; ">
+                            <div style=" margin-left: 15px;">
+                             <img class="image news21 " src="news-page-img/kahtain.jpg" alt="" width="350" style="height: 200px;">
+                             <p style="font-size:20px; font-weight:bold;  width: 96%;">တတိယ အႀကိမ္ေျမာက္ ကထိန္ေအာင္ပြဲ အခမ္းအနားက်င္းပ </p>
+                          </div>
+                          </div>
+                    </div>
+            
+                    <div style="display: flex; padding-left: 10px; border-bottom: 1px solid #eaeaea; padding: 20px;">
+                        <div  style="width: 33.33%; ">
+                            <div style=" margin-left: 15px;">
+                             <img class="image news22 " src="news-page-img/sayar-gadaw-pwe.jpg" alt="" width="350" style="height: 200px;">
+                             <p style="font-size:20px; font-weight:bold;  width: 96%;">အာစရိယ ပူေဇာ္ပြဲႏွင့္ ဆုေပးပြဲ အခမ္းအနား </p>
+                          </div>
+                          </div>
+                          <div  style="width: 33.33%; ">
+                            <div style=" margin-left: 15px;">
+                             <img class="image news23 " src="news-page-img/su-promise.jpg" alt="" width="350" style="height: 200px;">
+                             <p style="font-size:20px; font-weight:bold;  width: 96%;">ေက်ာင္းသားမ်ား သမဂၢ ကတိသစၥာ ခံယူပြဲ </p>
+                          </div>
+                          </div>
+                          <div  style="width: 33.33%; ">
+                            <div style=" margin-left: 15px;">
+                             <img class="image news24 " src="news-page-img/project-show.jpg" alt="" width="350" style="height: 200px;">
+                             <p style="font-size:20px; font-weight:bold;  width: 96%;">Project Show & Job Fairs </p>
+                          </div>
+                          </div>
+                    </div>
+            
+                 <div style="display: flex; padding-left: 10px; border-bottom: 1px solid #eaeaea;  padding: 20px;">
+                    <div  style="width: 33.33%; ">
+                        <div style=" margin-left: 15px;">
+                         <img class="image news25 " src="news-page-img/su-election.jpg" alt="" width="350" style="height: 200px;">
+                         <p style="font-size:20px; font-weight:bold;  width: 96%;">ေက်ာင္းသားမ်ား သမဂၢ ပထမအႀကိမ္ ေ႐ြးေကာက္ပြဲ က်င္းပ</p>
+                      </div>
+                      </div>
+                      <div  style="width: 33.33%; ">
+                        <div style=" margin-left: 15px;">
+                         <img class="image news26 " src="news-page-img/go-green-country-winner.jpg" alt="" width="350" style="height: 200px;">
+                         <p style="font-size:20px; font-weight:bold;  width: 96%;">Country Winner in Go Green in The City</p>
+                      </div>
+                      </div>
+                      <div  style="width: 33.33%; ">
+                        <div style=" margin-left: 15px;">
+                         <img class="image news27 " src="news-page-img/football.jpg" alt="" width="350" style="height: 200px;">
+                         <p style="font-size:20px; font-weight:bold;  width: 96%;">မိုးရာသီ ေမဂ်ာေပါင္းစံု ေဘာလံုးၿပိဳင္ပြဲက်င္းပျခင္း </p>
+                      </div>
+                      </div>
+                    </div>
+             </div>
+             </div>  
+             <br>
+             <br>
+             <p style="margin-left: 1130px;  position: relative;">page 3 of 3</p>
+            </div>   
+ </a>  
+
+        
+<!--Pagination Portion-->
+        <nav style="width: 100%;" >
+            <ul class="pagination ">
+                <a href="newspage1.html"  >1</li></a> 
+                <a href="newspage2.html" >2</a>
+                <a href="newspage3.html" class="pagination-active-page" >3</a>
+        </nav>
+
+        <hr style="border: 1px solid #000000"> 
+        </div>
+        <br>
+        <br>
+        
+
+        <!--Footer-->
+        <footer>
+            <div class="footerContainer">
+                <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+            
+                <div class="footerFlexContainer">
+                    <div class="block1">
+                        <h1>Contact Us</h1>
+                        <ul>
+                            <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                            <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                            <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                        </ul>
+                    </div>
+                    <div class="block2">
+                        <h1>Get Social With Us</h1>
+                        <div class="block2Flex">
+                            <img src="img/facebookicon.png">
+                            <img src="img/instagramicon.png">
+                            <img src="img/twittericon.png">
+                            <img src="img/googleicon.png">
+                        </div>
+                    <div class="suggest">
+                        <a href="suggest.html"><button>Suggest Us</button></a> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </footer>
+
+       
+<!--Script Portiion-->
+        <script src="js/jquery.js"></script>
+        <script src="js/news_page.js"></script>
+        
+
+
+  </script>
+   <!--Up Button Script-->
+   <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    </main>
+</div>
+</body>
+</html>

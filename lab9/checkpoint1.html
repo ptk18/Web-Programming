@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        img {
+            width: 40vw;
+            height: 20vh;
+            max-width: 12rem;
+            max-height: 12rem;
+        }
+        table, td {
+            border: solid 1px black;
+            border-collapse: collapse;
+        }
+    </style>
+    <script>
+        // This is question list. You may move it to .js or .json file if need be. BUT DON'T touch what inside it!!!
+        const questions = [
+                            {
+                                "question": "Which one of these is a berry?",
+                                "answer": [
+                                    {"id": "raspberry",
+                                    "pic" : "https://www.fast-growing-trees.com/cdn/shop/products/Heritage_Raspberry_1_FGT.jpg",
+                                    "correct":false},
+                                    {"id": "strawberry",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/220px-PerfectStrawberry.jpg",
+                                    "correct":false},
+                                    {"id": "eggplant",
+                                    "pic" : "https://www.harighotra.co.uk/images/Shutterstock/aubergine_560x560.jpg",
+                                    "correct":true},
+                                    {"id": "tomato",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bright_red_tomato_and_cross_section02.jpg/220px-Bright_red_tomato_and_cross_section02.jpg",
+                                    "correct":true}
+                                ],
+                                "explain": "Eggplants and Tomato are classified as berries. Raspberry is an accessory fruit, and strawberry is a false fruit."
+                            },
+                            {
+                                "question" : "Which of these countries have never won the FIFA World Cup?",
+                                "answer" : [
+                                    {"id": "Brazil",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg",
+                                    "correct":false},
+                                    {"id": "Germany",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/a/a9/Deutscher_Fu%C3%9Fball-Bund_logo.svg",
+                                    "correct":false},
+                                    {"id": "Spain",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Royal_Spanish_Football_Federation_logo.svg/1200px-Royal_Spanish_Football_Federation_logo.svg.png",
+                                    "correct":false},
+                                    {"id": "Netherlands",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Netherlands_national_football_team_logo.svg/1200px-Netherlands_national_football_team_logo.svg.png",
+                                    "correct":true}
+                                ],
+                                "explain": "Netherlands have never won the FIFA World Cup. They have reached the final three times, but lost all of them."
+                            },
+                            {
+                                "question" : "Which of the following is not a programming language?",
+                                "answer" : [
+                                    {"id": "Rust",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/220px-Rust_programming_language_black_logo.svg.png",
+                                    "correct":false},
+                                    {"id": "Java",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/220px-Java_programming_language_logo.svg.png",
+                                    "correct":false},
+                                    {"id": "C",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/220px-C_Programming_Language.svg.png",
+                                    "correct":false},
+                                    {"id": "Flask",
+                                    "pic" : "https://flask.palletsprojects.com/en/2.3.x/_images/flask-horizontal.png",
+                                    "correct":true}
+                                ],
+                                "explain": "Flask is a web framework for Python, not a programming language."
+                            },
+                            {
+                                "question" : "What distro is being used to host the SE Web Programming Server?",
+                                "answer" : [
+                                    {"id": "Ubuntu",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/7/76/Ubuntu-logo-2022.svg",
+                                    "correct":true},
+                                    {"id": "Debian",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/220px-Openlogo-debianV2.svg.png",
+                                    "correct":false},
+                                    {"id": "Arch Linux",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/e/e8/Archlinux-logo-standard-version.png",
+                                    "correct":false},
+                                    {"id": "Fedora",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fedora_logo.svg/220px-Fedora_logo.svg.png",
+                                    "correct":false}
+                                ],
+                                "explain": "Maybe you could just neofetch the server?"
+                            },
+                            {
+                                "question" : "Which one is NOT mobile phone OS?",
+                                "answer" : [
+                                    {"id": "Ubuntu",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/7/76/Ubuntu-logo-2022.svg",
+                                    "correct":false},
+                                    {"id": "Window 10",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Windows_logo_-_2012_%28dark_blue%2C_lines_thinner%29.svg/25px-Windows_logo_-_2012_%28dark_blue%2C_lines_thinner%29.svg.png",
+                                    "correct":false},
+                                    {"id": "Android",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Android_logo_2023_%28stacked%29.svg/200px-Android_logo_2023_%28stacked%29.svg.png",
+                                    "correct":false},
+                                    {"id": "macOS",
+                                    "pic" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/MacOS_logo.svg/200px-MacOS_logo.svg.png",
+                                    "correct":true}
+                                ],
+                                "explain": "This is the trick question, and yes everyone here have their own version of Mobile Phone OS. But for Mac it is iOS."
+                            }
+                        ];
+    </script>
+</head>
+<body style="text-align: center;" cz-shortcut-listen="true">
+    <tdata>
+            </tdata><table align="center">
+        <thead>
+            <tr><th colspan="2"><h1 id="questionNum">Question 1</h1></th></tr>
+            <tr>
+                <th colspan="2"><h2 id="question">Which one of these is a berry?</h2></th>
+            </tr>
+        </thead>
+        <tbody><tr style="width: 1.25rem; height: 2rem"></tr>
+            <tr style="width: 1.25rem; height: 1.25rem">
+                <td style="background-color: ghostwhite;"><img id="ans1" src="https://www.fast-growing-trees.com/cdn/shop/products/Heritage_Raspberry_1_FGT.jpg" alt="raspberry" title="raspberry"></td>
+                <td style="background-color: ghostwhite;"><img id="ans2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/220px-PerfectStrawberry.jpg" alt="strawberry" title="strawberry"></td>
+            </tr>
+            <tr style="width: 1.25rem; height: 1.25rem">
+                <td style="background-color: ghostwhite;"><img id="ans3" src="https://www.harighotra.co.uk/images/Shutterstock/aubergine_560x560.jpg" alt="eggplant" title="eggplant"></td>
+                <td style="background-color: ghostwhite;"><img id="ans4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bright_red_tomato_and_cross_section02.jpg/220px-Bright_red_tomato_and_cross_section02.jpg" alt="tomato" title="tomato"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: skyblue; border: none;"><h1 id="wrong" style="display: none; color: rgb(255, 0, 0);">Wrong!</h1></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: skyblue; border: none;"><h1 id="correct" style="display: none; color: green;">Correct!</h1></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: skyblue; border: none;"><h3 id="explanation" style="display: none;"></h3></td>
+            </tr>
+            <tr>
+                <td><h2 id="scoretext" style="background-color: ghostwhite;">Score : 0</h2></td>
+                <td  style="background-color: ghostwhite;">
+                    <h1 id="next">Next</h1>
+                </td>
+            </tr>
+        
+    </tbody></table>
+
+    <script>
+        let counter = 0; 
+        var num = 1;
+        let score = 0;
+        let correctAns;
+        let correct = document.getElementById('correct');
+        let wrong = document.getElementById('wrong');
+        let explanation = document.getElementById('explanation');
+        let questionNum = document.getElementById("questionNum");
+        let questionElement = document.getElementById('question');
+        let ans1Element = document.getElementById('ans1');
+        let ans2Element = document.getElementById('ans2');
+        let ans3Element = document.getElementById('ans3');
+        let ans4Element = document.getElementById('ans4');
+        let scoreElement = document.getElementById('scoretext');
+
+        let nextElement = document.getElementById('next');
+    
+        // Function to check the answer and update the score
+        function checkAnswer(selectedAnswer) {
+            if (selectedAnswer === correctAns) {
+                correct.style.display = "block";
+                score += 1;
+                scoreElement.innerHTML = `Score: ${score}`;
+            } else {
+                wrong.style.display = "block";
+            }
+        }
+    
+        // Add a click event listener to each answer option
+        ans1Element.addEventListener('click', () => checkAnswer(ans1Element.src));
+        ans2Element.addEventListener('click', () => checkAnswer(ans2Element.src));
+        ans3Element.addEventListener('click', () => checkAnswer(ans3Element.src));
+        ans4Element.addEventListener('click', () => checkAnswer(ans4Element.src));
+    
+        function nextQuestion() {
+            // Hide the "correct" and "wrong" messages
+            correct.style.display = "none";
+            wrong.style.display = "none";
+            questionNum.innerHTML = `Question ${counter+1}`;
+
+            let question = questions[counter];
+            counter += 1;
+            num +=1;
+            counter %= questions.length; // prevent the index from going out of scope
+            answers = question.answer;
+            correctAns = answers.find(answer => answer.correct).pic; // Find the correct answer
+            explanation.innerHTML = ""; // Clear explanation
+            
+            questionElement.innerHTML = question.question;
+            ans1Element.src = answers[0].pic;
+            ans2Element.src = answers[1].pic;
+            ans3Element.src = answers[2].pic;
+            ans4Element.src = answers[3].pic;
+            if (num===6){
+                nextElement.innerHTML = `Finish`;
+                nextButton.removeEventListener('click', nextQuestion);
+                return;
+                
+            }
+        }
+    
+        let nextButton = document.getElementById('next');
+        nextQuestion();
+        nextButton.addEventListener('click', nextQuestion);
+    </script>
+</body>
+</html>

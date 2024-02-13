@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AME Projects</title>
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/projectame.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <style>
+        body{
+            width: 100%;
+            margin: 0px auto;
+        }
+        main{
+            width: 100%;
+            background-color: white;
+        }
+        .footer{
+  width: 100%;
+  
+  background-image: linear-gradient(to bottom,rgb(204, 205, 206), rgb(201, 203, 204));
+  color: black;
+  opacity: 0.8;
+  /*background-image: linear-gradient(to right,#6dc0f2 , #0092cc);*/
+  
+}
+.footer p{
+ 
+  font-size: 17px;
+  
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  
+}
+
+.footer-1-sec{
+  width: 50%;
+  text-align: left;
+  
+  
+}
+.footer-2-sec{
+  width:50%;
+  text-align: right;
+
+   
+}
+.footer-2-sec img{
+ 
+  margin-top: 30px;
+  margin-bottom: 15px;
+text-align: right;
+
+
+}
+.footer-3-sec{
+  width: 60%;
+  
+  text-align: center;
+ 
+  font-size: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-style: italic;
+  padding-bottom: 10px;
+  color:black;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding-top: 10px;
+}
+.Suggest-button{
+  margin-top: 30px;
+  border: 2px solid ;
+   border-radius: 10px;
+   
+}
+        
+    </style>
+</head>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+<body>
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+    <main>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" style="width:30px"></button>
+            <div class="title">
+                <img src="graphic/projectnavigateame-01.png">
+                <h1>Projects of<br><span>Advanced Material Engineering<br><span>Department</span></span></h1>
+                <a href="project.html"><button class="previousButton">Previous</button></a>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Second Year</h1>
+                <div class="data">
+                       
+                        <details class="detailsTilte">
+                                <summary>Generating Hydrogen Gas by Water Electrolysis Using Brine Electrolyte</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Renewable energy is energy obtained from the continuous flows of energy occurring in the natural environment, such as solar energy, wind, hydro and energy from biomass. Water Electrolysis is a very simple process that takes water and passes a supply of electricity through it using immersed electrodes to split into positive hydrogen and oxygen ions migrate through the water towards the cathode and anodes respectively, where electron transfers allow for the diatomic H2 and O2 molecules to form at high purity.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">Renewable Energy, biomass, Electrolysis, electron</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To generate pure hydrogen by water electrolysis at low-cost</li>
+                                            <li>To study the reactions during water electrolysis</li>
+                                            <li>To know the advantages & disadvantages of water electrolysis</li>
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Study on Aluminum-air Battery</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">Aluminum-Air battery produce electricity form the reaction of oxygen in the air with Aluminum. Batteries convert chemical energy into electrical energy. They have two electrodes-called a cathode and anode-where chemical reactions that either use of produce electrons take place.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>Al-air battery has been developed for long range power suppliers and electric vehicles.</li>
+                                                <li>The cost of aluminum as an anode can be as low as US$1.1/kg</li>
+                                                <li>Al-air batteries could be used to power laptop computers and cell phones and are being developed for such use.</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Study on Production of Lightweight concrete Blocks Based on Autoclaved Aerated Concrete (AAC)</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Bricks remain one of the most important building materials in the country. Constructions materials such as, traditional brick is increasing demand. Directly of indirectly cause a series of environmental and animal and plants problems. But these versatile Autoclaved Aerated Concrete blocks may be one of the solutions for these problems.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Autoclaved aerated concrete, Lightweight, bricks, construction materials</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To study on autoclaved aerated concrete (AAC blocks)</li>
+                                                    <li>To prepare own lightweight blocks by the same functions as in the autoclaves</li>
+                                                </ul>
+                                    </details>
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Third Year</h1>
+                <div class="data">
+                    
+                        <details class="detailsTilte">
+                                <summary>Extraction of Silicon Dioxide from Sand</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Silicon dioxide mostly know as silica is found in nature as quartz. Sand is composed of quartz, making up 70% of sand. Silica is widely used in medicine, food-science, ceramic engineering and optical engineering and microelectronics due to its hygroscopic, electrically insulative, optical transparent, and chemical robustness.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <p class="detailsParagraph">To turn sand which is very abundant and invaluable substance in our country into precious substance silica which can be employed in many applications.</p>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Making Dye-sensitized Solar Cell</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">We use energy every day in many ways. There are tow types of energy: renewable energy and non-renewable energy. There are many forms of renewable energy. They are energies can be obtained directly or indirectly from solar, water, wind, etc. They are easy to get and use and low cost. Among them, solar energy is familiar to almost everybody.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>Low-light performance </li>
+                                                <li>Optimized performance</li>
+                                                <li>High temperature performance</li>
+                                                <li>Ecologically friendly</li>   
+                                                <li>Low cost</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Recycling of Plastic Wastes to Fuel</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Plastic are one of the most important materials in our life. These plastics are biodegradable and impact to the environment. To avoid the impact of the plastics in the environment, plastic wastes should be recycled. In the project, plastic wastes are recycled by the process of pyrolysis.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Pyrolysis, Plastics</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To avoid impacts on environment and public health</li>
+                                                    <li>To reduce the plastic wastes on the earth </li>
+                                                    <li>To reduce the use of fossil fuel</li>
+                                                    <li>To convert plastic wastes to useful fuel</li>   
+                                                </ul>
+                                    </details>
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Fourth Year</h1>
+                <div class="data">
+
+                        <details class="detailsTilte">
+                                <summary>Conductive Polymer Gel from Polyethylene Glycol</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Conductive polymers are organic polymers that conduct electricity.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To study the usage of polymers</li>
+                                            <li>To know the function of conductive polymers </li>
+                                            <li>To know how to make conductive polymers with easily available raw materials</li>
+                                            <li>To get experience and knowledge</li>   
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Dye-sensitized Solar Cell</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">A dye-sensitized solar cell is a low-cost solar cell belonging to the group of thin film solar cells. It is based on a semiconductor formed between a photo-synthesized anode and an electrolyte, a photo-electrochemical system.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To save energy resources in possible ways</li>
+                                                <li>To convert sunlight into electrical energy in easy and low-cost way</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Antimicrobial Medical Fabrics</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Antimicrobial fabric is a textile that has been treated to help inhibit or destroy the growth of disease-causing microbes. They are used where moisture and microbes meet. Antimicrobial fabrics include: Medical curtains, bed sheets and pillow coverings, mattress covers and linens, hospital gowns and cloves, gauze and other bandages used to help patients heal.</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To be used in medical, hospital and clothes</li>
+                                                    <li>To be used as the clean and antibacterial individual stuff</li>
+                                                    <li>To create a better healthy society</li>
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Activated Carbon from Rice Husk</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">Activated carbon is highly porous carbon which has been treated to increase its adsorption performance. Rice husk, due to its high cellulose and lignin content, can be used as source of carbon to produce activated carbon.</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <ul>
+                                                        <li>To recover agricultural waste into useful product and reduce environmental problems.</li>   
+                                                    </ul>
+                                        </details>
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Fifth Year</h1>
+                <div class="data">
+                    
+                        <details class="detailsTilte">
+                                <summary>Dye Sensitized Solar Cell Making</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Solar Cell – it is an electrical device that converts the energy of light directly into electricity by photovoltaic effect. Types of Solar Cell: Amorphous silicon solar cell, Biohybrid solar cell, Concentrated PV cell, Crystalline silicon cell, Multi-junction solar cell, Nanocrystal solar cell, Organic solar cell, Dye-sensitized solar cell.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To produce CuO NPs by solvothermal and spray pyrolysis methods</li>
+                                            <li>To make nontoxic solar cell and to produce environmentally suitable solar cell</li>
+                                            <li>To know one step low temperature methods to make nanoparticles</li>
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Production of Bioplastic from Waste Banana Peels</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">This is the project for making bioplastic from waste banana peels. Bioplastics can be defined as plastics made of biomass such as com, banana peels, and sugar cane. Bioplastics are natural biopolymers synthesized and catabolized by various organisms. Starch is one of the major sources in bioplastic (as a natural biopolymer). Starch consist of a long chain of two glucose units joined together, with gives its granular structure. One of the most common waste form of starch is the banana peels. Disposal of waste tonnage banana peels can harm environment and we can solve this problem by turning them to useful bioplastic.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To reduce using Petro plastics that toxins while degradation</li>
+                                                <li>To study production of bioplastic</li>
+                                                <li>To know application of its</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Production of Calcium Acetate Powder for Ethanol Fuel Gel</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">When the liquid alcohol is combined with the solid calcium acetate, if forms a semi solid jelly-like substance. The semi-solid fuel gel is actually solid commercially as canned head product called STERNO. Ethanol gel fuel is low cost, compact and lightweight than normal strokes, safer than liquid control.</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To study production of calcium acetate from waste egg shells and vinegar</li>
+                                                    <li>To produce cheap and easy ethanol fuel gel</li>
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Soap Making by Hot Process</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">Soaps are made by a chemical reaction between fats/oils and sodium hydroxide (“lye”). Chemical Reaction: Fat or Oil + NaOH  Soap + Glycerol<br>
+                                                            Because soap is made by this reaction, the reaction is sometimes called saponification.
+                                                            </p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">Soaps, Oils, Lye, Sodium Hydroxide, Saponification</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <ul>
+                                                        <li>To create holistic skincare products using herbs, spices, exotic oils and essential oils-coining the phrase “skin food”</li>
+                                                        <li>To make products by hands, using traditional methods. This means that glycerin remains in the soap and is not extracted as a by-product.</li>
+                                                        <li>To use low-energy manufacturing processes.</li>
+                                                        <li>To make product that does not dry out your skin and are gentle enough to use on your face</li> 
+                                                        <li>To use high-quality material materials where possible, organic</li>
+                                                        <li>To use minimal packing following the principle that a  product should sell itself</li>
+                                                    </ul>
+                                        </details>
+                </div>
+            </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

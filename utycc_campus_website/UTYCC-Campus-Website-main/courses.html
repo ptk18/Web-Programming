@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+
+    <!--Link to JQuery Library file-->
+    <script src="css/jquery-1.11.3.min.js"></script>
+
+    <!--Java Script for Hover Image-->
+    <script>
+    $(document).ready(function() {
+        $('.subdiv a').hover(function() {
+        var galleryHref=$(this).attr('href');
+        var galleryAlt=$(this).attr('title');
+        $('figure img').attr( { src: galleryHref, alt: galleryAlt } );
+        $('figcaption').html(galleryAlt);
+    } );
+} );
+    </script>
+
+    <!--Java Script for Up Button-->
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</head>
+
+<body>
+
+  <!--================start nav for phone===============-->
+  <div class=" block md:hidden">
+    <div class="flex items-center justify-between w-full  ">
+       
+        <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+           <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+    </div>
+    <nav class="text-lg font-semibold sidenav " id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                <ul class="block   ">
+                    <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                    <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                    <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+
+                        <div class="campusbox hidden z-20 mt-2">
+                            <ul class="font-normal" style="font-size: 15px;">
+                                <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+
+                        <div class="orgbox hidden z-20">
+                            <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+
+                        <div class="expbox hidden z-20">
+                            <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                            
+                            </ul>
+                        </div>
+
+                    </div>
+                   <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                            
+                </ul>
+    </nav>
+ </div>
+ <!--================start nav for phone===============-->
+   
+
+
+ <!--===============start nav for laptop==============-->
+
+    <div class="navcontainer lg:inline-block ">
+            
+        <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+            <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+            </div>
+            <div class=" text-xl">
+                <nav>
+                    <ul class="flex justify-between inline-block">
+                        <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                        <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                        <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+
+                            <div class="sub-menu-container z-20">
+                                <ul class="sub-menu bg-gray-200 ">
+                                    <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                    <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                    <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                </ul>
+                            </div>
+
+                        </button>
+                        <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+
+                            <div class="sub-menu-container z-20">
+                                <ul class="sub-menu bg-gray-200 ">
+                                    <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+
+                        </button>
+                        <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+
+                            <div class="sub-menu-container z-20">
+                                <ul class="sub-menu bg-gray-200  ">
+                                    <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+
+                        </button>
+                        <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                
+                    </ul>
+                </nav>
+            </div>
+        </div>
+   </div>
+<!--=================end nav for laptop===============-->
+<script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   }
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+  </script>
+           
+           <script src="js/jquery.js"></script>
+           <script src="js/nav1.js"></script>
+
+<div>
+<!--Graphic Image for Courses-->
+<div class="title">
+    <img src="img/coursestt.png">
+</div>
+
+<!--Main Article of the Web page-->
+<main>
+    <!-- Up button to top of the page-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/backtotop-01.png" style="width:30px"></button>
+
+
+    <!--Hover image display-->
+    <div class="hoverdisplay">
+
+    <!--Left Column-->
+    <div class="leftdiv" >
+        <div class="subdiv"  >
+            <div>
+                <a href="img/japanese.png" title="Japanese Language Course" >
+                    <img src="img/japanese.png" alt="Japanese Language Course" class="imgdata" >
+                </a>
+            </div>
+            &nbsp;&nbsp;
+
+            <div>
+                <a href="img/chinese.png" title="Chinese Language Course">
+                    <img src="img/chinese.png" alt="Chinese Language Course" class="imgdata">
+                </a>
+            </div>
+        </div>
+       
+        <div class="subdiv">
+            <div>
+                <a href="img/english.png" title="English Language Course">
+                    <img src="img/english.png" alt="English Language Course" class="imgdata">
+                </a>
+            </div>
+            &nbsp;&nbsp;
+            <div >
+                <a href="img/arduino.jpg" title="Arduino Boostrap WorkShop">
+                    <img src="img/arduino.jpg" alt="Arduino Boostrap WorkShop" class="imgdata">
+                </a>
+            </div>
+        </div>
+        
+        <div class="subdiv">
+            <div>
+                <a href="img/DS.png" title="Data Science">
+                    <img src="img/DS.png" alt="Data Science" class="imgdata">
+                </a>
+            </div>
+            &nbsp;&nbsp;
+            <div>
+                <a href="img/digitalart.jpg" title="Digital Art Sharing">
+                    <img src="img/digitalart.jpg" alt="Digital Art Sharing" class="imgdata">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Right Column-->
+    <div class="rightdiv">
+        <figure>
+                <img src="img/chinese.png" alt="Chinese Language Course" class="largeimagedata">
+                <figcaption>Chinese Language Course</figcaption>
+        </figure>
+    </div>
+
+</div>
+
+<!--Information for Courses-->
+<div class="displaytable">
+    <div class="flexdisplay">
+    <table>
+        <tr>
+            <td>
+                <div class="display">
+                    <img src="img/japanese.png" id="tableimgdata" >
+                    <p>
+                        <span>Japanese Language Course</span><br><br>
+                        Teacher&nbsp;&nbsp;: U Khin Zaw<br>
+                        Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 9:00 A.M&mdash;12:00 P.M (Every Saturday<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Sunday)<br>
+                        Duration&nbsp;: 3months<br>
+                        Contact&nbsp;: 09450020040 (from YCCSU <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Education Committe)<br>
+                        Location&nbsp;: LB-2-03<br><br><br>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <div class="display">
+                    <img src="img/chinese.png" id="tableimgdata" >
+                    <p>
+                        <span>Chinese Language Course</span><br><br>
+                        Teacher&nbsp;&nbsp;: U Kyi Win<br>
+                        Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 9:00 A.M&mdash;12:30 P.M (Every Saturday<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Sunday)<br>
+                        Duration&nbsp;: 3months<br>
+                        Contact&nbsp;: 09450020040 (from Student's Affair<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Office) <br>
+                        Location&nbsp;: LB-1-02 (Level-1), LB-1-02<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Level-1), LB-1-02 (Level-1)<br><br>
+
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="flexdisplay">
+    <table>
+        <tr>
+            <td>
+                <div class="display">
+                    <img src="img/english.png" id="tableimgdata" >
+                    <p>
+                        <span>English Language Coure</span><br><br>
+                        Teacher&nbsp;&nbsp;: Mr. Denis<br>
+                        Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 9:00 A.M&mdash;12:00 P.M (IELTS), 12:30<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.M&mdash;3:00 P.M (Business), 3:30 P.M&mdash;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6:00 P.M (IELTS)(Every Saturday and<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday)<br>
+                        Duration&nbsp;: 3months<br>
+                        Contact&nbsp;: 09450020040 (from YCCSU <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Education Committe)<br>
+                        Location&nbsp;: MB-2-01 (Main Building)<br>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <div class="display">
+                    <img src="img/arduino.jpg" id="tableimgdata" >
+                    <p>
+                        <span>Arduino Boostrap WorkShop</span><br><br>
+                        Teacher&nbsp;&nbsp;: Seniors from UTYCC<br>
+                        Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 4:00 P.M&mdash;6:00 P.M (Every Monday<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to Friday)<br>
+                        Duration&nbsp;: 1month<br>
+                        Contact&nbsp;: 09691808602 (from Now Maker<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Space)<br>
+                        Location&nbsp;: Now Maker Space (Lab-2)<br><br><br>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="flexdisplay">
+    <table>
+        <tr>
+            <td>
+                <div class="display">
+                    <img src="img/DS.png" id="tableimgdata" >
+                    <p>
+                        <span>Data Science</span><br><br>
+                        Teacher&nbsp;&nbsp;: Ko Phyo Thu Htet, Ma Khine Hsu Wai<br>
+                        Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 8:00 A.M&mdash;9:00 A.M (Every Monday<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to Friday)<br>
+                        Duration&nbsp;: 1month<br>
+                        Contact&nbsp;: 09457442032<br>
+                        Location&nbsp;: LB-2-03<br><br><br><br>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <div class="display">
+                    <img src="img/digitalart.jpg" id="tableimgdata" >
+                    <p>
+                        <span>Digital  Art Sharing</span><br><br>
+                        Teacher&nbsp;&nbsp;: Ko Myint Mo Htut<br>
+                        Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 4:00 P.M&mdash;5:30 P.M (Every Monday<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to Friday)<br>
+                        Duration&nbsp;: 5weeks<br>
+                        Contact&nbsp;: 09400103949<br>
+                        Location&nbsp;: MB-1-01 (Main Building)<br><br><br><br>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</div>
+<br>
+<br>
+<br>
+
+</main></div>
+
+
+<br>
+<br>
+
+
+<!--Footer-->
+<footer>
+    <div class="footerContainer">
+        <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+    
+        <div class="footerFlexContainer">
+            <div class="block1">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                    <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                    <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                </ul>
+            </div>
+            <div class="block2">
+                <h1>Get Social With Us</h1>
+                <div class="block2Flex">
+                    <img src="img/facebookicon.png">
+                    <img src="img/instagramicon.png">
+                    <img src="img/twittericon.png">
+                    <img src="img/googleicon.png">
+                </div>
+            <div class="suggest">
+                <a href="suggest.html"><button>Suggest Us</button></a> 
+            </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

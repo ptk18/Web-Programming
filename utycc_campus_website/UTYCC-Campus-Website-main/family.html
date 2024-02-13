@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/book1.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+	<link rel="stylesheet" href="css/family.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/backtotop.css">
+	<link rel="stylesheet" href="css/newfooter.css">
+	<title>Family</title>
+</head>
+<body>
+   <!--================start nav for phone===============-->
+   <div class=" block md:hidden">
+	<div class="flex items-center justify-between w-full  ">
+	   
+		<div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+		   <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+	</div>
+	<nav class="text-lg font-semibold sidenav " id="mySidenav">
+			<a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+				<ul class="block   ">
+					<div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+					<div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+					<div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+
+						<div class="campusbox hidden z-20 mt-2">
+							<ul class="font-normal" style="font-size: 15px;">
+								<a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+								<a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+								<a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+								<a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+								<a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+								<a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+								<a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+								<a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+								<a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+								<a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+							</ul>
+						</div>
+
+					</div>
+					<div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+
+						<div class="orgbox hidden z-20">
+							<ul class="font-normal mt-2 "style="font-size: 15px;">
+								<a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+								<a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+								<a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+								<a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+								<a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+							</ul>
+						</div>
+
+					</div>
+					<div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+
+						<div class="expbox hidden z-20">
+							<ul class=" font-normal mt-4" style="font-size: 15px;">
+								<a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+								<a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+								<a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+								<a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+											
+							</ul>
+						</div>
+
+					</div>
+				   <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+							
+				</ul>
+	</nav>
+ </div>
+ <!--================start nav for phone===============-->
+   
+
+
+ <!--===============start nav for laptop==============-->
+
+	<div class="navcontainer lg:inline-block ">
+			
+		<div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+			<div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+			</div>
+			<div class=" text-xl">
+				<nav>
+					<ul class="flex justify-between inline-block">
+						<a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+						<a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+						<button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+
+							<div class="sub-menu-container z-20">
+								<ul class="sub-menu bg-gray-200 ">
+									<a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+									<a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+									<a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+									<a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+									<a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+									<a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+									<a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+									<a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+									<a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+									<a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+								</ul>
+							</div>
+
+						</button>
+						<button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+
+							<div class="sub-menu-container z-20">
+								<ul class="sub-menu bg-gray-200 ">
+									<a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+									<a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+									<a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+									<a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+									<a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+								</ul>
+							</div>
+
+						</button>
+						<button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+
+							<div class="sub-menu-container z-20">
+								<ul class="sub-menu bg-gray-200  ">
+									<a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+									<a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+									<a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+									<a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+												
+								</ul>
+							</div>
+
+						</button>
+						<a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+								
+					</ul>
+				</nav>
+			</div>
+		</div>
+   </div>
+<!--=================end nav for laptop===============-->
+<script>
+  function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
+	   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   }
+  function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	  document.getElementById("main").style.marginLeft= "0";
+	  document.body.style.backgroundColor = "white";
+	}
+  </script>
+		   
+		   <script src="js/jquery.js"></script>
+		   <script src="js/nav1.js"></script>
+<div class="title">
+	<img src="img/familytt.png">
+</div>
+
+<main class="main">
+<fieldset>
+
+<br>
+<div class="row">
+	<div class="column3">
+		<a href="#Shan"><div class="container">
+			<img src="img/shan/Phaung-Daw-Oo-Pagoda-Festival.jpg" class="image">
+			<div class="overlay">Shan Family</div>
+		</div></a>
+	</div>
+	<div class="column3">
+		<a href="#Rakhine"><div class="container">			
+			<img src="img/rakhine/rakhinepagoda.jpg" class="image">
+			<div class="overlay">Rakhine Family</div>
+		</div></a>
+	</div>
+	<div class="column3">
+		<a href="#Kachin"><div class="container">
+			<img src="img/kachin/manaw.jpg" class="image">			
+			<div class="overlay">Kachin Family</div>
+		</div></a>
+	</div>
+</div>
+<div class="row">
+	<div class="column3">
+		<a href="#Mon"><div class="container">
+			<img src="img/mon/pagoda.jpg" class="image">
+			<div class="overlay">Mon Family</div>
+		</div></a>
+	</div>
+	<div class="column3">
+		<a href="#UCF"><div class="container">
+			<img src="img/ucf/christian.jpg" class="image">
+			<div class="overlay">Universal Christian Fellowship</div>
+		</div></a>
+	</div>
+	<div class="column3">
+		<a href="#HNYN"><div class="container">
+			<img src="img/hnyn/hnyn.jpg" class="image">
+			<div class="overlay">HNYN</div>
+		</div></a>
+	</div>
+</div>
+</fieldset>
+<div class="row" id="Shan">
+		<h1>Shan Family</h1>
+	<div class="column2 floatleft">
+	<a href="Shangallery.html"><img src="img/shan/Phaung-Daw-Oo-Pagoda-Festival.jpg" class="image"></a>
+	</div>
+	<div class="column2 text">
+		
+		<p><h3>Leader</h3> Ko Sai Phyo Hein</p>
+		<p><h3>Schedule</h3> Meeting once a week.</p>
+		<h3>Activities</h3>
+	<ul>
+		<li>Dancing in Fresher Welcome</li>
+		<li>Selling culture food at Fresher Welcome</li>
+		<li>Competing culture dance at Shann National Day</li>
+	</ul>
+		<h3>Details</h3>
+	<ul>
+		<li>Ko Khun Naing Pyae Htun founded this family at 2015.</li>
+		<li>45 members had been participated.</li>
+		<li>2000 kyats per month.</li>
+	</ul>
+	</div>
+</div>
+
+<div class="row" id="Rakhine">
+		<h1>Rakhine Family</h1>
+	<div class="column2 floatright">
+	<a href="Rakhinegallery.html"><img src="img/rakhine/rakhinepagoda.jpg" class="image"></a>
+	</div>
+	<div class="column2 text">
+	
+		<p><h3>Leader</h3> Ko Zaw Myo Htet(President)</p>
+		<p><h3>Schedule</h3> Regularly meeting once at every month.</p>
+		<h3>Activities</h3>
+	<ul>
+		<li>Sell the traditional food at uni fresher welcome</li>
+		<li>Cooking rice at fresher gathering for family </li>
+		<li>Short trip at February</li>
+		<li>Gathering to go religious festival such as Warso,...</li>
+	</ul>
+		<h3>Details</h3>
+	<ul>
+		<li> At January/1/2014 was founded by 1st batch & 2nd batch Senior.</li>
+		<li>75 members had been participated.Among them, 13 members have been graduated.</li>
+	</ul>
+	</div>	
+</div>
+
+<div class="row" id="Kachin">
+		<h1>Kachin Family</h1>
+	<div class="column2 floatleft">
+		<a href="Kachingallery.html"><img src="img/kachin/manaw.jpg" class="image"><a>
+	</div>
+	<div class="column2 text">
+		
+		<p><h3>Leader</h3> Ma Cho Zin Thant</p>
+		<p><h3>Schedule</h3> once in each month.</p>
+		<h3>Activities</h3>
+	<ul>
+		<li>dancing At Fresher Welcome</li>
+		<li>short trips</li>
+		<li>long trips for philanthropy</li>
+		<li>selling culture food at welcome</li>
+	</ul>
+		<h3>Details</h3>
+	<ul>
+		<li>fee 1500 kyats per month</li>
+		<li>both 20graduted seniors and 50members are participated</li>
+		<li>About 2013,our family was founded by 1st batch Seniors </li>
+	</ul>
+	</div>
+</div>
+<div class="row" id="Mon">
+		<h1>Mon Family</h1>
+	<div class="column2 floatright">
+	<a href="Mongallery.html"><img src="img/mon/pagoda.jpg" class="image"></a>
+	</div>
+	<div class="column2 text">
+		
+		<p><h3>Leader</h3> Min Wai Phyo Hlaing</p>
+		<p><h3>Schedule</h3> Twice in each month</p>
+		<h3>Activities</h3>
+	<ul>
+		<li>dancing At Fresher Welcome and youth cultural festival</li>
+		<li>short trips</li>
+		<li>long trips for philanthropy</li>
+		<li>selling culture food at welcome</li>
+	</ul>
+		<h3>Details</h3>
+	<ul>
+		<li>fee 3000kyats per month</li>
+		<li>both graduted seniors and members are participated</li>
+		<li>About 2013,our family was founded by  1st batch Seniors </li>
+	</ul>
+	</div>
+</div>
+
+<div class="row" id="UCF">
+		<h1>UCF</h1>
+
+	<div class="column2 floatleft">
+	<a href="UCFgallery.html"><img src="img/ucf/christian.jpg" class="image"></a>
+	</div>
+	<div class="column2 text">
+		
+		<h3>Leader </h3>	
+	<ul>
+		<li>David Nay Myo Han </li>
+		<li>Joseph Wah </li>
+		<li>C C Mon Jan  </li>
+		<li>Soi Thuzar Min  </li>
+	</ul>		
+		<h3>Schedule</h3>
+		<ul>
+			<li>Every Friday for unity fellowship at ......</li>
+			<li>At every Sunday,gather at university and go to the Pyin-Oo-Lwin Church</li>
+		</ul>
+		
+		<h3>Activities</h3>
+	<ul>
+		<li>Carol Singing before 25th December, every year</li>
+		<li>Celebrating the Christmas party after the Christmas day </li>
+		<li>Short trip at February</li>
+		<li>Anniversary day at Saturday of first week in June </li>
+		<li>Long Trip for philanthropy</li>
+		<li>Holding the ....... for finalist Senior</li>
+	</ul>
+		<h3>Details</h3>
+	<ul>
+		<li> At June/1/2013 was founded by 1st batch & 2nd batch Senior.</li>
+		<li>59 members had been participated.Among them, 23 members have been graduated.</li>
+		<li>6000 kyats per semester.</li>
+	</ul>
+	</div>
+</div>
+
+<div class="row" id="HNYN">
+		<h1>HNYN</h1>
+
+		<div class="column2 floatright">
+		<a href="HNYNgallery.html"><img src="img/hnyn/hnyn.jpg" class="image"></a>
+		</div>
+	<div class="column2 text">
+		
+		<p><h3>Leader</h3> Ravee Kaur Mahajan(President)</p>
+		<h3>Schedule</h3>
+		<ul>
+		<li>Regularly meeting once at every month.</li>
+		<li>Once gather dinner at two week</li>
+		</ul>
+		
+		<h3>Activities</h3>
+	<ul>
+		<li>Sell the traditional food at uni fresher welcome</li>
+		<li>With traditional costume & traditional dance at fresher Welcome.</li>
+		<li>Short trip & long trip situtated.</li>
+		<li>festivals participated</li>
+	</ul>
+		<h3>Details</h3>
+	<ul>
+		<li> At February/6/2013 was founded by 1st batch & 2nd batch Senior.</li>
+		<li>38 members had been participated.Among them, 13 members have been graduated.</li>
+		</ul>
+	</div>
+</div>
+<br><br>
+</main>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<!-- put button code under mian (starting) tag -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" style="width:30px"></button>
+
+<footer>
+	<div class="footerContainer">
+		<h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+	
+		<div class="footerFlexContainer">
+			<div class="block1">
+				<h1>Contact Us</h1>
+				<ul>
+					<li>&#10004; 09779441303, 09693157860, 09400103949</li>
+					<li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+					<li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+				</ul>
+			</div>
+			<div class="block2">
+				<h1>Get Social With Us</h1>
+				<div class="block2Flex">
+					<img src="img/facebookicon.png">
+					<img src="img/instagramicon.png">
+					<img src="img/twittericon.png">
+					<img src="img/googleicon.png">
+				</div>
+			<div class="suggest">
+				<a href="suggest.html"><button>Suggest Us</button></a> 
+			</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</body>
+</html>

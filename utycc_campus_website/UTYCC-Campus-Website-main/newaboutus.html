@@ -1,0 +1,493 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/book1.css">
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+              } else {
+                document.getElementById("myBtn").style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+    <style>
+
+        main{
+            width: 80%;
+            margin: auto;
+        }
+
+.footer{
+width: 100%;
+  
+  background-image: linear-gradient(to bottom,rgb(204, 205, 206), rgb(201, 203, 204));
+  color: black;
+  opacity: 0.8;
+  /*background-image: linear-gradient(to right,#6dc0f2 , #0092cc);*/
+  
+}
+.footer p{
+ 
+  font-size: 17px;
+  
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  
+}
+
+.footer-1-sec{
+  width: 50%;
+  text-align: left;
+  
+  
+}
+.footer-2-sec{
+  width:50%;
+  text-align: right;
+
+   
+}
+.footer-2-sec img{
+ 
+  margin-top: 30px;
+  margin-bottom: 15px;
+text-align: right;
+
+
+}
+.footer-3-sec{
+  width: 60%;
+  
+  text-align: center;
+ 
+  font-size: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-style: italic;
+  padding-bottom: 10px;
+  color:black;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding-top: 10px;
+}
+.Suggest-button{
+  margin-top: 30px;
+  
+  border: 2px solid ;
+   border-radius: 10px;
+   
+}
+
+    </style>
+</head>
+<body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/backtotop-01.png" style="width:30px"></button>
+        <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+<div>
+    <img src="img/about_us/aboutustt-01.png" class="allimg1 allimg">
+</div>
+        <main class="md:mb-16">
+            <h1 class="texttitle">Mission</h1>
+            <p class="paragraph">
+                &nbsp; &nbsp; &nbsp; Our mission with this website is to promote our University by making people gets in touch with our University's basic information and offering a variety of pages which are provided with allover informations dealing with UTYCC Campus.
+            </p>
+            <div class="md:mt-16 mt-8">
+            <div class="FlexDiv">
+                <div class="FlexDivData">
+                    <img src="img/about_us/aboutus (6).jpeg">
+                </div>
+                <div class="Text">
+                    <h1>Mg Myint Mo Htut</h1>
+                    <div class="underline"></div>
+                    <ul>
+                            <li>Roll-no : 2ICT-38</li>
+                            <li>Email   : saimyintmohtutlyc@gmail.com</li>
+                            <li>Part    : Bio, Map & Timetable, Graphic, Project</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showlaptop">
+                <div class="FlexDivLeft">
+                    <div class="Text">
+                        <h1>Mg Nay Oo Khant</h1>
+                        <div class="underlineR"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-4</li>
+                                <li>Email   : nok129810@gmail.com</li>
+                                <li>Part    : Emergency, Courses</li>
+                        </ul>
+                    </div>
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (3).jpeg">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="showphone">
+                <div class="FlexDiv md:mt-0 mt-6">
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (3).jpeg">
+                    </div>
+                    <div class="Text">
+                        <h1>Mg Nay Oo Khant</h1>
+                        <div class="underline"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-4</li>
+                                <li>Email   : nok129810@gmail.com</li>
+                                <li>Part    : Emergency, Courses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="FlexDiv md:mt-0 mt-6">
+                <div class="FlexDivData">
+                    <img src="img/about_us/aboutus (1).jpeg">
+                </div>
+                <div class="Text"> 
+                    <h1>Mg Hein Khant Kyaw</h1>
+                    <div class="underline"></div>
+                    <ul>
+                            <li>Roll-no : 2ICT-19</li>
+                            <li>Email   : heinkhantkyaw007@gmail.com</li>
+                            <li>Part    : Hostels, Carteen, Shop & Restaurants</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showlaptop1">
+                <div class="FlexDivLeft">
+                    <div class="Text">
+                        <h1>Mg Hein Htet Zaw</h1>
+                        <div class="underlineR"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-51</li>
+                                <li>Email   : heinhtetzawheinhtetzaw@gmail.com</li>
+                                <li>Part    : Red Cross, Drum & Bugle Corps, Curriculum</li>
+                        </ul>
+                    </div>
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (2).jpeg">
+                    </div>
+                </div>
+            </div>
+            <div class="showphone1">
+                <div class="FlexDiv md:mt-0 mt-6">
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (2).jpeg">
+                    </div>
+                    <div class="Text"> 
+                        <h1>Mg Hein Htet Zaw</h1>
+                        <div class="underline"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-51</li>
+                                <li>Email   : heinhtetzawheinhtetzaw@gmail.com</li>
+                                <li>Part    : Red Cross, Drum & Bugle Corps, Curriculum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="FlexDiv md:mt-0 mt-6">
+                <div class="FlexDivData">
+                    <img src="img/about_us/aboutus (4).jpeg">
+                </div>
+                <div class="Text">
+                    <h1>Mg Thiha Nyein</h1>
+                    <div class="underline"></div>
+                    <ul>
+                            <li>Roll-no : 2ICT-24</li>
+                            <li>Email   : thihanyein34@gmail.com</li>
+                            <li>Part    : Clubs & Families</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showlaptop2">
+                <div class="FlexDivLeft">
+                    <div class="Text">
+                        <h1>Ma Myo Pa Pa Kyaw</h1>
+                        <div class="underlineR"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-14</li>
+                                <li>Email   : myopapakyaw147@gmail.com</li>
+                                <li>Part    : About Us, Faculties & Departments</li>
+                        </ul>
+                    </div>
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (5).jpeg">
+                    </div>
+                </div>
+            </div>
+            <div class="showphone2">
+                <div class="FlexDiv md:mt-0 mt-6">
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (5).jpeg">
+                    </div>
+                    <div class="Text">
+                        <h1>Ma Myo Pa Pa Kyaw</h1>
+                        <div class="underline"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-14</li>
+                                <li>Email   : myopapakyaw147@gmail.com</li>
+                                <li>Part    : About Us, Faculties & Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="FlexDiv md:mt-0 mt-6">
+                <div class="FlexDivData">
+                    <img src="img/about_us/aboutus (7).jpeg">
+                </div>
+                <div class="Text">
+                    <h1>Ma Phyo Thi Khine</h1>
+                    <div class="underline"></div>
+                    <ul>
+                            <li>Roll-no : 2ICT-23</li>
+                            <li>Email   : phyoethikhine143@gmail.com</li>
+                            <li>Part    : Activities, News, Home</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showlaptop3">
+                <div class="FlexDivLeft">
+                    <div class="Text">
+                        <h1>Ma Ei Myat Noe Wai</h1>
+                        <div class="underlineR"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-17</li>
+                                <li>Email   : eimyatnoewai712@gmail.com</li>
+                                <li>Parts   : YCCSU, Freshers</li>
+                        </ul>
+                    </div>
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (8).jpeg">
+                    </div>
+                </div>
+            </div>
+            <div class="showphone3">
+                <div class="FlexDiv md:mt-0 mt-6">
+                    <div class="FlexDivData">
+                        <img src="img/about_us/aboutus (8).jpeg">
+                    </div>
+                    <div class="Text">
+                        <h1>Ma Ei Myat Noe Wai</h1>
+                        <div class="underline"></div>
+                        <ul>
+                                <li>Roll-no : 2ICT-17</li>
+                                <li>Email   : eimyatnoewai712@gmail.com</li>
+                                <li>Part    : YCCSU, Freshers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+       <div style="width: 200px; margin: auto;">
+           <a href="suggest.html" ><button class="button md:mt-0 mt-8 md:text-white text-white md:text-xl text-lg md:font-bold font-bold bg-gray-600 md:py-4 py-2 md:px-10 px-4 rounded-full" style="width: 100%;">Suggestion</button></a>
+       </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    
+</body>
+</html>

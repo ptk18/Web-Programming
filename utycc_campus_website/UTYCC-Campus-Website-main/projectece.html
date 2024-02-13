@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECE Projects</title>
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/projectece.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <style>
+        body{
+            width: 100%;
+            margin: 0px auto;
+        }
+        main{
+            width: 100%;
+            background-color: white;
+        }
+        .footer{
+  width: 100%;
+  
+  background-image: linear-gradient(to bottom,rgb(204, 205, 206), rgb(201, 203, 204));
+  color: black;
+  opacity: 0.8;
+  /*background-image: linear-gradient(to right,#6dc0f2 , #0092cc);*/
+  
+}
+.footer p{
+ 
+  font-size: 17px;
+  
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  
+}
+
+.footer-1-sec{
+  width: 50%;
+  text-align: left;
+  
+  
+}
+.footer-2-sec{
+  width:50%;
+  text-align: right;
+
+   
+}
+.footer-2-sec img{
+ 
+  margin-top: 30px;
+  margin-bottom: 15px;
+text-align: right;
+
+
+}
+.footer-3-sec{
+  width: 60%;
+  
+  text-align: center;
+ 
+  font-size: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-style: italic;
+  padding-bottom: 10px;
+  color:black;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding-top: 10px;
+}
+.Suggest-button{
+  margin-top: 30px;
+  border: 2px solid ;
+   border-radius: 10px;
+   
+}
+    </style>
+</head>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+<body>
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+    <main>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" style="width:30px"></button>
+            <div class="title">
+                    <img src="graphic/projectnavigateece-01.png">
+                    <h1>Projects of<br><span>Electrics Engineering<br><span>Department</span></span></h1>
+                    <a href="project.html"><button class="previousButton">Previous</button></a>
+            </div>
+            
+            <div class="dataContainer">
+                <h1>Second Year</h1>
+                <div class="data">
+
+                        <details class="detailsTilte">
+                                <summary>Amplitude Modulation (AM) Transmitter</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">AM transmitter is one type of communication system. AM transmitter is made by integrating small circuits like audio amplifier, oscillation circuit, modulation circuit and power amplifier.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">Audio amplifier, Oscillation circuit, Modulation circuit, Power amplifier.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                       <p class="detailsParagraph">This project is aimed to communicate with other people easily and to share information of message quickly to other people. It is also used in radio broadcasting to broadcast music, news, weather report, programs for entertainment and information. It includes short waves.</p>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Audio Amplifier</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">An audio amplifier is an electronic device that increase the strength of audio signals from the phone and other audio devices.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Phone, Audio Amplifier</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To be useful in daily life</li>
+                                                <li>To be used to design many several amplifiers</li>
+                                                <li>To prevent the damage of laptop and phone speaker</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Digital Clock</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">This project is designed about Digital clock. Clocks are important in everyday life. This clock is designed with the 7-segment displays, the decade counters, 7 segment decoders, 555 timer.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">7-segment displays, decade counters, 7-segment decoders, 555 timer</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To know time exactly in any condition i.e. no matter it is dark or bright in room</li>
+                                                    <li>To use in daily life</li>
+                                                    <li>To create a modern clock by using the theoretical knowledge</li>
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Four Ways controlled Car</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">The project is a car that can be controlled by human and also automatic using four smart ways. They are remote control, voice control, self-control and line follower. The main device is Arduino UNO as the brain of this car. This determines various decisions for controlling the car. Bluetooth module (HC-06) is used for data communication in voice control. Ultrasonic sensor and IR sensor determine the distance for self-control. The signals from IR sensor determine to follow the line.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">Arduino UNO, Ultrasonic sensor, Bluetooth module (HC-06), IR sensors</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <ul>
+                                                        <li>	To design a car that can be controlled by four methods. To become a product as the next step. To understand the use of Arduino, various sensors and components.</li>
+                                                    </ul>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>Line Follower and Remote Controlled Car</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">Today, electronic devices are taking place in everywhere. Line follower and remote control car, an essential technological supply, is introduced. LM 324 helps the DC motor to control the speed in triangle waves. IR sensors are used to remind the robot when if faces the things from accident. LDR is in another way to help the car. To control the car form the distance, RF module (Tx&Rx) is used.</p>
+                                                    <p class="detailsTitle">Keywords</p>
+                                                        <p class="detailsParagraph">LM324, IR sensors, LDR, RF module(Tx&Rx)</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <ul>
+                                                            <li>To save time for the human workers by using line follower car in industrials</li>
+                                                            <li>In supermarkets, the food, things, accessories are systematically placed without human</li>
+                                                            <li>By using line follower car, waiters can be ignored in restaurants.</li>
+                                                            <li>Line follower and remote control car can be using for driverless car in future.</li>   
+                                                        </ul>
+                                            </details>
+
+                                            <details class="detailsTilte">
+                                                    <summary>Record and Repeat Robot</summary>
+                                                        <p class="detailsTitle">Introduction</p>
+                                                            <p class="detailsParagraph">Computer programming is not familiar to normal people in reality. So they cannot give commands to robot easily although AI (Artificial Intelligence) has been developing. To solve these problems, prototype of Record and Repeat Robot project has designed by using two Arduino mega (2560). If one part of record robot body is moved, another robot by driving servo motors will move the same action as the first robot controlling potentiometers.</p>
+                                                        <p class="detailsTitle">Keywords</p>
+                                                            <p class="detailsParagraph">Two Arduino Mega(2560), potentiometers, servo motors</p>
+                                                        <p class="detailsTitle">Aims and Objective</p>
+                                                            <ul>
+                                                                <li>To do bigger things than people can’t effort such as lifting heavy things.</li>
+                                                                <li>To search areas that can harm people (bombs, toxic areas) and etc.</li>
+                                                            </ul>
+                                                </details>
+
+                                                <details class="detailsTilte">
+                                                        <summary>RGB Led 8x8 Dot Matrix with Animation Effects</summary>
+                                                            <p class="detailsTitle">Introduction</p>
+                                                                <p class="detailsParagraph">RBG LEDs are widely used in commercial environment and entertainment concerts, 512 LEDs are needed to form matrix cube. In this circuit, shift registers are used to get 64 output lines and ATmega controller is applied into the shift registers to display desired animation. The animation is run with programs of Arduino UNO.</p>
+                                                            <p class="detailsTitle">Keywords</p>
+                                                                <p class="detailsParagraph">RGB LEDs, Shift registers, ATmega controller, Arduino UNO</p>
+                                                            <p class="detailsTitle">Aims and Objective</p>
+                                                                <ul>
+                                                                    <li>To use in public area for beautiful decoration with LED light changing</li>
+                                                                    <li>In entertainment purposes</li>
+                                                                </ul>
+                                                    </details>
+
+                                                    <details class="detailsTilte">
+                                                            <summary>Smart Home System</summary>
+                                                                <p class="detailsTitle">Introduction</p>
+                                                                    <p class="detailsParagraph">These technologies can be used to create a better living. 555 timer, BJT transistors, mic condenser, water pump, motor, rain sensor and LDR are used for Clap Switch, Automatic Water Filling, Rain Alarm and Dark Activated Light System.</p>
+                                                                <p class="detailsTitle">Keywords</p>
+                                                                    <p class="detailsParagraph">555 timer, BJT transistors, mic condenser, Water pump, Rain Sensor, LDR</p>
+                                                                <p class="detailsTitle">Aims and Objective</p>
+                                                                    <ul>
+                                                                        <li>To create a smarter and more comfortable house more than an ordinary house</li>
+                                                                        <li>To reduce energy, power and time wastage</li>
+                                                                        <li>To understand the use of automatic working system</li>
+                                                                    </ul>
+                                                        </details>
+
+                                                        <details class="detailsTilte">
+                                                                <summary>Solar Supply System</summary>
+                                                                    <p class="detailsTitle">Introduction</p>
+                                                                        <p class="detailsParagraph">In our country, electricity from water isn’t sufficient for every place. By using solar, this problem can be solved. Maximum voltage 17.2V solar panel acts as power supply to a charging circuit 6V/4A battery. In this project, sensors use voltage and ampere from the battery.</p>
+                                                                    <p class="detailsTitle">Keywords</p>
+                                                                        <p class="detailsParagraph">Charging Circuit, Sensor, battery</p>
+                                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                                        <ul>
+                                                                            <li>This solar project can use in public (Petrol Area station, hospital, company etc.) and Security Places (meeting room, store house related no smoking area, etc.) where the electricity is insufficient.</li>
+                                                                            <li>to control street light automatically</li>
+                                                                            <li>To detect the smoking and fire condition</li>                                                                        </ul>
+                                                            </details>
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Third Year</h1>
+                <div class="data">
+
+                        <details class="detailsTilte">
+                                <summary>3D printed Animated Robot (Nora)</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Today, people feel lonely, depressive and get pressures and stresses from daily works. Amusements are needed to reduce them. There are many little things that make people’s happiness. This project is one of these little things.</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <p class="detailsParagraph">The aim of this project is to reduce people’s stresses. Moreover, this robot can be replaced instead of pets and children can play with it. Nora is a desk companion that makes the life better one simile at a time. This project explores human robot interactivity and emotional intelligence. Currently Nora uses face detection to interact with the users and loves playing the game “peek-a-boo”.</p>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Automatic Body Mass Index (BMI) Calculator</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">Healthy is the most important thing in a human life. To be healthy, the body weight is needed to be taken care. This device will help to show that the body is overweight, underweight or normal. In this system, for weight sensors and ultrasonic sensor are used to measure body weight and height.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Ultrasonic sensor, BMI calculation system, weight sensors</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>	To help people who want to know body weight</li>
+                                                <li>	To understand the working principle of the ultrasonic sensor and weight sensor</li>
+                                                <li>	To understand the Arduino Programming Language</li>                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Car Parking Control System</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Nowadays, worldwide population has been increasing rapidly. The more increase in number, the more transportations are used. In a developed city, most of citizens are using cars for the transportation. So that there are difficulties to park their cars. This project may solve this difficlulty.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Arduino Mega 2560, high torque dc motor, RFID-RC522</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To solve car parking problem</li>
+                                                    <li>To make high security</li>
+                                                    <li>To reduce time for parking</li>                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Car Washing System</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">Car washing system is commonly used in developed countries. This project is based on PLC. PLC plays a very important role in the system which is used for automation. There are three processes: washing, cleaning and drying.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">PLC, LDR, Voltage Regulator</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <p class="detailsParagraph">The aim and objectives of this system are to save time and energy, to study how to control with PLC and to use automation control like other developed countries. This project is controlled by PLC program and so that the system will perform step by step automatically.</p>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>Controlled Robotic Hand</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">As the technology develops, the usage of robot is popular. Such as in the repeat processes or where it’s impossible for human to do or it takes a long time to complete, robotic technology is very useful. As nanotechnology develops, the robots are used in small size with full capacity. So this project is done to be able to apply in some mini tasks.</p>
+                                                    <p class="detailsTitle">Keywords</p>
+                                                        <p class="detailsParagraph">Arduino, NRF24L01, Flex Sensors</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <ul>
+                                                            <li>To move the robotic hands as the way of the controlled hand</li>
+                                                            <li>To handle things which are not able to hold</li>
+                                                            <li>To study the foundation of the control & communication technology</li>                                                        </ul>
+                                            </details>
+
+                                            <details class="detailsTilte">
+                                                    <summary>Interactive LED</summary>
+                                                        <p class="detailsTitle">Introduction</p>
+                                                            <p class="detailsParagraph">Interactive LED is another called Touch Screen. In these days. Interactive LED is using in the advancement way as Interactive LED board in school instead of whiteboard and blackboard.</p>
+                                                        <p class="detailsTitle">Keywords</p>
+                                                            <p class="detailsParagraph">Non-Inventing, phototransistors, electronic technologies, mini project</p>
+                                                        <p class="detailsTitle">Aims and Objective</p>
+                                                            <ul>
+                                                                <li>In order to understand more about Integrated Electronics</li>
+                                                                <li>To know how using the formula, non-inventing operational amplifier, is related to practical</li>
+                                                                <li>To know that project like Interactive LED uses the formula of non-inventing op-amp</li>
+                                                                <li>For decoration and performance</li>   
+                                                            </ul>
+                                                </details>
+
+                                                <details class="detailsTilte">
+                                                        <summary>Micromouse Maze</summary>
+                                                            <p class="detailsTitle">Introduction</p>
+                                                                <p class="detailsParagraph">A maze is a network of paths, typically from an entrance to exit. Nowadays, maze solving problem is an important field of robotics. A maze runner make multiple runs in a maze. It is based on the idea of mouse to find exit in maze.</p>
+                                                            <p class="detailsTitle">Keywords</p>
+                                                                <p class="detailsParagraph">Ultrasonic sensors, Arduino Uno Controller, Motor driver (L298), dc motors, Bluetooth Module (HC-06)</p>
+                                                            <p class="detailsTitle">Aims and Objective</p>
+                                                                <p class="detailsParagraph">The aim and objectives of doing this project are to understand the implementation of the maze runner robot, to design the construction of the Arduino based hardware and algorithm on the robot.</p>
+                                                    </details>
+
+                                                    <details class="detailsTilte">
+                                                            <summary>Safety Guard for Blind System</summary>
+                                                                <p class="detailsTitle">Introduction</p>
+                                                                    <p class="detailsParagraph">This project is useful for only the blind but also other people. In order to help blind people and make the life easier, Safety Guard System is designed. This system alerts if any obstacle or object is in the path within 1 meter. Besides, this system helps the blind for sending the present location with SMS message.</p>
+                                                                <p class="detailsTitle">Keywords</p>
+                                                                    <p class="detailsParagraph">Ultrasonic, GPS tracking system, GSM system</p>
+                                                                <p class="detailsTitle">Aims and Objective</p>
+                                                                    <ul>
+                                                                        <li>To study the GPS and GSM system</li>
+                                                                        <li>To understand the usage of basic “C programming language”, (Arduino)</li>
+                                                                        <li>To help the blind for safety</li>                                                                    </ul>
+                                                        </details>
+
+                                                        <details class="detailsTilte">
+                                                                <summary>Wall Climbing Car</summary>
+                                                                    <p class="detailsTitle">Introduction</p>
+                                                                        <p class="detailsParagraph">Everyone has played a remote-controlled car in childhood. This project is also a controlled car but it can move not only on the ground but also can move on the wall. The car can be controlled by a mobile phone easily.</p>
+                                                                    <p class="detailsTitle">Keywords</p>
+                                                                        <p class="detailsParagraph">Gyro sensor, Bluetooth, Brushless Motor</p>
+                                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                                        <ul>
+                                                                            <li>To study the basic of the drone’s brushless motors and propellers</li>
+                                                                            <li>To understand the usage of Arduino UNO controller board and Bluetooth sensor</li>
+                                                                            <li>To understand the usage of the Gyro sensor</li>                                                                        </ul>
+                                                            </details>
+                            
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Fourth Year</h1>
+                <div class="data">
+                        <details class="detailsTilte">
+                                <summary>Chess Playing Robot</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Since AI technology has been improving, it is becoming more and more easy to use robots as partner in human’s daily lives. Especially, robots are used for entertainment and partner in sports and game areas such as football, table tennis, and Chess etc. Chess game is one of the most enjoyable game, but sometimes finding a partner to play with is so hard. Therefore, robot for chess playing partner becomes desirable. In this paper, a brief design for low cost chess playing robot has been presented.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">AI technology, robots, partner, chess game</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To implement a robotic arm that can play chess with humans on a normal chess board just as human do</li>
+                                            <li>To entertain human as chess playing partner</li>
+                                            <li>To develop a stand-alone chess robot</li>                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Egg Painting Robot</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">The egg painting robot is an art robot that can draw on small spherical or egg-shaped objects. The sphere Bot is a simple two axis drawing machine that can be adjustable and draw on all kinds of things that are normally “impossible” to print on. Not just eggs but ping pong balls, Christmas balls and most spherical surfaces.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">CNC, G code</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To study the CNC, G code</li>
+                                                <li>To study the use of stepper motors</li>
+                                                <li>To understand the use of inkscape software and SVG (scalable vector graphics ) images</li>
+                                                <li>Used as decoration of egg-shaped objects</li>   
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Electronic Hammer Game</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Today, many people are facing stress, depression from their work or their school. There are many ways to solve this problem. Playing game is also a way to fun them. The large variety of  dedicated games ICs are quite available in market. In this paper, electronic hammer game is implemented for funny projects using electronic components. The game is designed and implemented with many IR LEDs by using Arduino Mega.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">IR LEDs, Arduino, electronic game</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To use entertainment game</li>
+                                                    <li>To reduce the stress</li>
+                                                    <li>To achieve a number of victory</li>                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Fried Tofu</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">There are many works to do to eat fried machine can make fried tofu whenever a tofu is inserted, people can eat fried tofu easily without doing any works.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph"></p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <p class="detailsParagraph">To place in silent public places such as pagodas or parks. To give happiness to all people such as kids, couples or family.</p>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>Green Charging for Multiple Smart Phones</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">Nowadays, using renewable energy is one of the best solution for global warming. People prefer to use electronic devices which can run with renewable energy ( such as solar, wind turbine, water etc) . To solve insufficient of energy, we designed a charging system using solar energy. Now, we can charge our phones independent on electricity from EPC. Our project can help people in rural areas.</p>
+                                                    <p class="detailsTitle">Keywords</p>
+                                                        <p class="detailsParagraph">Chopper operation, Solar power system, Phone charging system</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <ul>
+                                                            <li>To make a way to study phone charging system</li>
+                                                            <li>To show the usage of the electricity from solar system</li>
+                                                            <li>To understand the utilizing Arduino promini board</li>                                                        </ul>
+                                            </details>
+
+                                            <details class="detailsTilte">
+                                                    <summary>Hand Gesture Vocalizer For Mute People</summary>
+                                                        <p class="detailsTitle">Introduction</p>
+                                                            <p class="detailsParagraph">Hand Gesture Vocalizer is a project for social purpose especially for mute people. In this project, sign language is not used and simple gestures are converted into audio and display on LCD screen.</p>
+                                                        <p class="detailsTitle">Keywords</p>
+                                                            <p class="detailsParagraph">Hand Gesture, Speaker, LCD</p>
+                                                        <p class="detailsTitle">Aims and Objective</p>
+                                                            <ul>
+                                                                <li>To communicate easily with normal people</li>
+                                                                <li>To fill the gap between mute and regular people</li>
+                                                                <li>To provide sign for letters</li>                                                            </ul>
+                                                </details>
+
+                                                <details class="detailsTilte">
+                                                        <summary>Portable OTP ( One-Time Password ) Generator</summary>
+                                                            <p class="detailsTitle">Introduction</p>
+                                                                <p class="detailsParagraph">Nowadays, in the modern age, the information era, security becomes the most important factor in almost every application that need to make sure a secure protocol between the end users and the company. OTP is one of security factor in these cases. Most of the OTP system is done via SMS or email. In this paper, an innovated system is described which does not need any communication network to use the OTP feature with 3-factor authentication.</p>
+                                                            <p class="detailsTitle">Keywords</p>
+                                                                <p class="detailsParagraph">Security, OTP, Fingerprint, 3-factor authentication</p>
+                                                            <p class="detailsTitle">Aims and Objective</p>
+                                                                <ul>
+                                                                    <li>To make better secure society</li>
+                                                                    <li>To use OTP feature without network connection</li>
+                                                                </ul> 
+                                                </details>
+                                            
+                                                <details class="detailsTilte">
+                                                        <summary>Robot Flutist</summary>
+                                                            <p class="detailsTitle">Introduction</p>
+                                                                <p class="detailsParagraph">It is said that many kinds of traditional things and cultures can be disappeared by the improvements of technologies. In fact, it is untrue and these technologies can even conserve some of the cultures in new forms to get long lasting, This project demonstrates that one of Myanmar traditional musical instruments; flute can be preserved with the help of new technologies.</p>
+                                                            <p class="detailsTitle">Keywords</p>
+                                                                <p class="detailsParagraph">IR sensors, servo motors, Mp3 module</p>
+                                                            <p class="detailsTitle">Aims and Objective</p>
+                                                                <ul>
+                                                                    <li>To provide modern kids to be in contact with traditional by this prototype flute.</li>
+                                                                    <li>To be attractive to foreigners with some modifications by adding some Myanmar classical music features.</li>
+                                                                    <li>To prove that modern technologies also give a hand in the conservation of traditional and cultures.</li>                                                                </ul>
+                                                    </details>
+
+                                                    <details class="detailsTilte">
+                                                            <summary>Table Tennis Training Machine</summary>
+                                                                <p class="detailsTitle">Introduction</p>
+                                                                    <p class="detailsParagraph">Table Tennis can be classified as a major sport worldwide with millions of participants and major tournaments. Along with table tennis, training machines come with an expensive tag. The project is to innovate a low-cost table tennis training machine.</p>
+                                                                <p class="detailsTitle">Keywords</p>
+                                                                    <p class="detailsParagraph">LCD, IR, keypad, ESC motor, Servo motors, Stepper motor</p>
+                                                                <p class="detailsTitle">Aims and Objective</p>
+                                                                    <ul>
+                                                                        <li>To train without needing an opponent</li>
+                                                                        <li>Lowest cost as possible</li>
+                                                                        <li>To improve Ping Pong skill level</li>
+                                                                        <li>Have fun while playing</li>   
+                                                                    </ul>
+                                                        </details>
+
+                                                        <details class="detailsTilte">
+                                                                <summary>Teaching Aid LED Cube</summary>
+                                                                    <p class="detailsTitle">Introduction</p>
+                                                                        <p class="detailsParagraph">Nowadays, modern electronic devices are being used in many fields including education. Many electronic educational equipments such as portable dictionary, smart electronic block are available. In this project, Teaching Aid LED Cube (8×8×8) is designed for kid. This LED cube displays alphabets and numbers with their respective sounds. Moreover, it also spells words such as ant, bee, etc.</p>
+                                                                    <p class="detailsTitle">Keywords</p>
+                                                                        <p class="detailsParagraph">Arduino (mega-2560), serial I/O common-cathode display driver (MAX7219), YX5300 UART serial control music player, AD keypad, sound box</p>
+                                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                                        <ul>
+                                                                            <li>To provide children to be easy in learning English at primary level</li>
+                                                                            <li>To improve education and living standard</li>
+                                                                            <li>To be available this local product with suitable price</li>                                                                        </ul>
+                                                            </details>
+
+                                                            <details class="detailsTilte">
+                                                                    <summary>Walkie-Talkie Device</summary>
+                                                                        <p class="detailsTitle">Introduction</p>
+                                                                            <p class="detailsParagraph">Although the technologies have been developing today, walkie-talkies are still used since they produced as a product. People think that the police men only use them but they are widely used in these days. Now, it becomes one of the useful devices in police stations and for linesmen.</p>
+                                                                        <p class="detailsTitle">Keywords</p>
+                                                                            <p class="detailsParagraph">: Nokia 5110 LCD, Amplifier, Transceiver(NRF24L01 module)</p>
+                                                                        <p class="detailsTitle">Aims and Objective</p>
+                                                                            <ul>
+                                                                                <li>To save power consumption</li>
+                                                                                <li>To protect the waste of time</li>
+                                                                                <li>To know NRF-module (Bi-directional wireless communication ) working</li>
+                                                                                <li>To realize about amplifier</li>
+                                                                            </ul>
+                                                                </details>
+
+
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Fifth Year</h1>
+                <div class="data">
+                        <details class="detailsTilte">
+                                <summary>Agricultural Drone</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Nowadays, a lot of time and effort is likely unnecessary spent on agricultural department. In order to save time and less efforts requirement, one flexible drone is available now in which some basic functions are included (spraying the plants with image processing). Any type of plant can be chosen to spray through a sample inserted in the system.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">APM controller, Raspberry pi, Mission Planner</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <p class="detailsParagraph">To introduce new environmental-compatible drone into the hands of our national farmers and lets them know how it work well with a few functions, and to make them being familiar with modern technology.</p>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Automatic Folding Machine</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">It is busy to fold many clothes simultaneously and is not easy to pack in a neat way with hands in cloth shops and industries, So, the automatic folding machine is introduced.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Folding Machine, Arduino Mega, Servos, Photo sensors, LCE display & keypad.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To make a low cost and effective folding machine.</li>
+                                                <li>To save time and energy</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Automatic Gun Aiming System</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Sensor Based Automatic Aiming System is an automatic gun target and aiming system if found an object within a range of sensors. The project is primarily based on PIR sensors, microcontroller and wireless transmitter and receiving units using FSK. The sensors will sense any living object inside the range, provide the signal to microcontroller, in response, it generates the code on the site and send to the watch tower where the receiver receives the codes, provides that codes to microcontroller, interprets the location of the object corresponding to received code, activates targeting system, buzzer system and at last firing system.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Auto aiming system, wireless transmission, wireless receiving, buzzer system.</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To detect any IR radiation in the range of border</li>
+                                                    <li>To target the object through DC motor</li>
+                                                    <li>To use in home security at night by simply adjusting the range</li>                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Floor Cleaning Robot</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">Nowadays, robots are standing as an important role of household application. Floor cleaning robot is designed to help human daily household activities with a good function. It can provide cleaning system via Automatic and Manual control.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">Automatic, Recovery (manual), Bluetooth, microcontroller</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <ul>
+                                                        <li>To design and implement a Floor Cleaning Robot Autonomous and Manual via Phone Application.</li>
+                                                        <li>To save time and energy</li>
+                                                        <li>To reduce labor requirements</li>
+                                                        <li>To know the usage of ultrasonic sensor and Bluetooth module</li>   
+                                                    </ul>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>FMCW Doppler Radar (Antenna)</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">FMCW Doppler radar detects range and doppler results of the target. The antennas are important for the pulse radar system. So, antenna design is considered by using antenna theory to get desired output.</p>
+                                                    <p class="detailsTitle">Keywords</p>
+                                                        <p class="detailsParagraph">FMCW, antenna, RADAR</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <ul>
+                                                            <li>To measure Range and Doppler</li>
+                                                            <li>To understand the basic operations of a radar</li>
+                                                            <li>To apply digital communication</li>
+                                                        </ul>
+                                            </details>
+
+                                            <details class="detailsTilte">
+                                                    <summary>FMCW Doppler Radar (Circuit Design)</summary>
+                                                        <p class="detailsTitle">Introduction</p>
+                                                            <p class="detailsParagraph">FMCW Doppler radar detects range and Doppler results of the target. The circuit design of FMCW Radar system has many portions, wave generation, voltage controlled oscillator (VCO), attenuator, SPLTR, low-noise amplifier, mixer and low-pass filter.</p>
+                                                        <p class="detailsTitle">Keywords</p>
+                                                            <p class="detailsParagraph">VCO, FMCW, RADAR, Mixer, SPLTR</p>
+                                                        <p class="detailsTitle">Aims and Objective</p>
+                                                            <ul>
+                                                                <li>To measure Range and Doppler</li>
+                                                                <li>To understand the basic operations of a radar</li>
+                                                                <li>To apply digital communication</li>
+                                                            </ul>
+                                                </details>
+
+                                                <details class="detailsTilte">
+                                                        <summary>FMCW Doppler Radar (Signal Processing with Matlab)</summary>
+                                                            <p class="detailsTitle">Introduction</p>
+                                                                <p class="detailsParagraph">FMCW Doppler radar detects range and Doppler results of the target. Frequency Modulated Continuous Wave, FMCW RADAR gets a special position within the radar technologies. The outputs (Range and Doppler effects) display on PC by using Matlab simulation software.</p>
+                                                            <p class="detailsTitle">Keywords</p>
+                                                                <p class="detailsParagraph">FMCW, RADAR, MATLAB</p>
+                                                            <p class="detailsTitle">Aims and Objective</p>
+                                                                <ul>
+                                                                    <li>To measure Range and Doppler</li>
+                                                                    <li>To understand the basic operations of a radar</li>
+                                                                    <li>To apply Digital Communication and Microwave theories</li>
+                                                                </ul>
+                                                    </details>
+
+                                                    <details class="detailsTilte">
+                                                            <summary>Humanoid Robot (Alpha)</summary>
+                                                                <p class="detailsTitle">Introduction</p>
+                                                                    <p class="detailsParagraph">Robotic technology is widely spread. Robots have been replaced instead of humans to perform and go to dangerous areas where humans should not go, or unable to do because of size limitations. Humanoid Robot is a robot with its body shape built to resemble the human body.</p>
+                                                                <p class="detailsTitle">Keywords</p>
+                                                                    <p class="detailsParagraph">Flex Sensors, Servo, NRF24L01, Transceiver, GY-521</p>
+                                                                <p class="detailsTitle">Aims and Objective</p>
+                                                                    <ul>
+                                                                        <li>To use in dangerous areas instead of humans</li>
+                                                                        <li>To save human energy</li>
+                                                                        <li>To entertain people</li>
+                                                                        <li>To use in detail process</li>   
+                                                                    </ul>
+                                                        </details>
+
+                                                        <details class="detailsTilte">
+                                                                <summary>Inverter</summary>
+                                                                    <p class="detailsTitle">Introduction</p>
+                                                                        <p class="detailsParagraph">An inverter is a device which converts direct current to alternative current (or) a device that converts either of the two binary digit or signals to the other. AC is used for grid service because it is more practical for long distance transmission.</p>
+                                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                                        <ul>
+                                                                            <li>To use in emergency cases if electricity goes off</li>
+                                                                            <li>To construct and design 500W transformer</li>
+                                                                        </ul>
+                                                            </details>
+
+                                                            <details class="detailsTilte">
+                                                                    <summary>IOT Based Smart Home</summary>
+                                                                        <p class="detailsTitle">Introduction</p>
+                                                                            <p class="detailsParagraph">In modern times, people prefer more of automatic systems rather than manual system. Home automation system uses the technology of Internet of Things (IOT) for monitoring and controlling of electrical appliances at home from remote location by simply using a smartphone with internet access, In this project, Blynk (IOT) platform is used.</p>
+                                                                        <p class="detailsTitle">Keywords</p>
+                                                                            <p class="detailsParagraph">Internet of things (IOT), Blynk Platform</p>
+                                                                        <p class="detailsTitle">Aims and Objective</p>
+                                                                            <ul>
+                                                                                <li>To control home applications with the internet access</li>
+                                                                                <li>To save time and utilize the energy</li>
+                                                                                <li>To improve living standard using technology</li>
+                                                                            </ul>
+                                                                </details>
+
+                                                                <details class="detailsTilte">
+                                                                        <summary>Melody of Heritage</summary>
+                                                                            <p class="detailsTitle">Introduction</p>
+                                                                                <p class="detailsParagraph">Nowadays, Myanmar traditional musical instruments become less popular among young generations. This project is dedicated to promote traditional instruments amongst young people. This is a small automatic orchestra to entertain people.</p>
+                                                                            <p class="detailsTitle">Keywords</p>
+                                                                                <p class="detailsParagraph">MG996R Metal Servo, Nema-17 stepper, A4988 Motor driver, limit switch</p>
+                                                                            <p class="detailsTitle">Aims and Objective</p>
+                                                                                <ul>
+                                                                                    <li>To entertain the audience</li>
+                                                                                    <li>To attract more people</li>
+                                                                                    <li>To promote traditional music</li>
+                                                                                </ul>
+                                                                    </details>
+
+                                                                    <details class="detailsTilte">
+                                                                            <summary>Wireless Free-Drum</summary>
+                                                                                <p class="detailsTitle">Introduction</p>
+                                                                                    <p class="detailsParagraph">The drum is a member musical instrument. Typically, a drum set includes at least four drums which are complex to carry and take many places. So, we made this project to perform the music without physical drums and to play or practice in small places.</p>
+                                                                                <p class="detailsTitle">Keywords</p>
+                                                                                    <p class="detailsParagraph">Accelerometer, Midi, data logging, Gyro, Magneto sensors, wireless</p>
+                                                                                <p class="detailsTitle">Aims and Objective</p>
+                                                                                    <ul>
+                                                                                        <li>To perform and practice</li>
+                                                                                        <li>No need carries drums</li>
+                                                                                        <li>More comfortable and easy to play</li>
+                                                                                    </ul>
+                                                                        </details>
+                                                            
+                </div>
+            </div>
+
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+.adjust_center{
+    padding: 20px;
+}
+.container{
+
+    max-width: 900px;
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: rebeccapurple;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 14px;
+        color: rebeccapurple;
+
+    }
+}
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .container{
+        font-size: 20px;
+
+    }
+}
+@media screen and (min-width: 900px) {
+    .container{
+        font-size: 26px;
+        color:red;
+
+    }
+}
+table {
+    box-sizing: border-box;
+}
+
+.coloum1{
+    width: 35%;
+    max-width: 250px;
+
+
+}
+.coloum2{
+    width: 65%;
+
+}
+.bg_cyan{
+    background-color: darkcyan;
+    margin: 0;
+}
+.bg_yellow{
+    background-color: khaki;
+    margin: 0;
+}
+.bg_green{
+    background-color:chartreuse;
+}
+.bg_pink{
+    background-color: hotpink;
+}
+.bg_gray{
+    background-color: gray;
+}
+input[type="submit"] {
+    background-color: #04aa6d;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+}
+table td input[type="text"],input[type="color"],input[type="tel"],input[type="email"],input[type="date"], textarea{
+    width: 80%;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cellONE{
+    height: 400px;
+}
+.cellTWO{
+    height: 320px;
+}
+.cellTHREE{
+    height: 330px;
+}
+@media screen and (max-height: 800px) {
+    .my_img{
+        width: 210px; 
+        height: 225px;
+
+    }
+}
+.my_img{
+    width: 140px; 
+    height: 150;
+}
+
+
+@media screen and (max-width: 500px) {
+    .row{
+        display:block;
+        width: 100%;
+    }
+    .coloum1, .coloum2{
+        width: 100%;
+    }
+    td {
+        display: block;
+        }
+}

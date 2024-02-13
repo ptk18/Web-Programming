@@ -1,0 +1,41 @@
+{
+  "name": "magicmouse.js",
+  "version": "2.0.0",
+  "description": "A lightweight javascript library to create some amazing effects for the mouse (cursor) on your website",
+  "homepage": "https://magicmousejs.web.app",
+  "main": "built/magicmouse.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js && webpack --config webpack.config.npm.js && webpack --config webpack.config.cdn.js",
+    "dev": "webpack serve --open",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "magic",
+    "mouse",
+    "magic mouse",
+    "magic cursor",
+    "mouse effect",
+    "cursor effect"
+  ],
+  "author": "Phuc Hong <dshongphuc@gmail.com> (dshongphuc.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "css-hot-loader": "^1.4.4",
+    "css-loader": "^6.7.1",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {    
+    "node-sass": "^7.0.1",
+    "ramda": "^0.28.0",
+    "vue": "^3.2.33"
+  }
+}

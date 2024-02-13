@@ -4,7 +4,7 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    background-color: powderblue;
+    background-color: #b0e0e6;
     margin: 0;
 }
 
@@ -155,7 +155,7 @@ body {
 }
 .sidebar a {
     display: block;
-    color: beige;
+    color: #f5f5dc;
     padding: 16px;
     text-decoration: none;
     opacity: 0.8;

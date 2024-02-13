@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW6 2023Calendar</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            width: 490px;
+        }
+        table td, th {
+            border: 1px solid black;
+            padding: 4px;
+            height: 30px;
+        }
+        td {
+            text-align: center;
+            width: 70px;
+        }
+        .previous-month, .next-month {
+            color: lightgray;
+        }
+        .saturday, .sunday {
+            color: red;
+        }
+        #month, #previous-month, #next-month{
+            background-color: #BADFD7;
+        }
+        .daysName{
+            background-color: #F8E4DB;
+        }
+    </style>
+    <script type="text/javascript" src="CodesHW6_65011466.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="previous-month"><input type="button" value="<"></th>
+                <th colspan="5" id="month">1/2023</th>
+                <th id="next-month"><input type="button" value=">"></th>
+            </tr>
+            <tr class="daysName">
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody id="dispaly_days"></tbody>
+    </table>
+</body>
+</html>

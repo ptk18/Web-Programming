@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_8.11</title>
+    <script type="text/javascript">
+        var product_no = 0;
+        var quantity;
+        var total = 0;
+        product_no = parseInt(window.prompt("Enter product number (type -1 to quit): "));
+        quantity = parseInt(window.prompt("Enter quantity: "));
+        while(product_no !== -1){
+            switch(product_no){
+                case 1:
+                    total += (quantity*2.98);
+                    break;
+                case 2:
+                    total += (quantity*4.50);
+                    break;
+            }
+            product_no = parseInt(window.prompt("Enter product number (type -1 to quit): "));
+            quantity = parseInt(window.prompt("Enter quantity: ","0"));
+        }
+        window.prompt("Result is: " + total);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

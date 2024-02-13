@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Timer</title>
+</head>
+<body>
+    <h1>Online Timer</h1>
+    <h3 id="currentTime"></h3>
+    <button id="editButton">Edit</button>
+    <button id="doneButton" style="display: none;">Done</button>
+    <table id="timer-table" border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Alert Word</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button id="addRowButton" style="display: none;">Add Row</button>
+
+    <script>
+        function AlertTime(time, alertMessage) {
+            this.time = time || "";
+            this.alertMessage = alertMessage || "";
+        }
+
+        var timerArray = [
+            new AlertTime("09:00", "Wake up"),
+            new AlertTime("09:10", "Lunch time"),
+            new AlertTime("09:20", "Take a break"),
+        ];
+
+        var timer_table = document.getElementById("timer-table");
+        var editButton = document.getElementById("editButton");
+        var doneButton = document.getElementById("doneButton");
+        var addRowButton = document.getElementById("addRowButton");
+        var isEditMode = false;
+
+        function renderTable() {
+            var tbody = timer_table.querySelector("tbody");
+            tbody.innerHTML = '';
+
+            for (var i = 0; i < timerArray.length; i++) {
+                var timer = timerArray[i];
+                var row = document.createElement("tr");
+
+                // Create and append input fields for time and alert message
+                var timeCell = document.createElement("td");
+                timeCell.innerHTML = `<input type="text" value="${timer.time}">`;
+                row.appendChild(timeCell);
+
+                var messageCell = document.createElement("td");
+                messageCell.innerHTML = `<input type="text" value="${timer.alertMessage}">`;
+                row.appendChild(messageCell);
+
+                if (isEditMode) {
+                    // Create remove button in editor mode
+                    var removeCell = document.createElement("td");
+                    var removeButton = document.createElement("button");
+                    removeButton.textContent = "Remove";
+                    removeButton.onclick = function () {
+                        // Handle the remove button click
+                        var row = this.parentNode.parentNode;
+                        var index = row.rowIndex - 1; // Adjust for the header row
+                        timerArray.splice(index, 1);
+                        renderTable();
+                    };
+                    removeCell.appendChild(removeButton);
+                    row.appendChild(removeCell);
+                }
+
+                tbody.appendChild(row);
+            }
+        }
+
+        function enterEditMode() {
+            isEditMode = true;
+            editButton.style.display = "none";
+            doneButton.style.display = "block";
+            addRowButton.style.display = "block";
+            renderTable();
+        }
+
+        function exitEditMode() {
+            isEditMode = false;
+            editButton.style.display = "block";
+            doneButton.style.display = "none";
+            addRowButton.style.display = "none";
+            var tbody = timer_table.querySelector("tbody");
+            var rows = tbody.querySelectorAll("tr");
+            timerArray = [];
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].querySelectorAll("td input");
+                var time = cells[0].value;
+                var alertMessage = cells[1].value;
+                timerArray.push(new AlertTime(time, alertMessage));
+            }
+            renderTable();
+        }
+
+        editButton.onclick = function () {
+            if (isEditMode) {
+                exitEditMode();
+            } else {
+                enterEditMode();
+            }
+        };
+
+        doneButton.onclick = function () {
+            exitEditMode();
+        };
+
+        addRowButton.onclick = function () {
+            timerArray.push(new AlertTime("", ""));
+            renderTable();
+        };
+
+        renderTable();
+
+        function updateCurrentTime(currentTimeInSec) {
+            const hours = Math.floor(currentTimeInSec / 3600);
+            const minutes = Math.floor((currentTimeInSec % 3600) / 60);
+            const currentTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+            var currentTimeItem = document.getElementById("currentTime");
+            currentTimeItem.innerHTML = "Current Time (1000x faster): " + currentTime;
+        }
+
+        var currentTimeinSec = (8 * 3600 + 50 * 60); // Initial time
+        updateCurrentTime(currentTimeinSec);
+
+        var incrementValue = 300; // Change this value to control the speed
+        var timerInterval = setInterval(function () {
+            currentTimeinSec += incrementValue; // Change the increment value
+            if (currentTimeinSec >= (24 * 3600)) {
+                clearInterval(timerInterval); // Stop the loop after 24 hours
+            }
+            updateCurrentTime(currentTimeinSec);
+            checkTimers(currentTimeinSec);
+        }, 5000);
+
+        function checkTimers(currentTimeinSec) {
+            if (!isEditMode) {
+                for (var i = 0; i < timerArray.length; i++) {
+                    var timer = timerArray[i];
+                    var timeParts = timer.time.split(":");
+                    var timeInSec = parseInt(timeParts[0]) * 3600 + parseInt(timeParts[1]) * 60;
+                    if (timeInSec === currentTimeinSec) {
+                        alert(timer.alertMessage);
+                    }
+                }
+            }
+        }
+        const fileInput = document.getElementById('fileInput');
+    </script>
+</body>
+</html>

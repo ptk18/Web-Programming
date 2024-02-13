@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canteen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/canteen.css">
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/img.css"> -->
+	<link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" style="width:30px"></button>
+	<!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+    <div class="title">
+    	<img src="img/canteentt.png">
+	</div>
+
+	
+	<main id="wrapper">
+		<div id="rowdata">
+        <div id="data">
+            
+            <div id="imgdata1">
+                <img src="img/canteen_photo/1.png">
+            </div>
+
+             <!-- <h4 id="caption">ေမတၱာရိပ္</h4> -->
+             <ul id="fontdata1">
+                 <li>ဝက္သားခ်ိဳခ်ဥ္ </li>
+                 <li>ဝက္အာလူး</li>
+                 <li> ၾကက္ဘူးသီး </li>
+                 <li> ၾကက္အာလူး </li>
+                 <li>ၾကက္အသည္းျမစ္</li>
+                 <li>ဝက္ကလီစာ </li>
+                 <li>ငါးၾကင္းေပါင္း </li>
+                 <li>ငါးၾကင္းေၾကာ္ႏွပ္ </li>
+                 <li>ငါးျမင္းခ်က္ </li>
+                 <li>ဆိတ္သားေျခာက္ခ်က္ </li>
+                 <li>အမဲသားခ်က္ </li>
+                 <li>ငါးဥခ်က္ </li>
+                 <li>ဆိတ္ေထာင္း.. ၾကက္ဥၾေကာ္</li>
+                 <li>လက္ဖက္ထမင္း.. ၾကက္ဥၾေကာ္  </li>
+                 <li>ထမင္းသုပ္ </li>
+                 <li>လက္ဖက္သုပ္ </li>
+                 <li>ငါးျမစ္ခ်ဥ္ </li>
+                 <li>ဝက္နံ႐ိုးခ်က္ </li>
+                 <li>ငါးဖယ္ခ်က္</li>
+                 
+             </ul>
+        </div>
+        &nbsp; &nbsp; &nbsp; 
+        <div id="data3">
+            <div  id="imgdata2">
+                <img src="img/canteen_photo/2.png">
+            </div>
+
+            <!-- <h4 id="caption">ထက္oမ္းေအာင္</h4> -->
+                <ul id="fontdata">
+                 <li>ရွမ္းေခါက္ဆဲြ </li>
+                 <li>ဆီခ်က္ </li>
+                 <li>Dim Sum </li>
+                 <li>ေခါက္ဆဲြၾေကာ္</li>
+                 <li>ေကာ္ဖီ </li>                
+                 <li>ထမင္း..ဟင္း </li>    
+                 <li>ၾကာဇံေၾကာ္ </li>
+                 <li>ဆန္ျပားေၾကာ္ </li>
+                 <li>တံုယမ္း  ထမင္းေၾကာ္ </li>
+                 <li>ငပိ ထမင္းေၾကာ္ </li>
+                 <li>ပသွ်ဴးး  ထမင္းေၾကာ္ </li>
+                 <li>မလေ႐ွား  ထမင္းေၾကာ္ </li>
+                 <li>ေကာ္ရည္ေခါက္ဆဲြ</li>                
+                 <li>ထမင္းေပါင္း </li>
+                 <li>ရာသီေပၚအသီးေဖ်ာ္ရည္  </li>
+                 <li>ဒိန္ခ်ဥ္  </li>
+                 <li>ေဟာ့ေတာ့ </li>
+             </ul>
+        </div>
+        &nbsp; &nbsp; &nbsp;
+        <div id="data3">
+             <div  id="imgdata3">
+                <img src="img/canteen_photo/3.png">
+            </div>
+
+             <!-- <h4 id="caption">For All</h4> -->
+                 <ul id="fontdata">
+                 <li>ထိုင္းငပိေၾကာ္ </li>
+                 <li>ၾကက္ခ်ဥ္စပ္ထမင္းေၾကာ္ </li>
+                 <li>ပုစနြ္ျေခာက္ထမင္းေၾကာ္ </li>
+                 <li>တုုံယမ္းဟင္းရည္ </li>
+                 <li>ကေ႕ြတရို႕</li>
+                 <li>ယိုးယားပဲၾကာဇံသုပ္ </li>
+                 <li> ထမင္း-ဟင္း  </li>
+                 <li>ငါးေသတၱာထမင္း </li>
+                 <li>သီစံုဒိန္ခ်ဥ္ </li>
+                 <li>ရာသီေပၚအသီးေဖ်ာ္ရည္ </li>
+                 <li>ေကာ္ဖီအစံု </li>
+                 <li>Ovtine </li>
+                  <li>Milo </li>
+             </ul>
+        </div>
+        </div>
+        <br>
+        <div id="rowdata2">
+        <div id="data3">
+             <div  id="imgdata4">
+                <img src="img/canteen_photo/4.png">
+            </div>
+             <!-- <h4 id="caption">မမၾကီး</h4> -->
+             <ul id="fontdata">
+                 <li>မုန္႔ဟင္းခါး </li>
+                 <li>အာပူလွ်ာပူ  </li>
+                 <li>႐ွမ္းေခါက္ဆဲြ (အစီး-အဖယြ္)  </li>
+                 <li>ၾကက္သားပလာတာ </li>
+                 <li>အုန္းႏို႔ေခါက္ဆဲြ</li>
+                 <li>ပဲအီၾကာ  </li>
+                 <li>မုန္႔တီသုပ္  </li>
+                 <li>ေခါက္ဆဲြသုပ္ </li>
+                 <li>ေပါင္မုန္႔ၾကက္ဥၾေကာ္ </li>
+                 <li>စမူဆာ  </li>
+                 <li>ေကာ္ဖီ  </li>
+                 <li>အအေး </li>
+                 <li>ၾကက္သားဆီျပန္ </li>
+                 <li>ဝက္သားခ်ိဳခ်က္  </li>
+                 <li>ငါးဖယ္ဆုပ္  </li>
+                 <li>ျပည္လံုးခ်မ္းသာ </li>
+                 <li>ၾကက္မိႈေပါင္း </li>
+                 <li>ၾကက္သားလံုးခ်ိဳခ်ဥ္  </li>
+                 <li>ဆတ္သားေျခာက္ခ်က္  </li>
+                 <li>ၾကက္ေသာက္ဆမ္း </li>
+                 <li>ဆိတ္ေထာင္း </li>
+                 <li>လက္ဖက္ထမင္း  </li>
+                 <li>ေခါက္ဆဲြျပဳတ္ </li>
+                 <li>ေဟာ့ေတာ့ </li>
+                 <li>အမဲသားနပ္  </li>
+                 <li>ငါးဥဟင္း  </li>
+                 <li>ဝက္သားအခ်ဥ္စပ္  </li>
+                 <li>ပုစနြ္ </li>
+                 <li>ငါးေျခာက္ဖုတ္  </li>
+                 <li>ၾကက္သားေၾကာ္  </li>
+                 <li>ၾကက္အသည္းျမစ္  </li>
+                 <li>ဖာလူဒါ   </li>
+                 <li>ေရႊရင္ေအး   </li>
+                 <li>ေရခဲသုပ္   </li>
+                 <li>ရာသီေပၚအသီးေဖ်ာ္ရည္   </li>
+                 <li>Bill   </li>
+
+             </ul>
+        </div>
+        &nbsp; &nbsp; &nbsp; 
+        <div id="data3">
+            <div  id="imgdata5">
+                <img src="img/canteen_photo/5.png">
+            </div>
+            <!-- <h4 id="caption">သီရီ</h4> -->
+                <ul id="fontdata">
+                 <li>မုန္႔တီသုပ္ </li>
+                 <li>ေခါက္ဆဲြသုပ္ </li>
+                 <li>႐ွမ္းေခါက္ဆဲြ </li>
+                 <li>ေပါင္မုန္႔ၾကက္ဥၾေကာ္</li>
+                 <li>ယမ္ယမ္ခ်ဥ္စပ္ </li>
+                 <li>ဒန္ေပါက္ </li>
+                 <li>ထမင္း-ဟင္း</li>
+                 <li>ရာသီေပၚအသီးေဖ်ာ္ရည္ </li>
+                 <li>ေကာ္ဖီ </li>
+                 <li>လက္ဖက္ရည္</li>
+                
+             </ul>
+        </div>
+        &nbsp; &nbsp; &nbsp;  
+        <div id="data3">
+            <div id="imgdata6">
+                <img src="img/canteen_photo/6.png">
+            </div >
+             <!-- <h4 id="caption">ေအာင္ျမန္မာ</h4> -->
+                 <ul id="fontdata">
+                 <li>ၾကက္ကုန္းေဘာင္ </li>
+                 <li>ဝက္ပဲငပိ  </li>
+                 <li>ၾကက္ပဲငပိ </li>
+                 <li>ၾကက္အသည္းျမစ္ကုန္းေဘာင္ </li>
+                 <li>ပုစနြ္ကုန္းေဘာင္(ခ်ဥ္စပ္-အသုပ္)  </li>
+                 <li>ဝက္သားကင္ျပန္ခ်က္  </li>
+                 <li>အရကြ္အစိမ္းေၾကာ္ </li>
+                 <li>ဝက္ျမစ္ခ်ဥ္ </li>
+                 <li>ပဲျပဳတ္သုပ္  </li>
+                 <li>အၾေကာ္မ်ိဳးစံု  </li>
+                 <li>ယမ္ယမ္ခ်ဥ္စပ္ </li>
+                 <li>ေပါင္မုန္႔ၾကက္ဥၾေကာ္  </li>
+                 <li>ေပါင္မုန္႔ႏို႔စိမ္   </li>
+                 <li>ထမင္းဆီဆမ္းၾကက္ဥၾေကာ္</li>
+                 <li>ေကာ္ဖီ    </li>
+                 <li>ေရခဲေခ်ာင္း  </li>
+                 <li>ေရခဲမုန္႔ </li>
+             </ul>
+        </div>
+        </div>
+    </div>
+    <br>
+    <div id="rowdata1">
+        <div id="data1">
+            <div  id="imgdata7">
+                <img src="img/canteen_photo/7.png">
+            </div>
+             <!-- <h4 id="caption">Sun Top</h4> -->
+                 <ul id="fontdata1">
+                 <li>ၾကက္သားဘာဂါ </li>
+                 <li>ၾကက္ဥဘာဂါ  </li>
+                 <li>ခ်ိစ္ဘာဂါ </li>
+                 <li>ၾကက္သား-ၾကက္ဥဘာဂါ </li>
+                 <li>ၾကက္သား-ခ်ိစ္ဘာဂါ  </li>
+                 <li>ၾကက္သား-ၾကက္ဥ-ခ်ိစ္ဘာဂါ  </li>
+                 <li>ၾကက္သားဆင္း၀စ္ခ်္ </li>
+                 <li>ၾကက္ဥဆင္း၀စ္ခ်္   </li>
+                 <li>ခ်ိစ္ဆင္း၀စ္ခ်္ </li>
+                 <li>ၾကက္သား-ၾကက္ဥဆင္း၀စ္ခ်္ </li>
+                 <li>ၾကက္သား-ခ်ိစ္ဆင္း၀စ္ခ်္  </li>
+                 <li>ၾကက္သား-ၾကက္ဥ-ခ်ိစ္ဆင္း၀စ္ခ်္  </li>
+                 <li>ေထာပတ္ေပါင္မုန္႕မီးကင္</li>
+                 <li>ေထာပတ္+စတော္ဘယ္ရီေပါင္မုန္႕ </li>
+                 <li>ေခ်ာကလက္ ပေါင္မုန္႕မီးကင္</li>
+                 <li>ေပါင္မုန္႕ႏို႕ဆမ္း</li>
+                 <li>ေပါင္မုန္႕ၾကက္ဥၾေကာ္  </li>
+                 <li>Hot-Dog (ေပါင္မုန္႕)</li>
+                 <li>သံသရာေဖ်ာ္ရည္ </li>
+                 <li>လိေမၼာ္ေဖ်ာ္ရည္ </li>
+                 <li>စတော္ဘယ္ရီေဖ်ာ္ရည္  </li>
+                 <li>ေထာဘတ္သီးေဖ်ာ္ရည္  </li>
+                 <li>ငွက္ေပ်ာသီးေဖ်ာ္ရည္ </li>
+                 <li>သဘောၤသီးေဖ်ာ္ရည္  </li>
+                 <li>နာနတ္သၤးေဖ်ာ္ရည္  </li>
+                 <li>ေကာ္ဖီေအး</li>
+                 <li>အိုဗာတင္းေအး    </li>
+                 <li>လီမနြ္တီးေအး </li>
+                 <li>ႏို႕အေး </li>
+                 <li>ဆားခ်ိဳသီး</li>
+                 <li>စတော္ဘယ္ရီ-မစ္ရွိတ္  </li>
+                 <li>လိေမၼာ္-မစ္ရွိတ္</li>
+                 <li>ေခ်ာကလက္-မစ္ရွိတ္ </li>
+                 <li>နာနတ္-မစ္ရွိတ္ </li>
+                 <li>ႏို႕-မစ္ရွိတ္  </li>
+                 <li> Coffee/Overtine/Lemon Tea</li>
+                 <li>ၾကက္ဥၾေကာ္ </li>
+                 <li>ၾကက္ဥအူေခ်ာင္းၾေကာ္ </li>
+                 <li>အာလူးကတ္တလိတ္  </li>
+                 <li>ၾကက္ကင္</li>
+                 <li>Hot-Dog (ၾကက္အူေခ်ာင္း) </li>
+                 <li>အာလူးေခ်ာင္းၾေကာ္</li>
+                 <li>ၾကက္ဥလိပ္ </li>
+                 <li>ၾကက္သားတံုးၾေကာ္</li>
+                 <li>ေကာ္ျပန္႕ </li>
+                 <li>ယမ္ယမ္ေခါက္ဆဲြၾေကာ္ </li>
+                 <li>မႏၱလေးထမင္းပေါင္း(ၾကက္၊ၾကက္ဥ)</li>
+                 <li>ၾကက္ဆီထမင္း(ၾကက္၊ၾကက္ဥ) </li>
+                 <li>ရန္ကုန္ထမင္းေပါင္း</li>
+                 <li>ၾကက္ထမင္းၾေကာ္ </li>
+                 <li>ထမင္းျဖဴ(ၾကက္၊ၾကက္ဥ)</li>
+                 <li>ထမင္းျဖဴ(ၾကက္ကုန္းေဘာင္)</li>
+                 
+             </ul>
+        </div>
+        <div id="data2">
+                <div  id="imgdata8">
+                    <img src="img/canteen_photo/8.png">
+                </div>
+                <!-- <h4 id="caption">ကန္တင္းမိတၱဴဆိုင္</h4> -->
+                    <ul id="fontdata1">
+                    <li>အအေး </li>
+                    <li>မိတၱဴ </li>
+                    <li>စာေရးကိရိယာ</li>
+                    <li>အားကစားရံု(Gym)</li>
+                </ul>
+           </div>
+    </div>  
+	</main><br>
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Transcript</title>
+    <style>
+        body, html {
+            height: 100%;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            max-width: 900px;
+        }
+        table {
+            text-align: center;
+            justify-content: center;
+        }
+        th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+        img {
+            width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 0 auto; 
+        }
+        .center_top_col{
+            width: 50%; 
+            text-align: center;
+        }
+        .left_top_col {
+            width: 35%; 
+            text-align: left;
+        }
+        .mid_top_col {
+            width: 15%; 
+            text-align: left;
+        }
+        .right_top_col {
+            text-align: left;
+        }
+
+        .content_table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .content_table td {
+            border: 1px solid black;
+            padding: 8px;
+            border-bottom: none;
+            border-top: none;
+        }
+        .content_table tbody {
+            border-bottom: 1px solid black;
+        }
+    </style>
+    
+</head>
+<body cz-shortcut-listen="true">
+    <br><br>
+    <h1>( Unofficial Transcript )</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td></td><td></td>
+                <td rowspan="3" class="right_top_pic">
+                    <img src="https://scontent.fbkk4-2.fna.fbcdn.net/v/t39.30808-6/357732287_1331696364082965_7319465010498967749_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHodVUe-qiORh7XhxLBwxTV_QBJbtmOKln9AElu2Y4qWXSyZWsXhOtVzIAXbgP-CvKCFfwUokifZ8Dn8xjthTf0&_nc_ohc=I2IP5_lla7gAX_mjAi2&_nc_zt=23&_nc_ht=scontent.fbkk4-2.fna&oh=00_AfCwM0E-U_AVy8cvL1zRsfXOzXVBkiv8RDiWbohWL27mdw&oe=6510CD4B" alt="transcript pic">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="center_top_col">
+                    <h2>School of Engineering</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="left_top_col">
+                    <label for="student_name" style="font-style: italic;">Name</label>
+                    <input type="text" id="student_name" readonly="">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td class="left_top_col">
+                    <label for="date_of_birth" style="font-style: italic;">Date of Birth</label>
+                    <input type="text" id="date_of_birth" readonly="">
+                </td>
+                <td class="mid_top_col"></td>
+                <td class="right_top_col">
+                    <label for="student_id" style="font-style: italic;">Student ID</label>
+                    <input type="text" id="student_id" readonly="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left_top_col">
+                    <label for="date_of_admission" style="font-style: italic;">Date of Admission</label>
+                    <input type="text" id="date_of_admission" readonly="">
+                </td>
+                <td class="mid_top_col"></td>
+                <td class="right_top_col">
+                    <label for="date_of_graduation" style="font-style: italic;">Date of Graduation</label>
+                    <input type="text" id="date_of_graduation" readonly="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left_top_col">
+                    <label for="degree" style="font-style: italic;">Degree</label>
+                    <input type="text" id="degree" readonly="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left_top_col">
+                    <label for="major" style="font-style: italic;">Major</label>
+                    <input type="text" id="major" readonly="">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="content_table">
+        <thead>
+            <tr><th style="width: 90%;">
+                <p>COURSE TITLE</p>
+            </th>
+            <th style="width: 5%;">
+                <p>CREDIT</p>
+            </th>
+            <th style="width: 5%;">
+                <p>GRADE</p>
+            </th>
+        </tr></thead>
+        <tbody id="content_body">
+            
+        </tbody>
+    </table>
+    <br>
+    <label for="fileInput">Import Transcript:</label>
+    <input type="file" id="fileInput" accept=".json">
+
+    <script src="CodesHW8_65011466.js"></script>
+</body>
+</html>

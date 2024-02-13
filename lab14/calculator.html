@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="/lab14/cal_styles.css">
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+    <body>
+        <table id="myTable">
+            <tr>
+                <td colspan= "4" style="text-align: right;">
+                    <label id="result">0</label>
+                </td>
+            </tr> 
+            <tr>
+                <td id="Backspace"><</td>
+                <td id="/">/</td>
+                <td id="*">*</td>
+                <td id="-" style="font-family: 'Courier New', Courier, monospace; font-weight:bold;">-</td>
+            </tr>
+            <tr>
+                <td id="7">7</td>
+                <td id="8">8</td>
+                <td id="9">9</td>
+                <td id="+" rowspan="2">+</td>
+            </tr>
+            <tr>
+                <td id="4">4</td>
+                <td id="5">5</td>
+                <td id="6">6</td>
+            </tr>
+            <tr>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                <td id="3">3</td>
+                <td id="Enter" rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td id="0" colspan="2">0</td>
+                <td id="c" style="font-weight: bold;">C</td>
+            </tr>
+        </table>
+
+        <section class="pyscript">
+<py-script>
+from js import document
+from pyodide import create_proxy
+import math
+userInput = ''
+class InputLog():
+    
+    def __init__(self, element_id):
+        self.element_id = element_id
+        self._element = None
+
+        
+
+    @property
+    def element(self):
+        """Return the dom element"""
+        if not self._element:
+            self._element = document.querySelector(f"#{self.element_id}")
+        return self._element
+
+    def on_click(self, event):
+        lineBreak = document.createElement('br');
+        self.element.appendChild(lineBreak)
+    
+    def on_event(self, event):
+        console.log("here",event.key)
+        console.log("res", result.innerHTML)
+
+        
+        
+        if result.innerHTML == '0':
+            console.log("true")
+            result.innerHTML = event.key
+            
+        else:
+            result.innerHTML += event.key
+        userInput = result.innerHTML
+        console.log("usrInput",userInput)
+
+        if event.key == '=':
+            if userInput == '':
+                result.innerHTML = '0'
+            else:
+                console.log("usrInput inside if ",userInput)
+                userInput = userInput[:-1]
+                console.log("usrInput again ",userInput)
+                if '/0' in userInput:
+                    console.log("divide by zero")
+                    result.innerHTML = 'Infinty'
+                
+
+                result.innerHTML  = eval(userInput)
+            userInput = ''
+        
+        if event.key == '<':
+            console.log("d here")
+            userInput = userInput[:-5]
+            result.innerHTML = userInput
+        
+        if event.key == 'c':
+            console.log("c here")
+            result.innerHTML = 0
+            userInput = ''
+
+output = InputLog("output")
+result = document.querySelector("#result")  
+  
+event_proxy = create_proxy(output.on_event)
+click_proxy = create_proxy(output.on_click)
+    
+document.addEventListener("click", click_proxy)
+document.addEventListener("keypress", event_proxy)
+
+                
+</py-script>
+    </body>
+</html>

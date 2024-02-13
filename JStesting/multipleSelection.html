@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var choice;
+    var startTag;
+    var endTag;
+    var validInput = true;
+    var listType; 
+
+    choice = window.prompt("Select a list style:\n" + "1(numbered), 2(lettered), 3(roman numbered)", "2");
+
+    switch(choice){
+        case "1":
+            startTag = "<ol>";
+            endTag = "</ol>";
+            listType = "<h1>Numbered list</h1>";
+            break;
+        case "2":
+            startTag = "<ol style = 'list-style-type: upper-alpha'>";
+            endTag = "</ol>";
+            listType = "<h1>Lettered list</h1>";
+            break;
+        case "3":
+            startTag = "<ol style = 'list-style-type: upper-roman'>";
+            endTag = "</ol>";
+            listType = "<h1>Roman Lettered list</h1>";
+            break;
+        default:
+            startTag = "<ol style = 'list-style-type: upper-alpha'>";
+            endTag = "</ol>";
+            listType = "<h1>Lettered list</h1>";
+            break;
+    }
+
+    if(validInput){
+        document.writeln(listType + startTag);
+
+        for(var i=0; i<3 ; i++)
+            document.writeln("<li>List item" + i + "</li>");
+        document.writeln(endTag);
+    }
+    else
+        document.writeln("Invalid Choice: "+choice);
+
+</script>
+<body>
+    <ol></ol>
+    
+</body>
+</html>

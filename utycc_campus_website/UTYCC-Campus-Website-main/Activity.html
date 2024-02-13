@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Activity.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <title>Activity</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+   <!--Up Buttom-->
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/backtotop-01.png" style="width:30px"></button>
+
+    <!--Navigation Bar-->
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+       <div class="hidden lg:block">
+        <slider class="">
+            <slide >
+                <p >&#10077; To Better & Active Society &#10078;</p>
+                <a href="#activity"><button class="button-design" >See More</button></a>
+            </slide>
+            <slide>
+                <p>Find Your Happiness!</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            <slide>
+                <p>Let's Enjoy It!</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            <slide>
+                <p>&#10077; Yearly Activiy Plan &#10078;</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+           </slider>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       </div>
+
+<!--for portrate  -->
+      <div class=" block sm:hidden">
+        <slider >
+            <slide >
+                <p >&#10077; To Better & Active Society &#10078;</p>
+                <a href="#activity"><button class="button-design" >See More</button></a>
+            </slide>
+            <slide>
+                <p>Find Your Happiness!</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            <slide>
+                <p>Let's Enjoy It!</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            <slide>
+                <p>&#10077; Yearly Activiy Plan &#10078;</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            
+           </slider>
+           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> 
+      </div>
+<!-- for land scale-->
+
+     <div class=" hidden sm:block lg:hidden">
+        <slider >
+            <slide >
+                <p >&#10077; To Better & Active Society &#10078;</p>
+                <a href="#activity"><button class="button-design" >See More</button></a>
+            </slide>
+            <slide>
+                <p>Find Your Happiness!</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            <slide>
+                <p>Let's Enjoy It!</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            <slide>
+                <p>&#10077; Yearly Activiy Plan &#10078;</p>
+                <a href="#activity"><button class="button-design">See More</button></a>
+            </slide>
+            
+           </slider>
+           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+     </div>
+   
+   
+               
+               <section id="activity" style="width: 80%; font-family:'Times New Roman', Times, serif; margin:0 auto; " >
+                <br><br>
+               <!--Fresher Welcome-->
+               <div class="lg:flex lg:mb-24 showdesktop">
+                 <div class="bottle">
+                   <p class="Activity-Title">Fresher Welcome</p>
+                   <p class="Activity-Content">This is the welcome party for newcomers to the university by their senior Students. In this party, all students of our university takes place actively and the fantastic parformance of the students can be found. </p><br>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> January</span></p>
+                </div>
+                <div class="bottle1" >
+                        <img src="pic/welcome3.jpg" alt="" class="image1">
+                    <img src="pic/welcome2.jpg" alt="" class="image2">
+                    <img src="pic/welcome4.jpg" alt="" class="image3">
+                </div>
+                </div>
+                <div class="lg:mb-24 showmyphone showlandscape">
+                   <div class="bottle1 mb-8" >
+                           <img src="pic/welcome3.jpg" alt=""  class="image1">
+                       <img src="pic/welcome2.jpg" alt=""  class="image2">
+                       <img src="pic/welcome4.jpg" alt="" class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">Fresher Welcome</p>
+                    <p class="Activity-Content">This is the welcome party for newcomers to the university by their senior Students. In this party, all students of our university takes place actively and the fantastic parformance of the students can be found. </p>
+                    <p class="Activity-Content">Celebrate in ~<span class="month">January</span></p>
+                 </div>
+                   </div>
+                
+         
+                <!--Independent Day-->
+               <div class="lg:flex mt-8 lg:mb-24">
+                    <div class="bottle1 mb-8">
+                        <img src="pic/independent day2.jpg" alt=""class="image1">
+                        <img src="pic/independent day3.jpg" alt="" class="image2">
+                        <img src="pic/independent day.jpg" alt="" class="image3">
+                    </div>
+                    <div class="bottle">
+                      <p class="Activity-Title">Independent Day </p>
+                      <p class="Activity-Content">In independent day, street games like running, tug of war, food eating races and sports like badminton, tennis are held together in front of main building. Independent day is supposed to be about unity, and appears to bring ethic communities together. </p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> January</span></p>
+                   </div>
+                   </div>
+                
+   
+                 <!--Blood Donation-->
+               <div class="lg:flex mt-8 lg:mb-24 showdesktop">
+                    <div class="bottle">
+                      <p class="Activity-Title">Blood Donation</p>
+                      <p class="Activity-Content">A voluntary unpaid blood donation is held in this day. Some students donate blood and some perform as volunteers. Some nutritious food like breads and eggs are returned back to the donater. The blood donation is held twice a year.</p>
+                      <p class="Activity-Content">Celebrate in ~<span class="month"> January/August</span></p>
+                   </div>
+                   <div class="bottle1">
+                       <img src="pic/blood donation2.jpg" alt="" class="image1">
+                       <img src="pic/blood donation1.jpg" alt="" class="image2">
+                       <img src="pic/blood donation.jpg" alt="" class="image3">
+                   </div>
+                   </div>
+                   <div class="mt-8 lg:mb-24 showmyphone">
+                   <div class="bottle1 mb-8">
+                       <img src="pic/blood donation2.jpg" alt="" class="image1">
+                       <img src="pic/blood donation1.jpg" alt="" class="image2">
+                       <img src="pic/blood donation.jpg" alt="" class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">Blood Donation</p>
+                    <p class="Activity-Content">A voluntary unpaid blood donation is held in this day. Some students donate blood and some perform as volunteers. Some nutritious food like breads and eggs are returned back to the donater. The blood donation is held twice a year.</p>
+                    <p class="Activity-Content">Celebrate in ~<span class="month"> January/August</span></p>
+                 </div>
+                   </div>
+    
+
+                   <!--Kahtain-->
+               <div class="lg:flex mt-8 lg:mb-24">
+                    <div class="bottle1 mb-8">
+                        <img src="pic/kahtain.jpg" alt="" class="image1">
+                        <img src="pic/kahtain1.jpg" alt="" class="image2">
+                        <img src="pic/kahtain2.jpg" alt="" class="image3">
+                    </div>
+                    <div class="bottle">
+                      <p class="Activity-Title">Kahtain</p>
+                      <p class="Activity-Content">This is the ceremony of donating Kahtain Robes to Buddhist Monks, and the instumental and expressive nature of our university can be found. You can also find the creative skill to make the Padatharpin. </p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> January</span></p>
+                   </div>
+                   </div>
+                   
+
+                    <!--YCC Invent-->
+               <div class="lg:flex mt-8 lg:mb-24 showdesktop">
+                    <div class="bottle">
+                      <p class="Activity-Title">YCC Invent</p>
+                      <p class="Activity-Content">This is the competition of different years & majors of our university. The innovation of our ycc students is breathtaking.</p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> February</span></p>
+                   </div>
+                   <div class="bottle1">
+                           <img src="pic/invent1.jpg" alt="" class="image1">
+                       <img src="pic/invent2.jpg" alt="" class="image2">
+                       <img src="pic/invent.jpg" alt="" class="image3">
+                   </div>
+                   </div>
+                   <div class="mt-8 lg:mb-24 showmyphone">
+                   <div class="bottle1 mb-8">
+                           <img src="pic/invent1.jpg" alt="" class="image1">
+                       <img src="pic/invent2.jpg" alt=""class="image2">
+                       <img src="pic/invent.jpg" alt=""class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">YCC Invent</p>
+                    <p class="Activity-Content">This is the competition of different years & majors of our university. The innovation of our ycc students is breathtaking.</p>
+                 <p class="Activity-Content">Celebrate in ~<span class="month"> February</span></p>
+                 </div>
+                   </div>
+                   
+
+                   <!--Convocation-->
+               <div class="lg:flex mt-8 lg:mb-24">
+                    <div class="bottle1 mb-8">
+                        <img src="pic/convo2.jpg" alt="" class="image1">
+                        <img src="pic/convo1.jpg" alt="" class="image2">
+                        <img src="pic/convo3.jpg" alt="" class="image3">
+                    </div>
+                    <div class="bottle">
+                      <p class="Activity-Title">Convocation</p>
+                      <p class="Activity-Content">Last years students who finished their seminors and thisis for the degree are awarded bachaler degrees at the convocation ceremony.</p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> February</span></p>
+                   </div>
+                   </div>
+                  
+
+                   <!--Htamanae-->
+               <div class="lg:flex mt-8 lg:mb-24 showdesktop">
+                    <div class="bottle">
+                      <p class="Activity-Title">Htamanae</p>
+                      <p class="Activity-Content">In the ceremony, the contestants cook Htamanae, a mixture of Glutinous Rice, fried coconut shavings, roasted peanuts, and other ingredents in a team. This ceremony helps promote unity and mutual support.</p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> February</span></p>
+                   </div>
+                   <div class="bottle1">
+                           <img src="pic/Htamanae1.jpg" alt=""class="image1">
+                       <img src="pic/Htamanae3.jpg" alt="" class="image2">
+                       <img src="pic/Htamanae2.jpg" alt="" class="image3">
+                   </div>
+                   </div>
+                   <div class=" mt-8 lg:mb-24 showmyphone">
+                   <div class="bottle1 mb-8">
+                       <img src="pic/Htamanae1.jpg" alt=""class="image1">
+                       <img src="pic/Htamanae3.jpg" alt="" class="image2">
+                       <img src="pic/Htamanae2.jpg" alt="" class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">Htamanae</p>
+                    <p class="Activity-Content">In the ceremony, the contestants cook Htamanae, a mixture of Glutinous Rice, fried coconut shavings, roasted peanuts, and other ingredents in a team. This ceremony helps promote unity and mutual support.</p>
+                    <p class="Activity-Content">Celebrate in ~<span class="month"> February</span></p>
+                 </div>
+                   </div>
+                   
+
+                   <!--Cyber Thingyan-->
+               <div class="lg:flex mt-8 lg:mb-24">
+                    <div class="bottle1 mb-8">
+                            <img src="pic/thingyan.jpg" alt="" class="image1">
+                        <img src="pic/thingyan1.jpg" alt="" class="image2">
+                        <img src="pic/FB_IMG_1554467301982.jpg" alt="" class="image3">
+                    </div>
+                    <div class="bottle">
+                      <p class="Activity-Title">Cyber Thingyan</p>
+                      <p class="Activity-Content">This the new year festival after the mid-term exam. The tradition of Myanmar water festival can be found there. All the students play water happily and peacefully.</p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> April</span></p>
+                   </div>
+                   </div>
+                   
+
+                    <!--Red Cross Training-->
+               <div class="lg:flex mt-8 lg:mb-24 showdesktop">
+                    <div class="bottle">
+                      <p class="Activity-Title">Red Cross Training</p>
+                      <p class="Activity-Content">This is the camp of first aid and can get the volunteering mind-set and teamwork. Firsr aid in this camp is lectured by the coach from the Myanmar Red Cross Society.  </p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> June</span></p>
+                   </div>
+                   <div class="bottle1">
+                           <img src="pic/rc.jpg" alt="" class="image1">
+                       <img src="pic/rc1.jpg" alt="" class="image2">
+                       <img src="pic/rc2.jpg" alt="" class="image3">
+                   </div>
+                   </div>
+                   <div class="mt-8 lg:mb-24 showmyphone">
+                   <div class="bottle1 mb-8">
+                           <img src="pic/rc.jpg" alt="" class="image1">
+                       <img src="pic/rc1.jpg" alt="" class="image2">
+                       <img src="pic/rc2.jpg" alt="" class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">Red Cross Training</p>
+                    <p class="Activity-Content">This is the camp of first aid and can get the volunteering mind-set and teamwork. Firsr aid in this camp is lectured by the coach from the Myanmar Red Cross Society.  </p>
+                 <p class="Activity-Content">Celebrate in ~<span class="month"> June</span></p>
+                 </div>
+                   </div>
+                   
+
+                   <!--Rainy Season Sport Activities-->
+               <div class="lg:flex mt-8 lg:mb-24">
+                    <div class="bottle1 mb-8">
+                        <img src="pic/sport1.jpg" alt="" class="image1">
+                        <img src="pic/sport2.jpg" alt="" class="image2">
+                        <img src="pic/sport5.jpg" alt="" class="image3">
+                    </div>
+                    <div class="bottle">
+                      <p class="Activity-Title">Sport Activities</p>
+                      <p class="Activity-Content">In rainy season, sport matches like football, badminton, tennis, cane ball are held to become healthy and intelligent students .</p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> June/July</span></p>
+                   </div>
+                   </div>
+                
+
+                   <!--Warso-->
+               <div class="lg:flex mt-8 lg:mb-24 showdesktop">
+                    <div class="bottle">
+                      <p class="Activity-Title">Warso</p>
+                      <p class="Activity-Content">This is the ceremony of donating Warso Robes to Buddhist Monks, and the instumental and expressive nature of our university can be found. Our university donate money and warso robes to the near monestries. </p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> July</span></p>
+                   </div>
+                   <div class="bottle1">
+                           <img src="pic/warso2.jpg" alt="" class="image1">
+                       <img src="pic/warso.jpg" alt="" class="image2">
+                       <img src="pic/warso1.jpg" alt="" class="image3">
+                   </div>
+                   </div>
+                   <div class="mt-8 lg:mb-24 showmyphone">
+                   <div class="bottle1 mb-8">
+                        <img src="pic/warso2.jpg" alt="" class="image1">
+                       <img src="pic/warso.jpg" alt="" class="image2">
+                       <img src="pic/warso1.jpg" alt="" class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">Warso</p>
+                    <p class="Activity-Content">This is the ceremony of donating Warso Robes to Buddhist Monks, and the instumental and expressive nature of our university can be found. Our university donate money and warso robes to the near monestries. </p>
+                    <p class="Activity-Content">Celebrate in ~<span class="month"> July</span></p>
+                 </div>
+                   </div>
+                   
+
+                   <!--Literature Talks-->
+               <div class="lg:flex mt-8 lg:mb-24">
+                    <div class="bottle1 mb-8">
+                            <img src="pic/literature talks1.jpg" alt="" class="image1">
+                        <img src="pic/literature talks3.jpg" alt="" class="image2">
+                        <img src="pic/literature talks2.jpg" alt="" class="image3">
+                    </div>
+                    <div class="bottle">
+                      <p class="Activity-Title">Literature Talks</p>
+                      <p class="Activity-Content">The invited authors discuss fields of literature or information techonology in the talk to improve knowledge and thinking power. All of the students attend the talk and they listen and discuss to the authors.</p>
+                   <p class="Activity-Content">Celebrate in ~<span class="month"> July</span></p>
+                   </div>
+                   </div>
+                   
+
+                   <!--Project Show-->
+               <div class="lg:flex mt-8 lg:mb-24 showdesktop">
+                    <div class="bottle">
+                      <p class="Activity-Title">Project Show</p>
+                      <p class="Activity-Content">Students apply their knowledge from their acadamic learning by making projects. These different projects are showned together there and they share about their projects to the visitors to the show. This is the famous tradition of our university and the innovation and the creation of the student are unbelievable.  </p>
+                      <p class="Activity-Content">Celebrate in ~<span class="month"> August</span></p>
+                   </div>
+                   <div class="bottle1">
+                        <img src="pic/project show.jpg" alt="" class="image1">
+                       <img src="pic/project show4.jpg" alt="" class="image2">
+                       <img src="pic/project show2.jpg" alt="" class="image3">
+                   </div>
+                   </div>
+                   <div class="mt-8 lg:mb-24 showmyphone">
+                   <div class="bottle1 mb-8">
+                        <img src="pic/project show.jpg" alt="" class="image1">
+                       <img src="pic/project show4.jpg" alt="" class="image2">
+                       <img src="pic/project show2.jpg" alt="" class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">Project Show</p>
+                    <p class="Activity-Content">Students apply their knowledge from their acadamic learning by making projects. These different projects are showned together there and they share about their projects to the visitors to the show. This is the famous tradition of our university and the innovation and the creation of the student are unbelievable.  </p>
+                    <p class="Activity-Content">Celebrate in ~<span class="month"> August</span></p>
+                 </div>
+                   </div>
+                   
+
+                   <!--Sayar Gadaw Pwe & Awarding Ceremony-->
+               <div class="lg:flex mt-8 lg:mb-24">
+                    <div class="bottle1 mb-8">
+                        <img src="pic/sayar gadaw pwe4.jpg" alt="" class="image1">
+                        <img src="pic/sayar gadaw pwe3.jpg" alt="" class="image2">
+                        <img src="pic/sayar gadaw pwe1.jpg" alt="" class="image3">
+                    </div>
+                    <div class="bottle">
+                      <p class="Activity-Title">Awarding Ceremony</p>
+                      <p class="Activity-Content">Students and some alumni of the university pay respect to their teachers in this ceremony. And the awarding ceremony to the outstanding students is held together in this day. </p>
+                      <p class="Activity-Content">Celebrate in ~<span class="month"> September</span></p>
+                   </div>
+                   </div>
+                
+
+                   <!--Night Of YCC-->
+               <div class="lg:flex mt-8 lg:mb-24 showdesktop">
+                    <div class="bottle">
+                      <p class="Activity-Title">Night Of YCC</p>
+                      <p class="Activity-Content">This is the night party that crowded with night market of food that is no-paid and people who play firework, pyrotechnic and hot-air balloon.Famous singers and music bands are invited and relax after the final-exam.</p>
+                      <p class="Activity-Content">Celebrate in ~<span class="month"> October</span></p>
+                   </div>
+                   <div class="bottle1">
+                        <img src="pic/5 - Copy.jpg" alt="" class="image1">
+                       <img src="pic/night of ycc.jpg" alt="" class="image2">
+                       <img src="pic/night of ycc1.jpg" alt="" class="image3">
+                   </div>
+                   </div>
+                   <div class="mt-8 lg:mb-24 showmyphone">
+                   <div class="bottle1 mb-8">
+                        <img src="pic/5 - Copy.jpg" alt="" class="image1">
+                       <img src="pic/night of ycc.jpg" alt="" class="image2">
+                       <img src="pic/night of ycc1.jpg" alt="" class="image3">
+                   </div>
+                   <div class="bottle">
+                    <p class="Activity-Title">Night Of YCC</p>
+                    <p class="Activity-Content">This is the night party that crowded with night market of food that is no-paid and people who play firework, pyrotechnic and hot-air balloon.Famous singers and music bands are invited and relax after the final-exam.</p>
+                    <p class="Activity-Content">Celebrate in ~<span class="month"> October</span></p>
+                   </div>
+                   </div>
+                   
+            </section>
+            <!--Footer-->
+            <footer>
+                <div class="footerContainer">
+                    <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+                
+                    <div class="footerFlexContainer">
+                        <div class="block1">
+                            <h1>Contact Us</h1>
+                            <ul>
+                                <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                                <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                                <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                            </ul>
+                        </div>
+                        <div class="block2">
+                            <h1>Get Social With Us</h1>
+                            <div class="block2Flex">
+                                <img src="img/facebookicon.png">
+                                <img src="img/instagramicon.png">
+                                <img src="img/twittericon.png">
+                                <img src="img/googleicon.png">
+                            </div>
+                        <div class="suggest">
+                            <a href="suggest.html"><button>Suggest Us</button></a> 
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </footer>
+<!--Up Button Script-->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+</html>

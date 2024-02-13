@@ -1,0 +1,95 @@
+{
+    "student_name": "Miss Phyo Thi Khaing",
+    "date_of_birth": "May 19th 2001",
+    "student_id": "65011466",
+    "date_of_admission": "2022",
+    "date_of_graduation": "N/A",
+    "degree": "Bachelor of Engineering",
+    "major": "Software Engineering",
+    "credit": {
+        "Year, 2022-2023" : {
+            "1st Semester" : [
+                {
+                    "name": "Introduction to Calculus",
+                    "subject_id": "01006710",
+                    "credit": "3",
+                    "grade": "A"
+                },
+                {
+                    "name": "Circuits and Electronics",
+                    "subject_id": "01286111",
+                    "credit": "4",
+                    "grade": "A"
+                },
+                {
+                    "name": "Elementary Systems Programming",
+                    "subject_id": "01286120",
+                    "credit": "4",
+                    "grade": "C"
+                },
+                {
+                    "name": "Computer Programming",
+                    "subject_id": "01286121",
+                    "credit": "4",
+                    "grade": "B"
+                },
+                {
+                    "name": "Digital Intelligence Quotient",
+                    "subject_id": "96641002",
+                    "credit": "3",
+                    "grade": "S"
+                },
+                {
+                    "name": "Introduction To Logic",
+                    "subject_id": "96642170",
+                    "credit": "3",
+                    "grade": "B+"
+                }
+            ],
+            "2nd Semester" : [
+                {
+                    "name": "Differential Equations",
+                    "subject_id": "01006717",
+                    "credit": "3",
+                    "grade": "A"
+                },
+                {
+                    "name": "Discrete Mathematics",
+                    "subject_id": "01006718",
+                    "credit": "3",
+                    "grade": "A"
+                },
+                {
+                    "name": "Digital System Fundamentals",
+                    "subject_id": "01286112",
+                    "credit": "4",
+                    "grade": "A"
+                },
+                {
+                    "name": "Object-Oriented Programming",
+                    "subject_id": "01286131",
+                    "credit": "4",
+                    "grade": "A"
+                },
+                {
+                    "name": "Charm School",
+                    "subject_id": "96641001",
+                    "credit": "2",
+                    "grade": "S"
+                },
+                {
+                    "name": "Sports and Recreational Activities",
+                    "subject_id": "96641003",
+                    "credit": "1",
+                    "grade": "S"
+                },
+                {
+                    "name": "Technical Writing",
+                    "subject_id": "96644034",
+                    "credit": "3",
+                    "grade": "A"
+                }
+            ]
+        }
+    }
+}

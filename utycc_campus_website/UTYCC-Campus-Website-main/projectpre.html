@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRE Projects</title>
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/projectpre.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <style>
+        body{
+            width: 100%;
+            margin: 0px auto;
+        }
+        main{
+            width: 100%;
+            background-color: white;
+        }
+        .footer{
+  width: 100%;
+  
+  background-image: linear-gradient(to bottom,rgb(204, 205, 206), rgb(201, 203, 204));
+  color: black;
+  opacity: 0.8;
+  /*background-image: linear-gradient(to right,#6dc0f2 , #0092cc);*/
+  
+}
+.footer p{
+ 
+  font-size: 17px;
+  
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  
+}
+
+.footer-1-sec{
+  width: 50%;
+  text-align: left;
+  
+  
+}
+.footer-2-sec{
+  width:50%;
+  text-align: right;
+
+   
+}
+.footer-2-sec img{
+ 
+  margin-top: 30px;
+  margin-bottom: 15px;
+text-align: right;
+
+
+}
+.footer-3-sec{
+  width: 60%;
+  
+  text-align: center;
+ 
+  font-size: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-style: italic;
+  padding-bottom: 10px;
+  color:black;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding-top: 10px;
+}
+.Suggest-button{
+  margin-top: 30px;
+  border: 2px solid ;
+   border-radius: 10px;
+   
+}
+    </style>
+</head>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+<body>
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+    <main>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" style="width:30px"></button>
+             <div class="title">
+                <img src="graphic/projectnavigatepre-01.png">
+                <h1>Projects of<br><span>Precision Engineering<br><span>Department</span></span></h1>
+                <a href="project.html"><button class="previousButton">Previous</button></a>
+            </div>
+            
+            <div class="dataContainer">
+                <h1>Second Year</h1>
+                <div class="data">
+
+                        <details class="detailsTilte">
+                                <summary>Color Sorting Machine</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Color sorting machines (called color sorters) separate items according to their colors. We use belt-type color sorting machine because it makes the transmission smooth and stable, it breaks small percentage of materials.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">12V DC motor, Arduino UNO, Servo motor, color sensor, Conveyor frame</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <p class="detailsParagraph">This project aim is to separate the color precisely by reducing the human resource, improve product quality and add social benefits. And then, it can save a lot of time. If we use the workers in sorting area, they were being bored and disappointed on their work. Instead of using workers, we can place the Color Sorting Machine.</p>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Controllable Cleaning Machine</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">The controllable Cleaning Machine is very much useful in cleaning floors in our daily life. It cleans the floor with liquid soap: size is portable as we can transfer from one place to another easily.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Power supply (12V Li-Po Battery), Motors, Motor driver, Arduino UNO, Bluetooth module, Servo motor, Ultrasonic sensor.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To beautify the floor</li>
+                                                <li>To save man power</li>
+                                                <li>Low maintenance and easy to operate.</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Rain Sensing Automatic Clothes Hanger</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Humans are not been at home most of the hour. We have washing machines to wash and can dry clothes but no time to keep them when there is rain. We should have more effective device. So “The Rain Sensing Automatic Clothes Hanger” will solve this problem.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Arduino UNO, Rain Drop Module, Limit switches, 12V Motor, clothes hanger</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To reduce the odor and damage of the clothes</li>
+                                                    <li>To alleviate human power and work</li>
+                                                    <li>To reduce clothes keeping time</li>
+                                                    <li>To dry the clothes naturally by sun</li>   
+                                                </ul>
+                                    </details>
+
+
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Third Year</h1>
+                <div class="data">
+
+                        <details class="detailsTilte">
+                                <summary>Automatic Box Transporting Mechanism</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">This project aims for the utilization of kinematic synthesis to fabricate a working physical model of link transporting mechanism. The box transporting mechanism, operated with crank and links arrangement.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">Box moving mechanism, DC motor, slider crank mechanism</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <p class="detailsParagraph">The aim of this project is to fabricate the box transporting mechanism, which can make easier to move boxes form on section to another while processing in the factories, In the workstation, an assembly line in order to obtain the required production rate and to achieve a minimum amount of idle time. The objective is to understand project planning and execution and understand the usage of various mechanical machines tools.</p>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Automatic Wall Painting Machine</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">In this first moving life construction is growing rapidly, the insufficient labors come to be a problem. For this purpose, automation robots are widely used. Despite the advances in the robots and its wide spreading applications, painting is also considered to be the difficult process. So that automation in painting was introduced.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Painting Arm, Motors, Arduino Board</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <p class="detailsParagraph">The primary aim of the project is to design, develop automatic wall painting machine which helps to achieve low cost equipment and safety. The actual target for development of this machine is to be usable in various places such as on walls of civil structures.</p>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>Design & Fabrication of Lever Operated Pesticide Sprayer</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Lever operated sprayer is used to spray pesticides and fertilizers by using four bars link mechanism. This phenomenon will perform spraying at maximum rate in minimum time.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Plunger, Sprocket and Chain, 4Bars Link Mechanism, Nozzle, Trigger</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To save time & human effort</li>
+                                                    <li>To increase efficiency</li>
+                                                    <li>To improve the quality of spraying pesticides</li>
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Four-ways Hacksaw Machine</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">The hacksaw machines are so precise that they cay cut four metal bars simultaneously with a minimum time. But they can only cut rods of same material at a time. It is used to achieve mass production for maximum profit in companies.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">DC Motor, Chain Gear, Crank, Slider, Hacksaw Blades, Vices</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <p class="detailsParagraph">We can operate the four hacksaws at the same time. Aim of this project is to cut lots of materials during a short time. The main objective of this project is to reduce man power and operation time for cutting materials in order to achieve high productions.</p>
+                                        </details>
+
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Fourth Year</h1>
+                <div class="data">
+
+                        <details class="detailsTilte">
+                                <summary>AUTOMATIC CAR PARKING SYSTEM</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">A car parking system is a mechanical device that multiplies parking capacity inside a parking lot. Car parking systems may be traditional or automated. But, automated car parking systems reduce a large area of parking spaces.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">Pinion and rack gear, Stepper motor, DC mortor</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To save time, money and space</li>
+                                            <li>To simplify the often tedious task of packing.</li>
+                                            <li>To save men power</li>
+                                            <li>To reduce accident by parking</li>   
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Automatic Seed Sowing Robot</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">Automatic seed sowing robot is produced to avoid the drawbacks. It is ahead to produce much-production of vegetables. It is produced which has very less cost. And the unskilled farmers can easily operate automatic seed sowing system because of using ardunio. It is very useful machine for farmers.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Ardunio, Seed metering mechanism, plough, 12V DC motor</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To reduce time and human power by using Ardunio Bluetooth Module</li>
+                                                <li>To plough and sowing without human force.</li>
+                                                <li>To adjust the plough depending upon the desire area.</li>
+                                                <liTo control the seed sowing robot within the 100mm</li>   
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>CNC Cake Decoration Machine</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">What is cake decoration process?<br>
+                                                        Cake decorating is one of the sugar arts that use icing or frosting and other edible decorative elements to make plain cakes more visually interesting. Cakes are decorated to mark a celebration (such as birthday or wedding) . So cake decorating is also essential for social occasion. It’s not only a delicious component of any treat, it is also responsible for maintaining the freshness of desserts and makes the cake more beautiful. For example, buttercreams, whipped cream, chocolate and more can be used.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">CNC, Ardunio</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <p class="detailsParagraph">The main purpose of this machine is to decorate the plain cakes. As the technology is increasing in these days, there are various machines that can help in social life. Among them, cake decorating machine may be the one. For example, this machine can be used in café and coffee shop to make cakes attractive. It can draw mostly everything we want. When it is difficult to draw by people, this machine can draw the design that give from the program.</p>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Design and Construction of Sorting Cast Iron from Waste Process</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">The global environmental awareness has resulted in an increased awareness of the use of recycle. So, this study focus on analyze of municipal solid waste by using electromagnet, sensor and hydraulic compressor compressed it into the ready to use raw metal.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">: Electromagnet, Sensor, Hydraulic Compressor</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <ul>
+                                                        <li>To reuse metal from the municipal solid waste</li>
+                                                        <li>To reduce the waste material</li>
+                                                        <li>To reduce the waste material</li>
+                                                        <li>To reduce human power in analyze the metal and non-metal</li>   
+                                                    </ul>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>DESIGN AND CONSTRUCTION OF TRASH SORTING ROBOT</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">People used various methods of waste disposal to get rid of unwanted material from the beginning of human civilization.<br>
+                                                                Nowadays, trash has become a problem in the society and the ecosystem due to the way people get rid of it. Sorting processes aim to distinguish and collect trashes according to their type. A trash sorting machine is an automatic waste sorter.
+                                                                </p>
+                                                    <p class="detailsTitle">Keywords</p>
+                                                        <p class="detailsParagraph">Sorting robot, Municipal waste, Ardunio, C programming</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <ul>
+                                                            <li>To recycle the municipal solid waste by using trash sorting robot.</li>
+                                                            <li>To analyze and sort the waste according to their waste of material types.</li>
+                                                            <li>To reduce human power by using robot arms and sensors.</li>
+                                                        </ul>
+                                            </details>
+
+                </div>
+            </div>
+
+            <div class="dataContainer">
+                <h1>Fifth Year</h1>
+                <div class="data">
+
+                        <details class="detailsTilte">
+                                <summary>Automatic Car Washing System and Recycling Water</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Today, in this modern era, automation helps us to save time and cost as well as man power. Car washing is simple activity done to keep the exterior of the car clean. In a car washing system, washing is a primary stage. This process is done manually in service-stations. This automatic car washing system minimizes the use of water, time consumption and also manpower requirement. Our car washing system is designed to recycle the used water to wash the next car.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">Automation, automatic car washing system, manually, recycle, save time</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To be automatic and to get high quality end product</li>
+                                            <li>To wash many cars in a short amount of time</li>
+                                            <li>Require less man power and reduce the waste water</li>
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Coffee Maker</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">Automatic Coffee Maker is a great application in daily life. It can be used at offices or university and self-service restaurants in our daily life. We can use automation to make coffee machine which can give different types of coffee in same taste every time.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Frame, Conveyor, Gear Motor, Pumps, Belt, Pipes, PLC, Relay, Power Supply, Sensors.</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To save time and human power</li>
+                                                <li>To decrease wastage and systematically used self-service in our life.</li>
+                                            </ul>
+                                </details>
+                                
+                                <details class="detailsTilte">
+                                        <summary>Electrical Energy Generation by Pneumatic System</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">A system to employ the wasting energy from the High-Way without damaging to the motor car tires. The system allows the vehicles to drive at the normal speed while the Slow-Down Entry Generation System has to reduce the speed of the vehicles.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Pistons, Pipes, Compressor, Pneumatic Engine, Generator, Air Injection System.</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To produce electrical energy from the potential energy of the vehicle</li>
+                                                    <li>To study the Pneumatic System</li>
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>Maze Robot</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">One of the simplest ways to solving a maze with a robot is by using the Wall Follower algorithm, also known as the left hand rule (or right hand rule). First, ultrasonic sensors sense the wall and inform the Arduino and the Arduino drives the dc motor.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">Arduino, sensors, dc motors</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <p class="detailsParagraph">The purpose of maze robot is finding its way through any type of maze. Objectives are to understand and implement the wall follower and flood fill algorithm, ultrasonic sensor and Arduino based hardware.</p>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>Vacuum Gripper Robot (Mobile Screen Adhesion)</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">A vacuum cup gripper is an essential end effectors tool of a robotic system. It serves as the robot’s hand and allows the robot to manipulate objects for proper safely gripping.</p>
+                                                    <p class="detailsTitle">Keywords</p>
+                                                        <p class="detailsParagraph">Robot, Vacuum cup gripper, Material composition, Gripping techniques</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <p class="detailsParagraph">Vacuum gripper can be used in many materials handling application. The main objective is to highlights the importance of vacuum cup universal gripper in industrial robot application. They must be designed more likely as human hand, both in their sensory and control capabilities.</p>
+                                            </details>
+            </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

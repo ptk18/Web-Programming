@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Union Form</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/nav1.css">
+    <style>
+        .for80{
+            width: 80%;
+        }
+        .formargin{
+            margin-left: 400px;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+.button_container {
+	top: 0;
+  
+}
+
+.description, .link {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.description {
+	font-size: 35px;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #fff;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btn span {
+  position: relative; 
+  z-index: 1;
+}
+#button1:hover span{
+  color: white;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #0092cc;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+ 
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #fff;
+  font-size: 25px; 
+}
+#button1{
+  margin-left: -1050px;
+    margin-top: 20px;
+}
+.forcolor{color:#0092cc;}
+     .forhover:hover
+     {
+                color:white;
+                background-color: #0092cc;
+    }
+    </style>
+</head>
+<body class="bg-gray-200">
+  <!--=======================Start Pre Button============================-->
+        <div id="button1">
+                <div class="button_container">
+                    <a href="yccsu.html">
+                    <button class="btn"><span>Back</span></button>
+                    </a>
+                </div>
+        </div>
+   <!--=======================End Pre Button============================-->
+
+
+
+   <!--=======================Start Title=================================-->
+    <div class=" for80 flex mx-auto mt-10" >
+        <div class="w-1/4 border shadow-xl" style="justify-content: space-between;"><img src="img/regist.jpg" alt=""></div><div class="w-2/4 text-5xl font-semibold forcolor" style="text-align: center; padding-top: 50px;">Union Register Form</div><div class="w-1/4 border shadow-xl"><img src="img/regist.jpg" alt=""></div>
+    </div>
+    <!--======================End Title====================================-->
+
+
+
+    <!--=======================Start personal Info==========================-->
+    <div class="for80 mx-auto mt-16 ">
+          <div class="formargin">
+                <label for="name" class="mr-4">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </label><input type="text" name="usr" id="usr"  class="border-2 border-blue-700"><br><br>
+			<label for="name" class="mr-4">NRC No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label><input type="text" name="nrc" id="nrc" class="border-2 border-blue-700" ><br><br>
+			<label for="name" class="mr-4">Roll No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label><input type="text" name="roll" id="roll" class="border-2 border-blue-700" ><br><br>
+			<label for="name" class="mr-4">Ph No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label><input type="text" name="ph" id="ph" class="border-2 border-blue-700" ><br><br>
+			<label for="name" class="mr-4">Hostel Name: </label><input type="text" name="hostel" id="hostel" class="border-2 border-blue-700"><br><br>
+          </div>
+    </div>
+    <!--=======================End personal Info==========================-->
+
+
+    <!--=======================Start date email section==========================-->
+    <div class="for80 mx-auto">
+            <FIELDSET class="py-10 mt-10" style="border: 3px solid  #ccc;">
+                    <div class="mx-8">
+                            <div class="flex justify-between">
+                                    <label>Date of Birth : <input type="text" name="Birth" id="Birth"class="border-2 border-blue-700"></label>
+  
+                                    <label>E-mail : <input type="text" name="E_mail" id="E_mail"class="border-2 border-blue-700"></label>
+                            </div><br><br>
+                            <div class="flex justify-between" >
+                                    <label>Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:	<input type="checkbox" name="yn1" id="yes" value="yes" >&nbsp;Male &nbsp;&nbsp;&nbsp;
+                                        <input type="checkbox" name="yn2" id="no" value="no">&nbsp;Female</label>
+                                   <label>Started Year of University: <input type="text" name="year" id="year" class="border-2 border-blue-700"></label>
+                            </div>
+                    </div>
+                </FIELDSET>
+    </div>
+     <!--=======================End date email section==========================-->
+
+      <!--=======================Start Perticipate==========================-->
+    <div class="for80 mx-auto mt-10">
+			<div class="">
+                    <label>Hobbies : <input type="text" name="hobby" size="54" class="border-2 border-blue-700"></label><br><br>
+                    <div class="">
+                            <label>
+                                    Paticipated activities in university life time :<br><br>
+                                    <input type="text" name="activities" class="border-2 border-blue-700">
+                                    </label><br><br>
+                                <label>
+                                    Paticipated society in university life time :<br><br>
+                                    <input type="text" name="society" class="border-2 border-blue-700">
+                                    </label><br><br>
+                    </div>
+            </div>
+			<div class="">
+                    <label>
+                            Can you do this activities as a volunteer?(at least two choice) : <br><br>
+                            <input type="checkbox" name="yn3" id="yn3" value="yes" >&nbsp;Fresher Welcome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="yn4" id="yn4" value="yes">&nbsp;Convocation dinner
+                            <br><br>
+                            <input type="checkbox" name="yn5" id="yn5" value="yes" >&nbsp;Cyber Thingyan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="yn6" id="yn6" value="yes" >&nbsp;Night of YCC<br><br>
+                            <input type="checkbox" name="yn7" id="yn7" value="yes">&nbsp;Kahtane&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="yn8" id="yn8" value="yes" >&nbsp;Warso<br><br>
+                            <input type="checkbox" name="yn" id="yn" value="yes">&nbsp;raniy festivals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="yn9" id="yn9" value="yes" >&nbsp;Teacher respect<br><br>
+                            <input type="checkbox" name="yn10" id="yn10" value="yes">&nbsp;Book debate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <input type="checkbox" name="yn11" id="yn11" value="yes">&nbsp;Others
+                        </label><br><br>
+           
+			<label>
+				Your purpose  :<br><br>
+				<input type="text" name="purpose" class="border-2 border-blue-700">
+            </label><br><br>
+        </div>
+    </div>
+     <!--=======================End Perticipate===============================-->
+
+
+    <!------------------------start join button--------------------------->
+     <div class=" mt-10 mb-10 w-full " >
+        <div class=" text-2xl w-1/4" style="margin: auto; text-align:center;"><button onclick="alert('Your imformation is\n Successfully submitted')" class="px-5 py-2 mx-auto border-2 border-blue-700 rounded-lg forhover">Join Union</button> </div>
+    </div>
+    <!------------------------------end join button-------------->        
+</body>
+</html>

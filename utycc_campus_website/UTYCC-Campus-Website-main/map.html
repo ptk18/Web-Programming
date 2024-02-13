@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAP</title>
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <style>
+        body{
+            width: 100%;
+            margin: 0px auto;
+        }
+        main{
+            width: 100%;
+            background-color: white;
+        }
+        .footer{
+  width: 100%;
+  
+  background-image: linear-gradient(to bottom,rgb(204, 205, 206), rgb(201, 203, 204));
+  color: black;
+  opacity: 0.8;
+  /*background-image: linear-gradient(to right,#6dc0f2 , #0092cc);*/
+  
+}
+.footer p{
+ 
+  font-size: 17px;
+  
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  
+}
+
+.footer-1-sec{
+  width: 50%;
+  text-align: left;
+  
+  
+}
+.footer-2-sec{
+  width:50%;
+  text-align: right;
+
+   
+}
+.footer-2-sec img{
+ 
+  margin-top: 30px;
+  margin-bottom: 15px;
+text-align: right;
+
+
+}
+.footer-3-sec{
+  width: 60%;
+  
+  text-align: center;
+ 
+  font-size: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-style: italic;
+  padding-bottom: 10px;
+  color:black;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding-top: 10px;
+}
+.Suggest-button{
+  margin-top: 30px;
+  border: 2px solid ;
+   border-radius: 10px;
+   
+}
+        
+    </style>
+</head>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+<body>
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+        <!-- ------------------------------------------------------nav----------------------------------------------------------------------- -->
+    <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" ></button>
+        <img class="titleImg" src="graphic/maptt.png" alt="maptitle">
+        <h1 class="titleText">Navigate to everywhere inside UTYCC Campus</h1>
+        
+        <div class="sectionButton">
+            <a href="#mainbuilding"><button>Main Building</button></a>
+            <a href="#lecturebuilding"><button>Lecture Building</button></a>
+            <a href="#laboratory"><button>Laboratory</button></a>
+        </div>
+        <section id="mainbuilding" >
+            <div class="selectContainer">
+                <h1>Main Building</h1>
+                <img src="graphic/map/rectoroffie-01.png" class="sampleImg">
+                <div class="selectContainerCathegory">
+                    <div>
+                        <h3>Office: </h3>
+                    </div>
+                    <ul>
+                        <li><a href="graphic/map/rectoroffie-01.png">Rector Office</a><span><img src="graphic/map/rectoroffie-01.png"></span></li>
+                        <li><a href="graphic/map/prorectoroffice-01.png">Pro Rector Office</a><span><img src="graphic/map/prorectoroffice-01.png"></span></li>
+                        <li><a href="graphic/map/studentaffairoffice-01.png">Student Affair Office</a><span><img src="graphic/map/studentaffairoffice-01.png"></span></li>
+                        <li><a href="graphic/map/qmsoffice-01.png">QMS Office</a><span><img src="graphic/map/qmsoffice-01.png"></span></li>
+                    </ul>
+                </div>
+
+                <div class="selectContainerCathegory">
+                        <div>
+                            <h3>Faculties: </h3>
+                        </div>
+                        <ul>
+                            <li><a href="graphic/map/ictfaculty-01.png">ICT</a><span><img src="graphic/map/ictfaculty-01.png"></span></li>
+                            <li><a href="graphic/map/ecefaculty-01.png">ECE</a><span><img src="graphic/map/ecefaculty-01.png"></span></li>
+                            <li><a href="graphic/map/prefaculty-01.png">PRE</a><span><img src="graphic/map/prefaculty-01.png"></span></li>
+                            <li><a href="graphic/map/amefaculty-01.png">AME</a><span><img src="graphic/map/amefaculty-01.png"></span></li>
+                        </ul>
+                    </div>
+
+                <div class="selectContainerCathegory">
+                        <div>
+                            <h3>Departments: </h3>
+                        </div>
+                        <ul>
+                            <li><a href="graphic/map/ictfaculty-01.png">IS(ICT faculty)</a><span><img src="graphic/map/ictfaculty-01.png"></span></li>
+                            <li><a href="graphic/map/cedepartment-01.png">CE</a><span><img src="graphic/map/cedepartment-01.png"></span></li>
+                            <li><a href="graphic/map/ecefaculty-01.png">ECE(ECE faculty)</a><span><img src="graphic/map/ecefaculty-01.png"></span></li>
+                            <li><a href="graphic/map/prefaculty-01.png">PRE(PRE faculty)</a><span><img src="graphic/map/prefaculty-01.png"></span></li>
+                            <li><a href="graphic/map/amefaculty-01.png">AME(AME faculty)</a><span><img src="graphic/map/amefaculty-01.png"></span></li>
+                            <li><a href="graphic/map/myanmardepartment-01.png">Myanmar</a><span><img src="graphic/map/myanmardepartment-01.png"></span></li>
+                            <li><a href="graphic/map/englishdepartment-01.png">English</a><span><img src="graphic/map/englishdepartment-01.png"></span></li>
+                            <li><a href="graphic/map/mathsdepartment-01.png">Mathematics</a><span><img src="graphic/map/mathsdepartment-01.png"></span></li>
+                            <li><a href="graphic/map/physicsdepartment-01.png">Physics and Chemistry</a><span><img src="graphic/map/physicsdepartment-01.png"></span></li>
+                            <li><a href="graphic/map/finance-01.png">Finance</a><span><img src="graphic/map/finance-01.png"></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="selectContainerCathegory">
+                            <div>
+                                <h3>MB-: </h3>
+                            </div>
+                            <ul>
+                                <li><a href="graphic/map/mb-101-01.png">10-1</a><span><img src="graphic/map/mb-101-01.png"></span></li>
+                                <li><a href="graphic/map/mb-102-01.png">10-2</a><span><img src="graphic/map/mb-102-01.png"></span></li>
+                                <li><a href="graphic/map/mb-103-01.png">10-3</a><span><img src="graphic/map/mb-103-01.png"></span></li>
+                                <li><a href="graphic/map/mb-104-01.png">10-4</a><span><img src="graphic/map/mb-104-01.png"></span></li>
+                                <li><a href="graphic/map/mb-201-01.png">20-1</a><span><img src="graphic/map/mb-201-01.png"></span></li>
+                                <li><a href="graphic/map/mb-202-01.png">20-2</a><span><img src="graphic/map/mb-202-01.png"></span></li>
+                                <li><a href="graphic/map/mb-203-01.png">20-3</a><span><img src="graphic/map/mb-203-01.png"></span></li>
+                                <li><a href="graphic/map/mb-204-01.png">20-4</a><span><img src="graphic/map/mb-204-01.png"></span></li>
+                                <li><a href="graphic/map/mb-205-01.png">20-5</a><span><img src="graphic/map/mb-205-01.png"></span></li>
+                                <li><a href="graphic/map/mb-206.png"   >20-6</a><span><img src="graphic/map/mb-206.png"   ></span></li>
+                                <li><a href="graphic/map/mb-207-01.png">20-7</a><span><img src="graphic/map/mb-207-01.png"></span></li>
+                                <li><a href="graphic/map/mb-208-01.png">20-8</a><span><img src="graphic/map/mb-208-01.png"></span></li>
+                            </ul>
+                        </div>
+
+                        <div class="selectContainerCathegory">
+                                <div>
+                                    <h3>Other: </h3>
+                                </div>
+                                <ul>
+                                    <li><a href="graphic/map/convohall-01.png">Convaocation Hall</a><span><img src="graphic/map/convohall-01.png"></span></li>
+                                    <li><a href="graphic/map/computerlab1-01.png">Computer Lab</a><span><img src="graphic/map/computerlab1-01.png"></span></li>
+                                    <li><a href="graphic/map/networklab-01.png">Network Lab</a><span><img src="graphic/map/networklab-01.png"></span></li>
+                                    <li><a href="graphic/map/mobilelab1-01.png">Mobile Lab I</a><span><img src="graphic/map/mobilelab1-01.png"></span></li>
+                                    <li><a href="graphic/map/mobilelab2-01.png">Mobile Lab II</a><span><img src="graphic/map/mobilelab2-01.png"></span></li>
+                                    <li><a href="graphic/map/seminarroom-01.png">Seminar Room I</a><span><img src="graphic/map/seminarroom-01.png"></span></li>
+                                    <li><a href="graphic/map/seminarroom-2-01.png">seminarroom-2-01</a><span><img src="graphic/map/seminarroom-2-01.png"></span></li>
+                                    <li><a href="graphic/map/meetingroom-01.png">Meeting Room</a><span><img src="graphic/map/meetingroom-01.png"></span></li>
+                                    <li><a href="graphic/map/library-01.png">Library</a><span><img src="graphic/map/library-01.png"></span></li>
+                                    <li><a href="graphic/map/pyarkhan-01.png">Payar Khan</a><span><img src="graphic/map/pyarkhan-01.png"></span></li>
+                                    <li><a href="graphic/map/languagelab-01.png">Language Lab</a><span><img src="graphic/map/languagelab-01.png"></span></li>
+
+                                </ul>
+                            </div>
+ 
+            </div>
+            <hr>
+        </section>
+        <section id="lecturebuilding" >
+                <div class="selectContainer">
+                    <h1>Lecture Building</h1>
+                    <img src="graphic/map/lb-1-01-01.png" class="sampleImg1">
+                    
+                    <div class="selectContainerCathegory">
+                        <div>
+                            <h3>LB1-: </h3>
+                        </div>
+                        <ul class="hoverImg1">
+                            <li><a href="graphic/map/lb-1-01-01.png">01</a><span><img src="graphic/map/lb-1-01-01.png"></span></li>
+                            <li><a href="graphic/map/lb-1-102-01.png">02</a><span><img src="graphic/map/lb-1-102-01.png"></span></li>
+                            <li><a href="graphic/map/lb-1-03-01.png">03</a><span><img src="graphic/map/lb-1-03-01.png"></span></li>
+                            <li><a href="graphic/map/lb-1-11-01.png">11</a><span><img src="graphic/map/lb-1-11-01.png"></span></li>
+                            <li><a href="graphic/map/lb-1-12-01.png">12</a><span><img src="graphic/map/lb-1-12-01.png"></span></li>
+                            <li><a href="graphic/map/lb-1-13-01.png">13</a><span><img src="graphic/map/lb-1-13-01.png"></span></li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="selectContainerCathegory">
+                            <div>
+                                <h3>LB2-: </h3>
+                            </div>
+                            <ul class="hoverImg1">
+                                <li><a href="graphic/map/lb-2-01-01.png">01</a><span><img src="graphic/map/lb-2-01-01.png"></span></li>
+                                <li><a href="graphic/map/lb-2-02-01.png">02</a><span><img src="graphic/map/lb-2-02-01.png"></span></li>
+                                <li><a href="graphic/map/lb-2-03-01.png">03</a><span><img src="graphic/map/lb-2-03-01.png"></span></li>
+                                <li><a href="graphic/map/lb-2-11-01.png">11</a><span><img src="graphic/map/lb-2-11-01.png"></span></li>
+                                <li><a href="graphic/map/lb-2-12-01.png">12</a><span><img src="graphic/map/lb-2-12-01.png"></span></li>
+                                <li><a href="graphic/map/lb-2-13-01.png">13</a><span><img src="graphic/map/lb-2-13-01.png"></span></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="selectContainerCathegory">
+                                <div>
+                                    <h3>LB3-: </h3>
+                                </div>
+                                <ul class="hoverImg1">
+                                    <li><a href="graphic/map/lb-3-01-01.png">01</a><span><img src="graphic/map/lb-3-01-01.png"></span></li>
+                                    <li><a href="graphic/map/lb-3-02-01.png">02</a><span><img src="graphic/map/lb-3-02-01.png"></span></li>
+                                    <li><a href="graphic/map/lb-3-03-01.png">03</a><span><img src="graphic/map/lb-3-03-01.png"></span></li>
+                                    <li><a href="graphic/map/lb-3-11-01.png">11</a><span><img src="graphic/map/lb-3-11-01.png"></span></li>
+                                    <li><a href="graphic/map/lb-3-12-01.png">12</a><span><img src="graphic/map/lb-3-11-01.png"></span></li>
+                                    <li><a href="graphic/map/lb-3-13-01.png">13</a><span><img src="graphic/map/lb-3-13-01.png"></span></li>
+                                </ul>
+                                
+                        </div>
+
+                            <div class="selectContainerCathegory">
+                                    <div>
+                                        <h3>LB4-: </h3>
+                                    </div>
+                                    <ul class="hoverImg1">
+                                        <li><a href="graphic/map/lb-4-01-01.png">01</a><span><img src="graphic/map/lb-4-01-01.png"></span></li>
+                                        <li><a href="graphic/map/lb-4-02-01.png">02</a><span><img src="graphic/map/lb-4-02-01.png"></span></li>
+                                        <li><a href="graphic/map/lb-4-03-01.png">03</a><span><img src="graphic/map/lb-4-03-01.png"></span></li>
+                                        <li><a href="graphic/map/lb-4-11-01.png">11</a><span><img src="graphic/map/lb-4-11-01.png"></span></li>
+                                        <li><a href="graphic/map/lb-4-12-01.png">12</a><span><img src="graphic/map/lb-4-12-01.png"></span></li>
+                                        <li><a href="graphic/map/lb-4-13-01.png">13</a><span><img src="graphic/map/lb-4-13-01.png"></span></li>
+                                    </ul>
+                                    
+                                </div>
+
+                    <div class="selectContainerCathegory">
+                            <div>
+                                <h3>Other: </h3>
+                            </div>
+                            <ul class="hoverImg1">
+                                <li><a href="graphic/map/su-01.png">Student Union</a><span><img src="graphic/map/su-01.png"></span></li>
+                                <li><a href="graphic/map/postoffice-01.png">Post Office</a><span><img src="graphic/map/postoffice-01.png"></span></li>
+                                <li><a href="graphic/map/storeroom-01.png">Store Room</a><span><img src="graphic/map/storeroom-01.png"></span></li>
+                            </ul>
+                            </div>
+                </div>
+            </section>
+            <section id="laboratory">
+                <div class="selectContainerlb">
+                    <div>
+                        <h1>Laboratory</h1>
+
+                        <img src="graphic/map/hardwarelab-01-01.png" class="sampleImg2">
+                        <br><br>
+                    <div class="selectContainerCathegorylb">
+                            <div>
+                                    <h3>Lab1-: </h3>
+                            </div>
+                            <ul class="hoverImg2">
+                                <li><a href="graphic/map/hardwarelab-01-01.png">01(Hardware Lab)</a><span><img src="graphic/map/hardwarelab-01-01.png"></span></li>
+                                <li><a href="graphic/map/lab-1-02-01.png">02</a><span><img src="graphic/map/lab-1-02-01.png"></span></li>
+                                <li><a href="graphic/map/lab-1-03-01.png">03</a><span><img src="graphic/map/lab-1-03-01.png"></span></li>
+                                <li><a href="graphic/map/softwarelab-01.png">11(Software Lab)</a><span><img src="graphic/map/softwarelab-01.png"></span></li>
+                                <li><a href="graphic/map/lab-1-12-01.png">12</a><span><img src="graphic/map/lab-1-12-01.png"></span></li>
+                                <li><a href="graphic/map/lab-1-13-01.png">13</a><span><img src="graphic/map/lab-1-13-01.png"></span></li>
+                            </ul>
+
+                    </div>
+                    <div class="selectContainerCathegory">
+                            <div>
+                                    <h3>Lab2-: </h3>
+                            </div>
+                            <ul class="hoverImg2">
+                                    <li><a href="graphic/map/lab-2-01-01.png">01(Communication Lab)</a><span><img src="graphic/map/lab-2-01-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-2-02-01.png">02(Control Lab)</a><span><img src="graphic/map/lab-2-02-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-2-03-01.png">03(Electronic Lab)</a><span><img src="graphic/map/lab-2-03-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-2-11-01.png">11(Maker Space)</a><span><img src="graphic/map/lab-2-11-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-2-12-01.png">12(Computer Lab II)</a><span><img src="graphic/map/lab-2-12-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-2-13-01.png">13(Computer Lab III)</a><span><img src="graphic/map/lab-2-13-01.png"></span></li>
+                            </ul>
+
+                    </div>
+                    <div class="selectContainerCathegory">
+                            <div>
+                                    <h3>Lab3-: </h3>
+                            </div>
+                            <ul class="hoverImg2">
+                                    <li><a href="graphic/map/lab-3-01-01.png">01(PLC Robotic Lab)</a><span><img src="graphic/map/lab-3-01-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-3-02-01.png">02(Pneumatic Lab)</a><span><img src="graphic/map/lab-3-02-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-3-03-01.png">03(Hydraulic Lab)</a><span><img src="graphic/map/lab-3-03-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-3-11-01.png">11(Measurement Lab)</a><span><img src="graphic/map/lab-3-11-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-3-12-01.png">12(Chemistry Lab)</a><span><img src="graphic/map/lab-3-12-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-3-13-01.png">13(Creative Lab)</a><span><img src="graphic/map/lab-3-13-01.png"></span></li>
+                            </ul>
+
+                    </div>
+                    <div class="selectContainerCathegory">
+                            <div>
+                                    <h3>Lab4-: </h3>
+                            </div>
+                            <ul class="hoverImg2">
+                                    <li><a href="graphic/map/lab-4-01-01.png">01(CM Lab)</a><span><img src="graphic/map/lab-4-01-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-4-02-01.png">02(SM Lab)</a><span><img src="graphic/map/lab-4-02-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-4-03-01.png">03(Physics Lab)</a><span><img src="graphic/map/lab-4-03-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-4-11-01.png">11(Pyrometallurgy Lab)</a><span><img src="graphic/map/lab-4-11-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-4-12-01.png">12(MP lab)</a><span><img src="graphic/map/lab-4-12-01.png"></span></li>
+                                    <li><a href="graphic/map/lab-4-13-01.png">13(Computer Lab IV)</a><span><img src="graphic/map/lab-4-13-01.png"></span></li>
+
+                    </div>
+                </div>
+                
+            </section>
+<br><br>
+
+
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

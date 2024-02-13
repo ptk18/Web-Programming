@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CE Projects</title>
+    <link rel="stylesheet" href="css/nav1.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/projectce.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <style>
+        body{
+            width: 100%;
+            margin: 0px auto;
+        }
+        main{
+            width: 100%;
+            background-color: white;
+        }
+        .footer{
+  width: 100%;
+  
+  background-image: linear-gradient(to bottom,rgb(204, 205, 206), rgb(201, 203, 204));
+  color: black;
+  opacity: 0.8;
+  /*background-image: linear-gradient(to right,#6dc0f2 , #0092cc);*/
+  
+}
+.footer p{
+ 
+  font-size: 17px;
+  
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  
+}
+
+.footer-1-sec{
+  width: 50%;
+  text-align: left;
+  
+  
+}
+.footer-2-sec{
+  width:50%;
+  text-align: right;
+
+   
+}
+.footer-2-sec img{
+ 
+  margin-top: 30px;
+  margin-bottom: 15px;
+text-align: right;
+
+
+}
+.footer-3-sec{
+  width: 60%;
+  
+  text-align: center;
+ 
+  font-size: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-style: italic;
+  padding-bottom: 10px;
+  color:black;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding-top: 10px;
+}
+.Suggest-button{
+  margin-top: 30px;
+  border: 2px solid ;
+   border-radius: 10px;
+   
+}
+    </style>
+</head>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+<body>
+    <!--================start nav for phone===============-->
+    <div class=" block md:hidden">
+        <div class="flex items-center justify-between w-full  ">
+           
+            <div class=" font-semibold  flex ml-4 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor sm:text-3xl text-2xl italic md:text-5xl ">UTYCC</span> <span class="text-xl sm:text-2xl " style="color:#666;">CAMPUS</span></h1></div>
+               <div class="w-1/6 sm:w-1/5 " onclick="openNav()"><img class="w-1/3 sm:w-1/4 ml-4 sm:ml-20" src="img/threeline.png" alt=""> </div>
+        </div>
+        <nav class="text-lg font-semibold sidenav " id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn font-thin" onclick="closeNav()">&times;</a>
+                    <ul class="block   ">
+                        <div class="pl-8 my-4"><a href="index.html">Home</a> </div>
+                        <div class="pl-8 my-4"><a href="bio.html">Bio</a></div>
+                        <div id="aa" class="campus my-4"> <span class="flex  items-center pl-8">Campus<img class="navimg mt-2 ml-2" src="img/downarrow.png" alt=""></span>
+    
+                            <div class="campusbox hidden z-20 mt-2">
+                                <ul class="font-normal" style="font-size: 15px;">
+                                    <a href="fresher.html"><li class=" pb-2 pl-12">Fresher</li></a>
+                                    <a href="newspage1.html"><li class=" pb-2 pl-12">News</li></a>
+                                    <a href="courses.html"><li class="pb-2   pl-12">Courses</li></a>
+                                    <a href="canteen.html"><li class="pb-2  pl-12">Canteen</li></a>
+                                    <a href="newdepartment.html"><li class="pb-2  pl-12">Faculties & Departments</li></a>
+                                    <a href="book/bookindex.html"><li class="pb-2  pl-12">Curriculum</li></a>
+                                    <a href="map.html"><li class="pb-2  pl-12">Map</li></a>
+                                    <a href="timetable.html"><li class="pb-2 pl-12  ">Timetables</li></a>
+                                    <a href="project.html"><li class="pb-2  pl-12">Projects</li></a>
+                                    <a href="Activity.html"><li class="pb-2 pl-12 ">Activities</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="org my-4"><span class="flex items-center pl-8">Organization<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="orgbox hidden z-20">
+                                <ul class="font-normal mt-2 "style="font-size: 15px;">
+                                    <a href="redcross/rc1.html"><li class= "pb-2 pl-12 ">Redcross</li></a>
+                                    <a href="yccsu.html"><li class="pb-2 pl-12  ">Students' Union</li></a>
+                                    <a href="club1.html"><li class="pb-2 pl-12 ">Clubs</li></a>
+                                    <a href="family.html"><li class="pb-2 pl-12 ">Families</li></a>
+                                    <a href="marchingband.html"><li class="pb-2 pl-12">Drum & Bugle Corps</li></a>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div id="aa" class="exp my-4"><span class="flex  items-center pl-8">Explore<img class="navimg mt-2 ml-2 " src="img/downarrow.png" alt=""></span>
+    
+                            <div class="expbox hidden z-20">
+                                <ul class=" font-normal mt-4" style="font-size: 15px;">
+                                    <a href="hostel.html"><li class=" pb-2 pl-12 ">Hostels</li></a>
+                                    <a href="emergency_contact.html"><li class="pb-2 pl-12 ">Emergency Contact</li></a>
+                                    <a href="clinic1.html"><li class="pb-2 pl-12 ">Pharmacies & Clinic</li></a>
+                                    <a href="shop&restaurant.html"><li class="pb-2 pl-12">Shops and Restaurants</li></a>
+                                                
+                                </ul>
+                            </div>
+    
+                        </div>
+                       <div class="pl-8 my-4"> <a href="newaboutus.html">About us</a></div>
+                                
+                    </ul>
+        </nav>
+     </div>
+     <!--================start nav for phone===============-->
+       
+    
+    
+     <!--===============start nav for laptop==============-->
+   
+        <div class="navcontainer lg:inline-block ">
+                
+            <div class="fornav flex mx-auto justify-between items-center   border-b-2 ">
+                <div class=" font-semibold " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><span class="forcolor m-0 text-4xl italic ">UTYCC</span> <span class="text-3xl " style="color:#666;">CAMPUS</span></h1>
+                </div>
+                <div class=" text-xl">
+                    <nav>
+                        <ul class="flex justify-between inline-block">
+                            <a href="index.html" class="p-0"><button class="px-4 py-2 rounded-full hovernav">Home</button></a>
+                            <a href="bio.html"><button class="px-4 py-2 rounded-full hovernav">Bio</button></a>
+                            <button class="has-sub-menu px-4 py-2 rounded-full "> <span class="flex justify-between items-center">Campus<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="fresher.html"><li class="hovernav pb-2 border-b-2">Fresher</li></a>
+                                        <a href="newspage1.html"><li class="hovernav pb-2 border-b-2">News</li></a>
+                                        <a href="courses.html"><li class="pb-2 hovernav  border-b-2">Courses</li></a>
+                                        <a href="canteen.html"><li class="pb-2 hovernav border-b-2">Canteen</li></a>
+                                        <a href="newdepartment.html"><li class="pb-2 hovernav border-b-2">Faculties & Departments</li></a>
+                                        <a href="book/bookindex.html"><li class="pb-2 hovernav border-b-2">Curriculum</li></a>
+                                        <a href="map.html"><li class="pb-2 hovernav border-b-2">Map</li></a>
+                                        <a href="timetable.html"><li class="pb-2 hovernav border-b-2">Timetables</li></a>
+                                        <a href="project.html"><li class="pb-2 hovernav border-b-2">Projects</li></a>
+                                        <a href="Activity.html"><li class="pb-2 hovernav border-b-2">Activities</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class=" has-sub-menu px-4 py-2 rounded-full hovernav"><span class="flex justify-between items-center">Organization<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200 ">
+                                        <a href="redcross/rc1.html"><li class="hovernav pb-2 border-b-2">Redcross</li></a>
+                                        <a href="yccsu.html"><li class="pb-2 hovernav  border-b-2">Students' Union</li></a>
+                                        <a href="club1.html"><li class="pb-2 hovernav border-b-2">Clubs</li></a>
+                                        <a href="family.html"><li class="pb-2 hovernav border-b-2">Families</li></a>
+                                        <a href="marchingband.html"><li class="pb-2 hovernav ">Drum & Bugle Corps</li></a>
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <button class="px-4 py-2 rounded-full hovernav has-sub-menu"><span class="flex justify-between items-center">Explore<img class="navimg pl-2 pt-2" src="img/downarrow.png" alt=""></span>
+    
+                                <div class="sub-menu-container z-20">
+                                    <ul class="sub-menu bg-gray-200  ">
+                                        <a href="hostel.html"><li class="hovernav pb-2 border-b-2">Hostels</li></a>
+                                        <a href="emergency_contact.html"><li class="pb-2 hovernav  border-b-2">Emergency Contact</li></a>
+                                        <a href="clinic1.html"><li class="pb-2 hovernav border-b-2">Pharmacies & Clinic</li></a>
+                                        <a href="shop&restaurant.html"><li class="pb-2 hovernav">Shops and Restaurants</li></a>
+                                                    
+                                    </ul>
+                                </div>
+    
+                            </button>
+                            <a href="newaboutus.html"><button class="px-4 py-2 rounded-full hovernav">About Us</button></a>
+                                    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    <!--=================end nav for laptop===============-->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+               
+               <script src="js/jquery.js"></script>
+               <script src="js/nav1.js"></script>
+    <main>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="graphic/backtotop-01.png" style="width:30px"></button>
+            <div class="title">
+                    <img src="graphic/projectnavigatece-01.png">
+                    <h1>Projects of<br><span>Electronics Engineering<br><span>Department</span></span></h1>
+                    <a href="project.html"><button class="previousButton">Previous</button></a>
+            </div>
+
+            <div  class="dataContainer">
+                <h1>Third Year</h1>
+                <div class="data">
+                        <details class="detailsTilte">
+                                <summary>Automatic Whiteboard Cleaner</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">An automatic white board cleaner is a machine which is used to clean board mechanically. This mini project is an automatic whiteboard cleaner for classes (e.g.: school, university). This project is to develop a motorized whiteboard cleaner controlled by an Arduino UNO and 4-DC motors.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">Whiteboard, Arduino UNO</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To save time and energy</li>
+                                            <li>To make a smart classroom</li>
+                                            <li>To provide easy and fast cleaning</li>
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Ezzy Robot Arm with Bluetooth Control Carrier</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">The project is a robot arm that can be controlled by android application. Recently, this robot arm is used to carry things to and form. The main devices are Arduino UNO, Bluetooth module (HC-06), motor and motor driver. We control 4 servos that are connected in the 3D printed frame to control the arm through Bluetooth. The user is able to control the car through the mobile car via Bluetooth module.</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">Arduino, Bluetooth, Robot arm</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To carry things for industrial</li>
+                                                <li>To apply in the hazardous environments</li>
+                                                <li>Make fewer mistakes than man, saving time</li>
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>3.	Kawaii Roboto</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Robotics can be defined as the science and study of the technology associated with the design, theory, and application of robots. Kawaii robot is implemented by using Arduino. This robot can be controlled by Android Application. The icons an be produced in the eyes such as happy, sad, surprise, fear and etc. Moreover, the robot can speck according to the input of the user via Android Application.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Arduino, robot, android</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To be familiar with robot technology for children</li>
+                                                    <li>To make children happy in classroom</li>
+                                                    <li>To be more activated in learning with new words and things</li>
+                                                    <li>To develop creativity</li>   
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>SumoBot Fight</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">SumoBot competition is a sport in which two robots attempt to push each other out of a circle (in a similar fashion to the sport of sumo). The robots used in this competition are called sumobots. This system is designed to implement sumobout to take part in sumobot competition.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">Sumobot</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <ul>
+                                                        <li>To encourage creativity of youth</li>
+                                                        <li>To get interest in embedded and AI technologies</li>
+                                                        <li>To entertain people by unique robot fight.</li>
+                                                    </ul>
+                                        </details>
+
+                                        <details class="detailsTilte">
+                                                <summary>Waste (Metal and Non-metal) Separator</summary>
+                                                    <p class="detailsTitle">Introduction</p>
+                                                        <p class="detailsParagraph">Nowadays, the world wd live has so much garbage. That garbage will cause great harm to the environment and loss of natural resource. Therefore, we have to find an effective way to classify and recycle that garbage. The most useful and popular way is garbage separation. So, our project can separate garbage as metal and non-metal.</p>
+                                                    <p class="detailsTitle">Keywords</p>
+                                                        <p class="detailsParagraph">Garbage, metal, non-metal</p>
+                                                    <p class="detailsTitle">Aims and Objective</p>
+                                                        <ul>
+                                                            <li>To collect and categorize garbage</li>
+                                                            <li>To manage the system before recycling the garbage</li>
+                                                            <li>To clean the environment</li>
+                                                            <li>To save the natural resource</li> 
+                                                            <li>To reduce a lot of waste</li> 
+                                                        </ul>
+                                            </details>
+
+                </div>
+            </div>
+
+             <div  class="dataContainer">
+                <h1>Fourth Year</h1>
+                <div class="data">
+                    <details class="detailsTilte">
+                        <summary>iLAB ( IoT )</summary>
+                            <p class="detailsTitle">Introduction</p>
+                                <p class="detailsParagraph">The concept of iLab is gaining popularity as it helps reducing human struggle and error and increasing the efficiency. With the help of this project, we can control different appliances such as lights, fans, projector, aircons, attendance sheet, etc. This project can also provide other features like security, alarms, emergency systems etc.</p>
+                            <p class="detailsTitle">Keywords</p>
+                                <p class="detailsParagraph">lab, security, alarm</p>
+                            <p class="detailsTitle">Aims and Objective</p>
+                                <ul>
+                                    <li>To provide safety and security</li>
+                                    <li>To safe energy, time, money</li>
+                                    <li>To get students’ information quickly</li>
+                                    <li>To control appliances from anywhere</li>   
+                                </ul>
+                    </details>
+
+                    <details class="detailsTilte">
+                        <summary>VR Smart Glove</summary>
+                            <p class="detailsTitle">Introduction</p>
+                                <p class="detailsParagraph">VR glove is to provide a realistic sense of touch impressive movement tracking capability full autonomous tracking system for arms ( fingers ). This is a very interesting project in which we are going to learn how to implement virtual reality using Arduino and Processing.</p>
+                            <p class="detailsTitle">Keywords</p>
+                                <p class="detailsParagraph">VR glove, Arduino, Processing</p>
+                            <p class="detailsTitle">Aims and Objective</p>
+                                <ul>
+                                    <li>To create an input device that naturally transports our hands into the virtual world amplifying the immersive experience and unlocking creativity with a new level of interaction.</li>
+                                    <li>To learn the performance of VR technology</li>
+                                </ul>
+                    </details>
+
+                </div>
+            </div>
+
+             <div  class="dataContainer">
+                <h1>Fifth Year</h1>
+                <div class="data">
+                        <details class="detailsTilte">
+                                <summary>Design and Implementation of Secure Network Using DMVPN and pfSense</summary>
+                                    <p class="detailsTitle">Introduction</p>
+                                        <p class="detailsParagraph">Nowadays, although there are many kinds of network design, humans are always trying to develop the better network for data communication. Computer networks nowadays take a very significant place in business. It is very critical for business to use the latest technologies available because they provide enhanced security, increased storage capacity, high data transfer rates. Designing and implementing of Local ad Wide Area Networks with the goal of providing employee performance and improved workflow.</p>
+                                    <p class="detailsTitle">Keywords</p>
+                                        <p class="detailsParagraph">Network design, security</p>
+                                    <p class="detailsTitle">Aims and Objective</p>
+                                        <ul>
+                                            <li>To reduce WAN implementation costs with increase bandwidth and reliability</li>
+                                            <li>To allow only the genuine users to access the network an d prevent the intruders from accessing it</li>
+                                            <li>To support better performance, resilience, security, and maintainability</li>
+                                        </ul>
+                            </details>
+
+                            <details class="detailsTilte">
+                                    <summary>Eco-Bin</summary>
+                                        <p class="detailsTitle">Introduction</p>
+                                            <p class="detailsParagraph">This project solves garbage problem by automatic trash classification of recyclable or not and monitors the bin (now much percent filled inside it) over the internet via IOT. Our solution idea will be the best for solving indiscriminate dumping of garbage. The Eco-Bin recognize the waste via the system positioned inside the bin which uses camera, sensors, image recognition and artificial intelligence (AI).</p>
+                                        <p class="detailsTitle">Keywords</p>
+                                            <p class="detailsParagraph">IOT, AI, garbage</p>
+                                        <p class="detailsTitle">Aims and Objective</p>
+                                            <ul>
+                                                <li>To solve currently confront garbage problems in our country</li>
+                                                <li>To reduce the pollution caused by recycles waste</li>
+                                                <li>To be an efficient solution to the current waste management problem</li>
+                                                <li>To help the recycling process easily and quickly using AI and IOT</li>   
+                                            </ul>
+                                </details>
+
+                                <details class="detailsTilte">
+                                        <summary>One Stop Data Retriever</summary>
+                                            <p class="detailsTitle">Introduction</p>
+                                                <p class="detailsParagraph">Nowadays cybercrimes have been happening all over the world. If an organization was attacked, attacker can harm the reputation of the victim of cause physical or metal harm, or loss, to the victim directly or indirectly, using modern telecommunication networks such as internet and mobile phones, that’s why: we have to care about cybercrimes. That is the main weakness of our IT fields. If we want to develop E-government we must care about cyber security seriously.</p>
+                                            <p class="detailsTitle">Keywords</p>
+                                                <p class="detailsParagraph">Cybercrime, attack, security</p>
+                                            <p class="detailsTitle">Aims and Objective</p>
+                                                <ul>
+                                                    <li>To study the important of cyber security</li>
+                                                    <li>To understand how a tiny piece of microcontroller can attack a network</li>
+                                                    <li>To reduce hunting of attacker</li>
+                                                </ul>
+                                    </details>
+
+                                    <details class="detailsTilte">
+                                            <summary>OTTTO Bot (Education Robot)</summary>
+                                                <p class="detailsTitle">Introduction</p>
+                                                    <p class="detailsParagraph">OTTO Bot, educational robot for children, allows open STEAM education, we got some information that collect feedback from different workshops and schools around the world that are already using OTTO DIY in their classroom.</p>
+                                                <p class="detailsTitle">Keywords</p>
+                                                    <p class="detailsParagraph">DIY bot, Educational Robot</p>
+                                                <p class="detailsTitle">Aims and Objective</p>
+                                                    <p class="detailsParagraph">OTTO brings children and people closer to technology, learn the logical connection between code and action, and by assembling it they understand how its components, and electronics work. Via the instructions, children can exercise mathematical thinking, problem solving and creativity.</p>
+                                        </details>
+
+                </div>
+            </div>
+
+            
+
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerContainer">
+            <h1 class="footerHeader"> &#10077; Shape and Bright your Future at UTYCC &#10078; </h1>
+        
+            <div class="footerFlexContainer">
+                <div class="block1">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>&#10004; 09779441303, 09693157860, 09400103949</li>
+                        <li>&#10004; <a href="mailto:saimyintmohtutlyc@gmail.com">saimyintmohtutlyc@gmail.com</a></li>
+                        <li>&#10004; 28 miles on Mandalay-Lashio road, between Pyin Sar Village &amp; Thone Taung Village, Pyin Oo Lwin, Myanmar.</li>
+                    </ul>
+                </div>
+                <div class="block2">
+                    <h1>Get Social With Us</h1>
+                    <div class="block2Flex">
+                        <img src="img/facebookicon.png">
+                        <img src="img/instagramicon.png">
+                        <img src="img/twittericon.png">
+                        <img src="img/googleicon.png">
+                    </div>
+                <div class="suggest">
+                    <a href="suggest.html"><button>Suggest Us</button></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

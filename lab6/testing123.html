@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing123</title>
+    <style>
+        th{
+            background-color: lightcoral;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div style="min-width: 30px; min-height: 400px; border: solid 1px red; padding: 5px;">
+        <h1>Shopping List</h1>
+        <table id="shoppingTable">
+            <tr>
+                <th>Item Name</th>
+                <th>Amount</th>
+                <th>Price</th>
+            </tr>
+        </table>
+        <button onclick="resetList()">Reset List</button>
+        <h1>Add Item</h1>
+        <div>
+            <div style="padding: 5px;">
+                <label for="item_name">Name: </label>
+                <input type="text" id="item_name">
+            </div>
+            <div style="padding: 5px;">
+                <label for="amount">Amount: </label>
+                <input type="text" id="amount">
+            </div>
+            <div style="padding: 5px;">
+                <label for="price">Price: </label>
+                <input type="text" id="price">
+            </div>
+        </div>
+        <button onclick="addItem()">Add</button>
+        <button onclick="clearInputs()">Clear</button>
+    </div>
+
+    <script>
+        function addItem() {
+            const nameElement = document.getElementById("item_name");
+            const amountElement = document.getElementById("amount");
+            const priceElement = document.getElementById("price");
+            
+            const nameText = nameElement.value;
+            const amountText = amountElement.value;
+            const priceText = priceElement.value;
+            
+            const table = document.getElementById("shoppingTable");
+            const newRow = table.insertRow(table.rows.length);
+            
+            const nameCell = newRow.insertCell(0);
+            const amountCell = newRow.insertCell(1);
+            const priceCell = newRow.insertCell(2);
+            
+            nameCell.textContent = nameText;
+            amountCell.textContent = amountText;
+            priceCell.textContent = priceText;
+            
+            clearInputs();
+        }
+        
+        function resetList() {
+            const table = document.getElementById("shoppingTable");
+            table.innerHTML = `
+                <tr>
+                    <th>Item Name</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                </tr>
+            `;
+        }
+        
+        function clearInputs() {
+            const nameElement = document.getElementById("item_name");
+            const amountElement = document.getElementById("amount");
+            const priceElement = document.getElementById("price");
+            
+            nameElement.value = "";
+            amountElement.value = "";
+            priceElement.value = "";
+        }
+    </script>
+</body>
+</html>

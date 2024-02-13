@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Editor</title>
+<style>
+ textarea {
+    width: 100%;
+    height: 200px;
+ }
+ </style>
+</head>
+<body>
+ <h1>JSON Editor</h1>
+ <!-- Input for uploading JSON file -->
+ <input type="file" id="fileInput" accept=".json">
+ <br><br>
+ <!-- Textarea for displaying and editing JSON data -->
+ <textarea id="jsonTextArea"></textarea>
+ <br><br>
+ <!-- Save and Load buttons -->
+ <button onclick="saveJSON()">Save JSON</button>
+ <button onclick="loadJSON()">Load JSON</button>
+ <script>
+ const fileInput = document.getElementById('fileInput');
+ const jsonTextArea = document.getElementById('jsonTextArea');
+ // Function to handle file selection and load JSON data
+ fileInput.addEventListener('change', function (e) {
+ const file = e.target.files[0];
+ if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const content = e.target.result;
+        jsonTextArea.value = content;
+        };
+        reader.readAsText(file);
+        }
+    });
+        // Function to save JSON data as a file
+        function saveJSON() {
+            const jsonContent = jsonTextArea.value;
+            const blob = new Blob([jsonContent],
+            { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a =  document.createElement('a');
+            a.href = url;
+            a.download = 'data.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        // Functionto load JSON data from textarea
+        function loadJSON() {
+            const jsonContent = jsonTextArea.value;
+            try {
+            const data = JSON.parse(jsonContent);
+            // You can work with the parsed JSON data here
+            console.log(data);
+            } catch (error) {
+            alert('Invalid JSON format');
+        }
+    }
+    </script>
+   </body>
+   </html>
+   

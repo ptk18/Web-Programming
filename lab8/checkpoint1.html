@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table to JSON</title>
+</head>
+<body cz-shortcut-listen="true">
+    <table border="1" align="center" id="originalTable">
+        <tbody>
+            <tr>
+                <th>Number</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Item 1</td>
+                <td>1</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Item 2</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Item 3</td>
+                <td>3</td>
+                <td>300</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Item 4</td>
+                <td>4</td>
+                <td>400</td>
+                <td>1600</td>
+            </tr>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>3000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="text-align: center; margin-top: 2%;">
+        <textarea rows="10" cols="50" id="displayTextarea" placeholder="Your JSON Here"></textarea>
+    </div>
+    
+    <div class="button" style="text-align: center; margin-top: 1%; margin-bottom: 1%;">
+        <button id="convertButton">Table->JSON</button>
+        <button id="convertButton2">JSON->Table</button>                        
+    </div>
+
+    <table border="1" align="center" id="newTable"></table>
+
+    <script>
+        document.getElementById('convertButton').addEventListener('click', function() {
+            convertTableToJSON();
+        });
+        document.getElementById('convertButton2').addEventListener('click', function() {
+            convertJSONToTable();
+        });
+
+    
+        function convertTableToJSON() {
+            var originalTable = document.getElementById('originalTable');
+            var tableBody = originalTable.getElementsByTagName('tbody')[0];
+            var tableRows = tableBody.getElementsByTagName('tr');
+            var jsonData = [];
+            var Body = [];
+
+            var tableHeaders = tableRows[0].getElementsByTagName('th');
+            var rowHeader = {
+                "Header" : {
+                    "head1": tableHeaders[0].textContent,
+                    "head2": tableHeaders[1].textContent,
+                    "head3": tableHeaders[2].textContent,
+                    "head4": tableHeaders[3].textContent,
+                    "head5": tableHeaders[4].textContent
+                }
+            };
+            jsonData.push(rowHeader);
+            var rowObject;
+            for (var i = 1; i < tableRows.length-1; i++) { // Start from 1 to skip the header row
+                var tableCells = tableRows[i].getElementsByTagName('td');
+                rowObject = {
+                        "Number": tableCells[0].textContent,
+                        "Item": tableCells[1].textContent,
+                        "Quantity": tableCells[2].textContent,
+                        "Price": tableCells[3].textContent,
+                        "Amount": tableCells[4].textContent
+                };
+                Body.push(rowObject);
+            }
+            var bodyObject = {Body};
+            jsonData.push(bodyObject);
+
+            var tableFooters = tableRows[tableRows.length - 1].getElementsByTagName('td');
+            var colspanInTd = tableFooters[0].colSpan; // Get the colspan value correctly
+            var rowFooter = {
+                "Footer": {
+                    "Name": {
+                        "value": tableFooters[0].textContent,
+                        "colspan": colspanInTd,
+                    },
+                    "Amount": tableFooters[1].textContent
+                }
+            };
+            jsonData.push(rowFooter);
+
+            var displayTextarea = document.getElementById('displayTextarea');
+            displayTextarea.value = JSON.stringify(jsonData, null, 2);
+        }
+
+        function convertJSONToTable() {
+            var displayTextarea = document.getElementById('displayTextarea');
+            var jsonData;
+        
+            try {
+                jsonData = JSON.parse(displayTextarea.value);
+            } catch (error) {
+                alert('Invalid JSON format.');
+                return;
+            }
+        
+            if (!Array.isArray(jsonData) || jsonData.length !== 3) {
+                alert('Invalid JSON format. The JSON should contain 3 objects.');
+                return;
+            }
+        
+            var table = document.createElement('table');
+            table.border = "1";
+            table.align = "center";
+        
+            var thead = document.createElement('thead');
+            var tbody = document.createElement('tbody');
+            var tfoot = document.createElement('tfoot');
+        
+            var headerRow = document.createElement('tr');
+            var headers = jsonData[0]["Header"];
+        
+            for (var key in headers) {
+                if (headers.hasOwnProperty(key)) {
+                    var th = document.createElement('th');
+                    th.textContent = headers[key];
+                    headerRow.appendChild(th);
+                }
+            }
+        
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+        
+            var bodyData = jsonData[1]["Body"];
+            for (var i = 0; i < bodyData.length; i++) {
+                var bodyRow = document.createElement('tr');
+                var body = bodyData[i];
+        
+                for (var key in body) {
+                    if (body.hasOwnProperty(key)) {
+                        var td = document.createElement('td');
+                        td.textContent = body[key];
+                        bodyRow.appendChild(td);
+                    }
+                }
+        
+                tbody.appendChild(bodyRow);
+            }
+        
+            table.appendChild(tbody);
+        
+            var footerRow = document.createElement('tr');
+            var footers = jsonData[2]["Footer"]["Name"];
+            var colspan = footers["colspan"]; // Get the colspan value
+        
+            var td = document.createElement('td');
+            td.textContent = footers["value"];
+            td.colSpan = colspan; // Set colspan for the "Total" cell
+            footerRow.appendChild(td);
+        
+            td = document.createElement('td');
+            td.textContent = jsonData[2]["Footer"]["Amount"];
+            footerRow.appendChild(td);
+        
+            tfoot.appendChild(footerRow);
+            table.appendChild(tfoot);
+        
+            var newTable = document.getElementById('newTable');
+            newTable.innerHTML = ''; // Clear existing table content
+            newTable.appendChild(table);
+        }
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
